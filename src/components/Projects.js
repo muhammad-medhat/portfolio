@@ -10,8 +10,12 @@ import projects from "../projectsData.js";
 
 export const Projects = () => {
   // console.log(projects);
-  // const wp = projects.filter((p) => p.cat == 1);
-  // console.log(wp);
+  const wp = projects.filter((p) => p.cat == 1);
+  const js = projects.filter((p) => p.cat == 2);
+  const ud = projects.filter((p) => p.cat == 3);
+  console.log(wp);
+  console.log(js);
+  console.log(ud);
 
   return (
     <section className="project" id="project">
@@ -27,11 +31,12 @@ export const Projects = () => {
                 >
                   <h2>Projects</h2>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                    Through a fusion of technical skill and creative thinking, a
+                    collection of custom web applications have been developed to
+                    empower businesses and share creative work with the world.
+                    From ecommerce stores and open-source platforms to
+                    portfolios and WordPress workflow wonders, precision-built
+                    websites bring key concepts to life on the internet.
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
@@ -59,31 +64,24 @@ export const Projects = () => {
                     >
                       <Tab.Pane eventKey="first">
                         <Row>
-                          {/* {projects.map((project, index) => {
-                            return <ProjectCard key={index} {...project} />;
-                          })} */}
-                          {projects
-                            .filter((p) => p.cat == 1)
-                            .map((x, i) => {
-                              return <ProjectCard key={i} {...x} />;
-                            })}
+                          {wp.map((x, i) => {
+                            return <ProjectCard key={x.slug} {...x} />;
+                          })}
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="section">
-                        {projects
-                          .filter((p) => p.cat == 2)
-                          .map((x, i) => {
-                            return <ProjectCard key={i} {...x} />;
+                      <Tab.Pane eventKey="second">
+                        <Row>
+                          {js.map((x, i) => {
+                            return <ProjectCard key={x.slug} {...x} />;
                           })}
+                        </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
+                        <Row>
+                          {ud.map((x, i) => {
+                            return <ProjectCard key={x.slug} {...x} />;
+                          })}
+                        </Row>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>

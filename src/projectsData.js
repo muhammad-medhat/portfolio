@@ -81,24 +81,28 @@ const projects = [
     slug: "myreads",
     desc: "A React application to organize and manage your library of books. Easily search, sort, and categorize your collection. Keep track of which books you have read and which you haven't. Never lose a book again!",
     image: "img/react myreads.jpg",
+    cat: 3,
   },
   {
     title: "Fyurr app",
     slug: "fyurr",
-    desc: "Simple Udacity Project: A Flask application to easily create, read, update, and delete music bands in your personal list. Keep track of your favorite bands and never miss a show again! ",
+    desc: "A Flask application to easily create, read, update, and delete music bands in your personal list. Keep track of your favorite bands and never miss a show again! ",
     image: "img/fyyur.png",
+    cat: 3,
   },
   {
     title: "Trivia API app",
     slug: "trivia-api",
-    desc: "Simple Udacity Project: A Flask API to easily create, read, update, and delete questions in your personal list. Get answers to your questions quickly and easily! ",
+    desc: "A Flask API to easily create, read, update, and delete questions in your personal list. Get answers to your questions quickly and easily! ",
     image: "img/trivia_api.png",
+    cat: 3,
   },
   {
     title: "TODO CRUD app",
     slug: "todo-crud",
     desc: "A React and Flask application to easily create, read, update, and delete tasks in your personal to-do list. Keep track of your tasks and never miss a deadline again!",
     image: "img/todo-crud.png",
+    cat: 2,
   },
 ];
 export default projects;
