@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.svg";
+// import headerImg from "../assets/img/header-img.svg";
+import profileImg from "../assets/img/profile-img.jpeg";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -11,7 +12,7 @@ export const Banner = () => {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"];
+  const toRotate = ["Web Developer", "Web Designer"];
   const period = 2000;
 
   useEffect(() => {
@@ -55,7 +56,8 @@ export const Banner = () => {
     <section className="banner" id="home">
       <Container>
         <Row className="aligh-items-center">
-          <Col xs={12} md={6} xl={7}>
+          {/* <Col xs={12} md={6} xl={7}> */}
+          <Col>
             <TrackVisibility>
               {({ isVisible }) => (
                 <div
@@ -64,8 +66,20 @@ export const Banner = () => {
                   }
                 >
                   <span className="tagline">Welcome to my Portfolio</span>
-                  <h1>
-                    {`Hi! I'm Muhammad  Medhat`}{" "}
+                  <div className="d-flex  align-items-center">
+                    <img
+                      src={profileImg}
+                      alt="Muhammad Medhat"
+                      style={{
+                        width: "100px",
+                        height: "100px",
+                        marginRight: "1rem",
+                        borderRadius: "50%",
+                      }}
+                    />
+                    <h2>{`Hi! I'm Muhammad Medhat`} </h2>
+                  </div>
+                  <div className="d-flex justify-content-center align-content-center">
                     <span
                       className="txt-rotate"
                       dataPeriod="1000"
@@ -73,7 +87,8 @@ export const Banner = () => {
                     >
                       <span className="wrap">{text}</span>
                     </span>
-                  </h1>
+                  </div>
+
                   <p>
                     Hi there! I am a web developer with expertise in JavaScript,
                     React, WordPress, and PHP. I have a passion for creating
@@ -95,7 +110,7 @@ export const Banner = () => {
               )}
             </TrackVisibility>
           </Col>
-          <Col xs={12} md={6} xl={5}>
+          {/* <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
               {({ isVisible }) => (
                 <div
@@ -107,7 +122,7 @@ export const Banner = () => {
                 </div>
               )}
             </TrackVisibility>
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </section>
