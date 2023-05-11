@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 // import headerImg from "../assets/img/header-img.svg";
 import profileImg from "../assets/img/profile-img.jpeg";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import "animate.css";
+// import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 export const Banner = () => {
@@ -12,8 +12,13 @@ export const Banner = () => {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = ["Web Developer", "Web Designer"];
-  const period = 2000;
+  const toRotate = [
+    "MERN Web Developer",
+    "Wordpress Developer",
+    "Search Engine Optimization",
+  ];
+
+  const period = 1000;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -31,6 +36,7 @@ export const Banner = () => {
     let updatedText = isDeleting
       ? fullText.substring(0, text.length - 1)
       : fullText.substring(0, text.length + 1);
+    debugger;
 
     setText(updatedText);
 
@@ -80,13 +86,10 @@ export const Banner = () => {
                     <h2>{`Hi! I'm Muhammad Medhat`} </h2>
                   </div>
                   <div className="d-flex justify-content-center align-content-center">
-                    <span
-                      className="txt-rotate"
-                      dataPeriod="1000"
-                      data-rotate='[ "JavaScript Web Developer", "Wordpress Developer", "Search Engine Optimization" ]'
-                    >
-                      <span className="wrap">{text}</span>
-                    </span>
+                    <h4 className="txt-rotate" dataPeriod="1000">
+                      {/* <span className="wrap">{text}</span> */}
+                      Web Developer (Mern Stack, Wordpress)
+                    </h4>
                   </div>
 
                   <p>

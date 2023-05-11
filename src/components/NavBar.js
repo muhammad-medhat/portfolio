@@ -73,20 +73,22 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="#">
-                  {/* <img src={navIcon1} alt="" /> */}
-                  <i className="fa-brands fa-github fa-2xs"></i>
+                <a target="_blank" href="https://github.com/muhammad-medhat">
+                  <i className="fa-brands fa-github"></i>
                 </a>
-                <a href="#">
-                  {/* <img src={navIcon1} alt="" /> */}
-                  <i className="fa-brands fa-linkedin-in fa-2xs"></i>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/muhammad-medhat/"
+                >
+                  <i className="fa-brands fa-linkedin-in"></i>
                 </a>
-                <a href="#">
-                  {/* <img src={navIcon2} alt="" /> */}
-                  <i className="fa-brands fa-facebook-f fa-2xs"></i>
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/muhammad.medhat.1983/"
+                >
+                  <i className="fa-brands fa-facebook-f"></i>
                 </a>
-                <a href="#">
-                  {/* <img src={navIcon3} alt="" /> */}
+                <a target="_blank" href="https://twitter.com/muhammad_medhat">
                   <i class="fa-brands fa-twitter fa-2xs"></i>
                 </a>
               </div>
