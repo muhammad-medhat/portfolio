@@ -36,7 +36,7 @@ export const Banner = () => {
     let updatedText = isDeleting
       ? fullText.substring(0, text.length - 1)
       : fullText.substring(0, text.length + 1);
-    debugger;
+    //debugger;
 
     setText(updatedText);
 
@@ -106,9 +106,9 @@ export const Banner = () => {
                     me exploring new hiking trails or catching up on the latest
                     tech news.
                   </p>
-                  <button onClick={() => console.log("connect")}>
+                  {/* <button onClick={() => console.log("connect")}>
                     Let’s Connect <ArrowRightCircle size={25} />
-                  </button>
+                  </button> */}
                 </div>
               )}
             </TrackVisibility>

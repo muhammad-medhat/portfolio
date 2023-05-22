@@ -13,12 +13,12 @@ export const Projects = () => {
   const wp = projects.filter((p) => p.cat == 1);
   const js = projects.filter((p) => p.cat == 2);
   const ud = projects.filter((p) => p.cat == 3);
-  console.log(wp);
-  console.log(js);
-  console.log(ud);
+  // console.log(wp);
+  // console.log(js);
+  // console.log(ud);
 
   return (
-    <section className="project" id="projects">
+    <section className="projects" id="projects">
       <Container>
         <Row>
           <Col size={12}>
@@ -91,7 +91,6 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
     </section>
   );
 };
