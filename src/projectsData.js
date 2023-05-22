@@ -52,7 +52,7 @@ const projects = [
     title: "United Cotton",
     slug: "United-Cotton",
     desc: "City Compound :: Villas :: Town House :: Quatro :: Hotel :: Golf",
-    image: "img/United-Cotton.jpg",
+    image: "img/united-cotton.jpg",
     cat: 1,
   },
   {
