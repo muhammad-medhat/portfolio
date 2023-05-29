@@ -7,6 +7,7 @@ import { Banner } from "./components/Banner";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
+import { ContactInfo } from "./components/ContactInfo";
 
 function App() {
   return (
@@ -14,8 +15,8 @@ function App() {
       <NavBar />
       <Banner />
       {/* <Skills /> */}
+      <ContactInfo />
       <Projects />
-      {/* <Contact /> */}
       <Footer />
     </div>
   );

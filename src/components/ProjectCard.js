@@ -1,6 +1,11 @@
 import { Col } from "react-bootstrap";
+import Popup from "reactjs-popup";
+import "reactjs-popup/dist/index.css";
+import "./components.css";
+import { CheckLg } from "react-bootstrap-icons";
 
-export const ProjectCard = ({ title, desc, image }) => {
+export const ProjectCard = ({ title, desc, image, longDesc }) => {
+  // console.log(longDesc);
   return (
     <Col size={12} sm={6} md={4}>
       <div
@@ -16,7 +21,6 @@ export const ProjectCard = ({ title, desc, image }) => {
         <div className="proj-txtx">
           <h4>{title}</h4>
           <span>{desc}</span>
-          {/* <a href=""></a> */}
         </div>
       </div>
     </Col>

@@ -4,6 +4,7 @@ const projects = [
     slug: "cookreads",
     desc: "A WordPress blog to share recipes and cooking tips. Easily search for the perfect dish or learn how to make it yourself. Find new recipes and discover new flavors!",
     image: "img/cookreads.png",
+
     cat: 1,
   },
   {
@@ -103,6 +104,13 @@ const projects = [
     desc: "A React and Flask application to easily create, read, update, and delete tasks in your personal to-do list. Keep track of your tasks and never miss a deadline again!",
     image: "img/todo-crud.png",
     cat: 2,
+    longDesc: {
+      usedPlugins: {
+        database: "postgress",
+        backend: "python",
+        frontend: "react",
+      },
+    },
   },
 ];
 export default projects;
