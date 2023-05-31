@@ -2,34 +2,46 @@
   background: linear-gradient(90.21deg, #1a1630 -5.91%, #4A2FBD 111.58%);
   /* padding: 60px 0 200px 60px; */
 }
-.contact img {
-  width: 92%;
-}
+
 .contact h2 {
-	/* font-size: 45px;
-	font-weight: 700;
-  margin-bottom: 30px; */
+	font-size: xx-large;
+  margin: 30px auto;
 }
-
-
-
-
-
 .info .container{ 
-  /* background-color: red; */
   font-size: x-large;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
-.info .cont .row .col:first-of-type{
+/* .info .cont .row .col:first-of-type{
   text-align: right;
 }
 .info .cont .row .col:nth-of-type(2){
   text-align: left;
+} */
+.info .cols{
+  margin: 0 36%;
+  max-width: 50%;
 }
-/* @media screen and (min-width: 280px) {
+.cols .col i{
+  margin: 0 1rem;
+}
+.cols .col{
+  display: flex;
+    justify-content: flex-start;
+    min-width: 100%;
+}
+.cols span{
+
+}
+@media screen and (max-width: 999px) {
+
+  /* .social-icon{
+    border: solid 1px #fff;
+  } */
+}
+@media screen and (min-width: 280px) {
   .info .container{ font-size: medium;}
 
-} */
+}

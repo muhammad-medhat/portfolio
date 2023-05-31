@@ -115,7 +115,7 @@ span.navbar-text {
 }
 .social-icon {
     display: inline-block;
-    margin-left: 14px;
+    /* margin-left: 14px; */
 }
 
 .social-icon a i{

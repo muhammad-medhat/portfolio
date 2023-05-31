@@ -11,12 +11,13 @@ import { ContactInfo } from "./components/ContactInfo";
 import "bootstrap/dist/css/bootstrap.css";
 
 function App() {
+  document.title = "Muhammad Medhat - Wordpress Developer";
   return (
     <div className="App color-overlay">
       <NavBar />
       <Banner />
       {/* <Skills /> */}
-      {/* <ContactInfo /> */}
+      <ContactInfo />
       <Projects />
       <Footer />
     </div>
