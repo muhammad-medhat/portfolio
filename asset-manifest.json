@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d8fdb056.css",
-    "main.js": "/portfolio/static/js/main.6a49fa33.js",
+    "main.css": "/portfolio/static/css/main.f7cdd8e1.css",
+    "main.js": "/portfolio/static/js/main.23e280e4.js",
     "static/js/787.fb771931.chunk.js": "/portfolio/static/js/787.fb771931.chunk.js",
     "static/media/Shining Stars In Black Night.gif": "/portfolio/static/media/Shining Stars In Black Night.346048887347aea28d21.gif",
     "static/media/color-sharp2.png": "/portfolio/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
@@ -14,12 +14,12 @@
     "index.html": "/portfolio/index.html",
     "static/media/nav-icon1.svg": "/portfolio/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "static/media/nav-icon2.svg": "/portfolio/static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
-    "main.d8fdb056.css.map": "/portfolio/static/css/main.d8fdb056.css.map",
-    "main.6a49fa33.js.map": "/portfolio/static/js/main.6a49fa33.js.map",
+    "main.f7cdd8e1.css.map": "/portfolio/static/css/main.f7cdd8e1.css.map",
+    "main.23e280e4.js.map": "/portfolio/static/js/main.23e280e4.js.map",
     "787.fb771931.chunk.js.map": "/portfolio/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8fdb056.css",
-    "static/js/main.6a49fa33.js"
+    "static/css/main.f7cdd8e1.css",
+    "static/js/main.23e280e4.js"
   ]
 }
