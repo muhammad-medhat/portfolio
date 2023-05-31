@@ -1,0 +1,35 @@
+.contact {
+  background: linear-gradient(90.21deg, #1a1630 -5.91%, #4A2FBD 111.58%);
+  /* padding: 60px 0 200px 60px; */
+}
+.contact img {
+  width: 92%;
+}
+.contact h2 {
+	/* font-size: 45px;
+	font-weight: 700;
+  margin-bottom: 30px; */
+}
+
+
+
+
+
+.info .container{ 
+  /* background-color: red; */
+  font-size: x-large;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.info .cont .row .col:first-of-type{
+  text-align: right;
+}
+.info .cont .row .col:nth-of-type(2){
+  text-align: left;
+}
+/* @media screen and (min-width: 280px) {
+  .info .container{ font-size: medium;}
+
+} */

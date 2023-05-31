@@ -8,6 +8,7 @@ import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { ContactInfo } from "./components/ContactInfo";
+import "bootstrap/dist/css/bootstrap.css";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
       <NavBar />
       <Banner />
       {/* <Skills /> */}
-      <ContactInfo />
+      {/* <ContactInfo /> */}
       <Projects />
       <Footer />
     </div>
