@@ -1,0 +1,14 @@
+.cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.desc{
+    width: 30%;
+    /* display: flex; */
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-style: italic;
+} 

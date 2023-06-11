@@ -8,7 +8,7 @@ export const ContactInfo = () => {
   return (
     <section className="contact info" id="connect" style={{ opacity: 0.9 }}>
       <Container>
-        <h2>Contact Information</h2>
+        <h2 className="title">Contact Information</h2>
 
         <div className="cols">
           <Col>

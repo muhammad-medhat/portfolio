@@ -1,12 +1,10 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-// import projImg1 from "../assets/img/project-img1.png";
-// import projImg2 from "../assets/img/project-img2.png";
-// import projImg3 from "../assets/img/project-img3.png";
-import colorSharp2 from "../assets/img/color-sharp2.png";
+
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import projects from "../projectsData.js";
+import "./projects.css";
 
 export const Projects = () => {
   // console.log(projects);
@@ -24,13 +22,9 @@ export const Projects = () => {
           <Col size={12}>
             <TrackVisibility>
               {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
-                  }
-                >
-                  <h2>Projects</h2>
-                  <p>
+                <div className="cont">
+                  <h2 className="title">Projects</h2>
+                  <p className="intro">
                     Through a fusion of technical skill and creative thinking, a
                     collection of custom web applications have been developed to
                     empower businesses and share creative work with the world.
@@ -38,6 +32,10 @@ export const Projects = () => {
                     portfolios and WordPress workflow wonders, precision-built
                     websites bring key concepts to life on the internet.
                   </p>
+                  <div className="disc">
+                    Please note that the items displayed in my portfolio are
+                    accepted and approved for sharing.
+                  </div>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
                       variant="pills"

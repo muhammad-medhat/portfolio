@@ -637,3 +637,13 @@ body{
   background-image: url("./assets/img/Shining Stars In Black Night.gif");
   background-position: fixed;
 }
+.title{
+    min-width: 50%;
+    text-align: center;
+    padding: 1em;
+    border-radius: 5px;
+    letter-spacing: 6px;
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.20220588235294112) 0%); */
+    /* background: linear-gradient(90deg, rgb(0,255,0) 0%, rgba(121, 9, 18, 0.202) 0%); */
+    /* box-shadow:0px 0px 47px 8px rgba(155,154,100, 1); */
+}
