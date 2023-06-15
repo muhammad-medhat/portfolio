@@ -43,15 +43,18 @@ export const Projects = () => {
                       id="pills-tab"
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey="first">
+                        <Nav.Link eventKey="cms">
                           Cms: Joomla, WordPress
                         </Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">React, NodeJS</Nav.Link>
+                        <Nav.Link eventKey="js">React, NodeJS</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">Udacity Projects</Nav.Link>
+                        <Nav.Link eventKey="udacity">Udacity Projects</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="mobile">Mobile Apps</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content
@@ -60,25 +63,40 @@ export const Projects = () => {
                         isVisible ? "animate__animated animate__slideInUp" : ""
                       }
                     >
-                      <Tab.Pane eventKey="first">
+                      <Tab.Pane eventKey="cms">
                         <Row>
                           {wp.map((x, i) => {
                             return <ProjectCard key={x.slug} {...x} />;
                           })}
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="second">
+                      <Tab.Pane eventKey="js">
                         <Row>
                           {js.map((x, i) => {
                             return <ProjectCard key={x.slug} {...x} />;
                           })}
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="third">
+                      <Tab.Pane eventKey="udacity">
                         <Row>
                           {ud.map((x, i) => {
                             return <ProjectCard key={x.slug} {...x} />;
                           })}
+                        </Row>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="mobile">
+                        <Row>
+                          {/* {ud.map((x, i) => {
+                            return <ProjectCard key={x.slug} {...x} />;
+                          })} */}
+                          <div className="intro">
+                            Although there are no mobile apps available at the
+                            moment, I'm excited to let you know that I'm
+                            currently working on developing some awesome
+                            projects using React Native. Stay tuned for updates
+                            and feel free to browse through my portfolio to see
+                            some of my past work.
+                          </div>
                         </Row>
                       </Tab.Pane>
                     </Tab.Content>
