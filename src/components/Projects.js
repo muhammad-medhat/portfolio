@@ -39,22 +39,28 @@ export const Projects = () => {
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
                       variant="pills"
-                      className="nav-pills mb-5 justify-content-center align-items-center"
+                      className="nav-pills mb-5 justify-content-center align-items-center row1"
                       id="pills-tab"
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey="cms">
+                        <Nav.Link className="" eventKey="cms">
                           Cms: Joomla, WordPress
                         </Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="js">React, NodeJS</Nav.Link>
+                        <Nav.Link className="" eventKey="js">
+                          React, NodeJS
+                        </Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="udacity">Udacity Projects</Nav.Link>
+                        <Nav.Link className="" eventKey="udacity">
+                          Udacity Projects
+                        </Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="mobile">Mobile Apps</Nav.Link>
+                        <Nav.Link className="" eventKey="mobile">
+                          Mobile Apps
+                        </Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content

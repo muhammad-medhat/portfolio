@@ -27,7 +27,6 @@ export const ContactInfo = () => {
           </Col>
         </div>
       </Container>
-      c
     </section>
   );
 };
