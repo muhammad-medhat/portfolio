@@ -7,13 +7,9 @@ import projects from "../projectsData.js";
 import "./projects.css";
 
 export const Projects = () => {
-  // console.log(projects);
-  const wp = projects.filter((p) => p.cat == 1);
-  const js = projects.filter((p) => p.cat == 2);
-  const ud = projects.filter((p) => p.cat == 3);
-  // console.log(wp);
-  // console.log(js);
-  // console.log(ud);
+  const wp = projects.filter((p) => p.cat === 1);
+  const js = projects.filter((p) => p.cat === 2);
+  const ud = projects.filter((p) => p.cat === 3);
 
   return (
     <section className="projects" id="projects">
@@ -36,7 +32,7 @@ export const Projects = () => {
                     Please note that the items displayed in my portfolio are
                     accepted and approved for sharing.
                   </div>
-                  <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                  <Tab.Container id="projects-tabs" defaultActiveKey="cms">
                     <Nav
                       variant="pills"
                       className="nav-pills mb-5 justify-content-center align-items-center row1"
@@ -57,11 +53,11 @@ export const Projects = () => {
                           Udacity Projects
                         </Nav.Link>
                       </Nav.Item>
-                      <Nav.Item>
+                      {/* <Nav.Item>
                         <Nav.Link className="" eventKey="mobile">
                           Mobile Apps
                         </Nav.Link>
-                      </Nav.Item>
+                      </Nav.Item> */}
                     </Nav>
                     <Tab.Content
                       id="slideInUp"
@@ -71,23 +67,53 @@ export const Projects = () => {
                     >
                       <Tab.Pane eventKey="cms">
                         <Row>
-                          {wp.map((x, i) => {
-                            return <ProjectCard key={x.slug} {...x} />;
-                          })}
+                          <div className="tab-cont">
+                            <div className="disc" style={{ padding: "2rem" }}>
+                              Since 2011, I've created countless Joomla and
+                              WordPress websites for my clients. I use the
+                              latest platforms, and my websites are beautiful,
+                              easy to use, and optimized for search engines.
+                              Let's create something great!
+                            </div>
+                            <div className="project-list">
+                              {wp.map((x, i) => {
+                                return <ProjectCard key={x.slug} {...x} />;
+                              })}
+                            </div>
+                          </div>
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="js">
                         <Row>
-                          {js.map((x, i) => {
-                            return <ProjectCard key={x.slug} {...x} />;
-                          })}
+                          <div className="tab-cont">
+                            <div className="disc">
+                              In this section of my portfolio, you'll find some
+                              of my favorite projects using React and MERN
+                              stack. I'm proud to showcase my work!
+                            </div>
+                            <div className="project-list">
+                              {js.map((x, i) => {
+                                return <ProjectCard key={x.slug} {...x} />;
+                              })}
+                            </div>
+                          </div>
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="udacity">
                         <Row>
-                          {ud.map((x, i) => {
-                            return <ProjectCard key={x.slug} {...x} />;
-                          })}
+                          <div className="tab-cont">
+                            <div className="disc">
+                              In my portfolio, you'll find examples of my work
+                              on professional training websites for React and
+                              Python Udacity nano-degrees. I'm excited to share
+                              my projects with you!
+                            </div>
+                            <div className="project-list">
+                              {ud.map((x, i) => {
+                                return <ProjectCard key={x.slug} {...x} />;
+                              })}
+                            </div>
+                          </div>
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="mobile">

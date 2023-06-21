@@ -67,7 +67,7 @@ const projects = [
     title: "Landing Page",
     slug: "Landing-Page",
     desc: "Using JavaScript to enhances user experience by adding interactive elements, dynamic content, and animations to drive conversions and capture attention.",
-    image: "img/landing page.png",
+    image: "img/landing.png",
     cat: 2,
   },
   {

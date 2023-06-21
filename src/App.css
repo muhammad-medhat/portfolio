@@ -500,15 +500,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 20px;
 }
 
-.proj-imgbx img{
-  height: 365px;
-}
-.proj-txtx{
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  border: solid;
-}
+
 body{
   background-color: rgba(7, 15, 117, 0.858) !important;
   background-image: url("./assets/img/Shining Stars In Black Night.gif");
@@ -517,7 +509,7 @@ body{
 .title{
     min-width: 50%;
     text-align: center;
-    padding: 1em;
+    /* padding: 1em; */
     border-radius: 5px;
     letter-spacing: 6px;
     /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.20220588235294112) 0%); */
