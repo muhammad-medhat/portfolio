@@ -1,9 +1,17 @@
 const projects = [
   {
+    title: "The pets now",
+    slug: "tpn",
+    desc: "A WordPress blog for cats",
+    image: "img/tpn.jpg",
+
+    cat: 1,
+  },
+  {
     title: "Cook reads",
     slug: "cookreads",
     desc: "A WordPress blog to share recipes and cooking tips. Easily search for the perfect dish or learn how to make it yourself. Find new recipes and discover new flavors!",
-    image: "img/cookreads.png",
+    image: "img/cookreads.jpg",
 
     cat: 1,
   },
@@ -11,21 +19,21 @@ const projects = [
     title: "MERN Shop",
     slug: "MERN-shop",
     desc: "A MERN stack ecommerce platform to buy and sell products online. Easily search for the perfect item or create your own store. Get the best deals and never miss a sale!",
-    image: "img/MERN-shop.png",
+    image: "img/MERN-shop.jpg",
     cat: 2,
   },
   {
     title: "MDweb",
     slug: "MDweb",
     desc: "Video ADs: A WordPress website to easily selling video ads. Find the perfect ad quickly and securely. Get the best deals and never miss an opportunity!",
-    image: "img/videos.png",
+    image: "img/videos.jpg",
     cat: 1,
   },
   {
     title: "MERN Ecom",
     slug: "MERN-Ecom",
     desc: "A MERN stack ecommerce platform to buy and sell products online. Easily search for the perfect item or create your own store. Get the best deals and never miss a sale!",
-    image: "img/mern-ecommerce.png",
+    image: "img/mern-ecommerce.jpg",
     cat: 2,
   },
   {
@@ -67,14 +75,14 @@ const projects = [
     title: "Landing Page",
     slug: "Landing-Page",
     desc: "Using JavaScript to enhances user experience by adding interactive elements, dynamic content, and animations to drive conversions and capture attention.",
-    image: "img/landing.png",
+    image: "img/landing.jpg",
     cat: 2,
   },
   {
     title: "Courses List",
     slug: "courses-list",
     desc: "An application with React and Flask allows CRUD operations for a course list. Users can create, read, update, and delete course entries easily and efficiently.",
-    image: "img/react-courses-list.png",
+    image: "img/react-courses-list.jpg",
     cat: 2,
   },
   {
@@ -88,21 +96,21 @@ const projects = [
     title: "Fyurr app",
     slug: "fyurr",
     desc: "A Flask application to easily create, read, update, and delete music bands in your personal list. Keep track of your favorite bands and never miss a show again! ",
-    image: "img/fyyur.png",
+    image: "img/fyyur.jpg",
     cat: 3,
   },
   {
     title: "Trivia API app",
     slug: "trivia-api",
     desc: "A Flask API to easily create, read, update, and delete questions in your personal list. Get answers to your questions quickly and easily! ",
-    image: "img/trivia_api.png",
+    image: "img/trivia_api.jpg",
     cat: 3,
   },
   {
     title: "TODO CRUD app",
     slug: "todo-crud",
     desc: "A React and Flask application to easily create, read, update, and delete tasks in your personal to-do list. Keep track of your tasks and never miss a deadline again!",
-    image: "img/todo-crud.png",
+    image: "img/todo-crud.jpg",
     cat: 2,
     longDesc: {
       usedPlugins: {

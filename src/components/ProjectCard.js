@@ -12,9 +12,8 @@ export const ProjectCard = ({ title, desc, image, longDesc }) => {
         className="proj-imgbx"
         style={{
           backgroundImage: `url(${image.replace(/\s/g, "%20")})`,
-          backgroundSize: "cover",
-          // border: "solid",
-          height: "400px",
+          // backgroundSize: "cover",
+          // height: "400px",
         }}
       >
         {/* <img src={image} alt={`Project: ${title}`} /> */}
