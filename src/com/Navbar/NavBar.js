@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from "../assets/img/logo.svg";
-// import "./NavBar.css";
+import logo from "../../assets/img/logo.svg";
+import "./navbar.css";
 
 import { HashLink } from "react-router-hash-link";
+import Social from "../social/Social";
+import { Link } from "react-router-dom";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -41,47 +43,30 @@ export const NavBar = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link
-              href="/"
-              className={
-                activeLink === "home" ? "active navbar-link" : "navbar-link"
-              }
+            <Link
+              to="/"
+              className={`${
+                "navbar-link nav-link " +
+                (activeLink === "home" ? "active" : "")
+              }`}
               onClick={() => onUpdateActiveLink("home")}
             >
               Home
-            </Nav.Link>
+            </Link>
 
-            <Nav.Link
-              href="/projects"
-              className={
-                activeLink === "projects" ? "active navbar-link" : "navbar-link"
-              }
+            <Link
+              to="/projects"
+              className={`${
+                "navbar-link nav-link " +
+                (activeLink === "projects" ? "active" : "")
+              }`}
               onClick={() => onUpdateActiveLink("projects")}
             >
               Projects
-            </Nav.Link>
+            </Link>
           </Nav>
           <span className="navbar-text">
-            <div className="social-icon">
-              <a target="_blank" href="https://github.com/muhammad-medhat">
-                <i className="fa-brands fa-github"></i>
-              </a>
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/in/muhammad-medhat/"
-              >
-                <i className="fa-brands fa-linkedin-in"></i>
-              </a>
-              <a
-                target="_blank"
-                href="https://www.facebook.com/muhammad.medhat.1983/"
-              >
-                <i className="fa-brands fa-facebook-f"></i>
-              </a>
-              <a target="_blank" href="https://twitter.com/muhammad_medhat">
-                <i className="fa-brands fa-twitter fa-2xs"></i>
-              </a>
-            </div>
+            <Social />
             <HashLink to="/contact">
               <button className="vvd">
                 <span>Let’s Connect</span>
