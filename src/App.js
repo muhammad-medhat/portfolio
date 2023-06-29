@@ -9,16 +9,21 @@ import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { ContactInfo } from "./components/ContactInfo";
 import "bootstrap/dist/css/bootstrap.css";
+import Home from "./components/Home";
+import { Route, Routes } from "react-router-dom";
+import About from "./components/About";
 
 function App() {
   document.title = "Muhammad Medhat - Wordpress Developer";
   return (
     <div className="App color-overlay">
       <NavBar />
-      <Banner />
-      {/* <Skills /> */}
-      <ContactInfo />
-      <Projects />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />{" "}
+      </Routes>
       <Footer />
     </div>
   );

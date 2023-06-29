@@ -5,6 +5,7 @@ import profileImg from "../assets/img/profile-img.jpeg";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 // import "animate.css";
 import TrackVisibility from "react-on-screen";
+import { ContactInfo } from "./ContactInfo";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -86,7 +87,7 @@ export const Banner = () => {
                     <h2>{`Hi! I'm Muhammad Medhat`} </h2>
                   </div>
                   <div className="d-flex justify-content-center align-content-center">
-                    <h4 className="txt-rotate" dataPeriod="1000">
+                    <h4 className="txt-rotate">
                       {/* <span className="wrap">{text}</span> */}
                       Web Developer (Mern Stack, Wordpress)
                     </h4>
@@ -128,6 +129,7 @@ export const Banner = () => {
           </Col> */}
         </Row>
       </Container>
+      <ContactInfo />
     </section>
   );
 };
