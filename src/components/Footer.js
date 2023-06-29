@@ -1,13 +1,10 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { MailchimpForm } from "./MailchimpForm";
 import logo from "../assets/img/logo.svg";
-import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon2 from "../assets/img/nav-icon2.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
-
+import "./footer.css";
 export const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer shiny-box">
       <Container>
         <Row className="align-items-center">
           {/* <MailchimpForm /> */}
@@ -32,10 +29,10 @@ export const Footer = () => {
                 <i className="fa-brands fa-facebook-f"></i>
               </a>
               <a target="_blank" href="https://twitter.com/muhammad_medhat">
-                <i class="fa-brands fa-twitter fa-2xs"></i>
+                <i className="fa-brands fa-twitter fa-2xs"></i>
               </a>
             </div>
-            <p>Copyright 2023. All Rights Reserved</p>
+            <p>Copyright {new Date().getFullYear()}. All Rights Reserved</p>
           </Col>
         </Row>
       </Container>

@@ -4,20 +4,22 @@ import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 export const ProjectDetails = () => {
+  //destruct params
 
   return (
-    <section className="projects" id="projects">
-      <Container>
-        <Row>
-          <Col size={12}>
-            <TrackVisibility>
-              {({ isVisible }) => (
+    <h2>project</h2>
+    // <section className="projects" id="projects">
+    //   <Container>
+    //     <Row>
+    //       <Col size={12}>
+    //         <TrackVisibility>
+    //           {({ isVisible }) => (
 
-              )}
-            </TrackVisibility>
-          </Col>
-        </Row>
-      </Container>
-    </section>
+    //           )}
+    //         </TrackVisibility>
+    //       </Col>
+    //     </Row>
+    //   </Container>
+    // </section>
   );
 };
