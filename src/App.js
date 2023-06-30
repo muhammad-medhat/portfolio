@@ -15,13 +15,13 @@ import About from "./components/About";
 
 function App() {
   document.title = "Muhammad Medhat - Wordpress Developer";
-  const homePage = "/portfolio";
+  const homePage = "/portfolio/";
 
   return (
     <div className="App color-overlay">
       <NavBar />
       <Routes>
-        <Route exact path={homePage + "/"} element={<Home />} />
+        <Route exact path={homePage} element={<Home />} />
         <Route path={`${homePage}/projects`} element={<Projects />} />
         <Route path={`${homePage}/about`} element={<About />} />
         <Route path={`${homePage}/contact`} element={<Contact />} />{" "}
