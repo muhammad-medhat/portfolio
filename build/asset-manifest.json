@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.921e164a.css",
+    "main.js": "/static/js/main.57755f0e.js",
+    "static/media/Shining Stars In Black Night.gif": "/static/media/Shining Stars In Black Night.346048887347aea28d21.gif",
+    "static/media/CentraNo2-Bold.ttf": "/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
+    "static/media/CentraNo2-Medium.ttf": "/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
+    "static/media/CentraNo2-Book.ttf": "/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
+    "static/media/contact-img.svg": "/static/media/contact-img.87eac2b29352fa01abb2f9510ef6ac7e.svg",
+    "static/media/logo.svg": "/static/media/logo.eaf3c0bc058e0ed6471ba20dc0af6da2.svg",
+    "index.html": "/index.html",
+    "main.921e164a.css.map": "/static/css/main.921e164a.css.map",
+    "main.57755f0e.js.map": "/static/js/main.57755f0e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.921e164a.css",
+    "static/js/main.57755f0e.js"
+  ]
+}
