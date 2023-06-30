@@ -15,15 +15,15 @@ import About from "./components/About";
 
 function App() {
   document.title = "Muhammad Medhat - Wordpress Developer";
-
+  const baseUrl = "portfolio";
   return (
     <div className="App color-overlay">
       <NavBar />
       <Routes>
-        <Route exact path={"/"} element={<Home />} />
-        <Route path={`/projects`} element={<Projects />} />
-        <Route path={`/about`} element={<About />} />
-        <Route path={`/contact`} element={<Contact />} />{" "}
+        <Route exact path={`${baseUrl}/`} element={<Home />} />
+        <Route path={`${baseUrl}/projects`} element={<Projects />} />
+        <Route path={`${baseUrl}/about`} element={<About />} />
+        <Route path={`${baseUrl}/contact`} element={<Contact />} />{" "}
       </Routes>
       <Footer />
     </div>
