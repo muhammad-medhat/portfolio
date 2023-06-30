@@ -28,6 +28,7 @@ export const NavBar = () => {
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
   };
+  const homePage = "/portfolio";
 
   return (
     <Navbar
@@ -44,7 +45,7 @@ export const NavBar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Link
-              to="/"
+              to={homePage}
               className={`${
                 "navbar-link nav-link " +
                 (activeLink === "home" ? "active" : "")
@@ -55,7 +56,7 @@ export const NavBar = () => {
             </Link>
 
             <Link
-              to="/projects"
+              to={`${homePage}/projects`}
               className={`${
                 "navbar-link nav-link " +
                 (activeLink === "projects" ? "active" : "")
