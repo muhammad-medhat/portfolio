@@ -129,7 +129,7 @@ export const Banner = () => {
           </Col> */}
         </Row>
       </Container>
-      <ContactInfo />
+      {/* <ContactInfo /> */}
     </section>
   );
 };
