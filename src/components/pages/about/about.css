@@ -1,0 +1,17 @@
+
+ul{
+  list-style: none;
+  /* max-width: 50%; */
+}
+
+.fa{
+  font-size: xx-large;
+  color: var(--yellow-theme-main-color)
+}
+.sm{
+  font-size: smaller;
+    margin-left: 1rem;
+}
+.no-border{
+  border:none !important;
+}

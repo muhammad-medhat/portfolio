@@ -11,20 +11,24 @@ import { ContactInfo } from "./components/ContactInfo";
 import "bootstrap/dist/css/bootstrap.css";
 import Home from "./components/Home";
 import { Route, Routes } from "react-router-dom";
-import About from "./components/About";
+import About from "./components/pages/about/";
+// import "font-awesome/css/font-awesome.min.css";
 
 function App() {
   document.title = "Muhammad Medhat - Wordpress Developer";
   const baseUrl = "portfolio";
   return (
-    <div className="App color-overlay">
+    <div className="App1 color-overlay">
       <NavBar />
-      <Routes>
-        <Route exact path={`${baseUrl}/`} element={<Home />} />
-        <Route path={`${baseUrl}/projects`} element={<Projects />} />
-        <Route path={`${baseUrl}/about`} element={<About />} />
-        <Route path={`${baseUrl}/contact`} element={<Contact />} />{" "}
-      </Routes>
+      <div className="App">
+        <Routes>
+          <Route exact path={`${baseUrl}/`} element={<Home />} />
+          <Route path={`${baseUrl}/projects`} element={<Projects />} />
+          <Route path={`${baseUrl}/about`} element={<About />} />
+          <Route path={`${baseUrl}/contact`} element={<Contact />} />{" "}
+        </Routes>
+      </div>
+
       <Footer />
     </div>
   );
