@@ -6,6 +6,9 @@ import "./style.css";
 import TrackVisibility from "react-on-screen";
 import emailjs from "@emailjs/browser";
 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 export const Contact = () => {
   const formInitialDetails = {
     userName: "",
@@ -28,8 +31,6 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    /////////////////////////////
-
     emailjs
       .sendForm(
         "service_s6y27bd",
@@ -40,18 +41,29 @@ export const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          showToastMessage();
         },
         (error) => {
           console.log(error.text);
+          showToastMessageError(error.text);
         }
       );
 
-    ////////////////////
     setButtonText("Send");
   };
-
+  const showToastMessage = () => {
+    toast.success("Thank you, Email Sent !", {
+      position: toast.POSITION.TOP_RIGHT,
+    });
+  };
+  const showToastMessageError = (error) => {
+    toast.error(error, {
+      position: toast.POSITION.TOP_RIGHT,
+    });
+  };
   return (
     <section className="contact" id="connect">
+      <ToastContainer />
       <Container>
         <Row className="align-items-center">
           <Col size={12} md={6}>
@@ -77,6 +89,7 @@ export const Contact = () => {
                 >
                   <h2>Get In Touch</h2>
                   <form ref={form} onSubmit={handleSubmit}>
+                    {/* <form ref={form} onSubmit={() => showToastMessage()}> */}
                     <Row>
                       <Col size={12} sm={4} className="px-1">
                         <input

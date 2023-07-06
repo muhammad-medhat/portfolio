@@ -59,4 +59,8 @@
   .contact form button:hover::before {
     width: 100%;
   }
+
+  .Toastify__toast-container--top-right{
+    top:initial
+  }
   
