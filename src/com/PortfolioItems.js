@@ -1,10 +1,10 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import { ProjectCard } from "../components/ProjectCard";
+import { ProjectCard } from "../components/pages/projects/ProjectCard";
 
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import projects from "../projectsData.js";
-import "../components/projects.css";
+import "../components/pages/projects/projects.css";
 
 export const PortfolioItems = () => {
   const wp = projects.filter((p) => p.cat === 1);

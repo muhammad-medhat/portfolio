@@ -1,7 +1,7 @@
 import { Col } from "react-bootstrap";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
-import "./components.css";
+// import "./components.css";
 import { CheckLg } from "react-bootstrap-icons";
 
 export const ProjectCard = ({ title, desc, image, longDesc }) => {
