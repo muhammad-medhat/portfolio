@@ -61,6 +61,6 @@
   }
 
   .Toastify__toast-container--top-right{
-    top:initial
+    top:initial !important;
   }
   
