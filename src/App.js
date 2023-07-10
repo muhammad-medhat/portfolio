@@ -12,7 +12,6 @@ import Home from "./components/Home";
 import { Projects } from "./components/pages/projects/Projects";
 import About from "./components/pages/about/";
 import { Contact } from "./components/pages/contact";
-import { Todos } from "./components/apps/todo";
 // import "font-awesome/css/font-awesome.min.css";
 
 function App() {
@@ -26,8 +25,7 @@ function App() {
           <Route exact path={`${baseUrl}/`} element={<Home />} />
           <Route path={`${baseUrl}/projects`} element={<Projects />} />
           <Route path={`${baseUrl}/about`} element={<About />} />
-          <Route path={`${baseUrl}/contact`} element={<Contact />} />
-          <Route path={`${baseUrl}/todos`} element={<Todos />} />
+          <Route path={`${baseUrl}/contact`} element={<Contact />} />{" "}
         </Routes>
       </div>
 
