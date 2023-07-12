@@ -12,6 +12,7 @@ import Home from "./components/Home";
 import { Projects } from "./components/pages/projects/Projects";
 import About from "./components/pages/about/";
 import { Contact } from "./components/pages/contact";
+import ResponsiveAppBar from "./com/MuiNavbar";
 // import "font-awesome/css/font-awesome.min.css";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
   return (
     <div className="App1 color-overlay">
       <NavBar />
+      {/* <ResponsiveAppBar /> */}
       <div className="App">
         <Routes>
           <Route exact path={`${baseUrl}/`} element={<Home />} />
