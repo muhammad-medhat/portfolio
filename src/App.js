@@ -14,6 +14,7 @@ import About from "./components/pages/about/";
 import { Contact } from "./components/pages/contact";
 import ResponsiveAppBar from "./com/MuiNavbar";
 // import "font-awesome/css/font-awesome.min.css";
+import { Todos } from "./components/apps/todo";
 
 function App() {
   document.title = "Muhammad Medhat - Wordpress Developer";
@@ -27,7 +28,8 @@ function App() {
           <Route exact path={`${baseUrl}/`} element={<Home />} />
           <Route path={`${baseUrl}/projects`} element={<Projects />} />
           <Route path={`${baseUrl}/about`} element={<About />} />
-          <Route path={`${baseUrl}/contact`} element={<Contact />} />{" "}
+          <Route path={`${baseUrl}/contact`} element={<Contact />} />
+          <Route path={`${baseUrl}/todos`} element={<Todos />} />
         </Routes>
       </div>
 
