@@ -1,33 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
-:root{
-    --yellow-theme-background-color : #1d1d1d;
-    --yellow-theme-main-color : #ffdd40;
-    --yellow-theme-sub-text-color : #ffffff;
-    --yellow-theme-nav-background-color : #181818;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap");
+:root {
+  --yellow-theme-background-color: #1d1d1d;
+  --yellow-theme-main-color: #ffdd40;
+  --yellow-theme-sub-text-color: #ffffff;
+  --yellow-theme-nav-background-color: #181818;
 
-    --blue-theme-background-color : #1d1d1d;
-    --blue-theme-main-color :#0d6efd;
-    --blue-theme-sub-text-color : #ffffff;
-    --blue-theme-nav-background-color : #181818;
+  --blue-theme-background-color: #1d1d1d;
+  --blue-theme-main-color: #0d6efd;
+  --blue-theme-sub-text-color: #ffffff;
+  --blue-theme-nav-background-color: #181818;
 
-    --gold:rgba(155,154,100, 1);
-
+  --gold: rgba(155, 154, 100, 1);
 }
 /************ Custom Font ************/
 @font-face {
-	font-family: Centra;
-	src: url('./assets/font/CentraNo2-Bold.ttf');
-	font-weight: 700;
+  font-family: Centra;
+  src: url("./assets/font/CentraNo2-Bold.ttf");
+  font-weight: 700;
 }
 @font-face {
-	font-family: Centra;
-	src: url('./assets/font/CentraNo2-Medium.ttf');
-	font-weight: 500;
+  font-family: Centra;
+  src: url("./assets/font/CentraNo2-Medium.ttf");
+  font-weight: 500;
 }
 @font-face {
-	font-family: Centra;
-	src: url('./assets/font/CentraNo2-Book.ttf');
-	font-weight: 400;
+  font-family: Centra;
+  src: url("./assets/font/CentraNo2-Book.ttf");
+  font-weight: 400;
 }
 
 /************ Default Css ************/
@@ -48,16 +47,25 @@ body {
   position: relative;
   /* background-color: #121212 !important; */
   color: #fff !important;
-  font-family: 'Centra', sans-serif !important;
+  font-family: "Centra", sans-serif !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
   line-height: normal;
 }
 
-p, a, li, button, ul {
+p,
+a,
+li,
+button,
+ul {
   margin: 0;
   padding: 0;
   line-height: normal;
@@ -78,28 +86,29 @@ button {
   background-color: transparent;
 }
 
-input:focus, textarea:focus, select:focus {
+input:focus,
+textarea:focus,
+select:focus {
   outline: none;
 }
 
-@media (min-width:1700px) {
-	main .container {
-		max-width: 100%;
-		padding: 0 150px;
-	}
+@media (min-width: 1700px) {
+  main .container {
+    max-width: 100%;
+    padding: 0 150px;
+  }
 }
-.App{
+.App {
   margin-top: 10rem;
 }
 p.success {
-	color: green;
+  color: green;
 }
 
 p.danger {
-	color: red;
+  color: red;
 }
 /************ Navbar Css ************/
-
 
 /************ Banner Css ************/
 .banner {
@@ -114,7 +123,11 @@ p.danger {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  background: linear-gradient(
+    90.21deg,
+    rgba(170, 54, 124, 0.5) -5.91%,
+    rgba(74, 47, 189, 0.5) 111.58%
+  );
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
@@ -129,7 +142,7 @@ p.danger {
   display: block;
 }
 .banner p {
-  color: #B8B8B8;
+  color: #b8b8b8;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
@@ -157,75 +170,31 @@ p.danger {
   /* animation: updown 3s linear infinite; */
 }
 @keyframes updown {
-    0% {
-        transform: translateY(-20px);
-    }
-    50% {
-        transform: translateY(20px);
-    }
-    100% {
-        transform: translateY(-20px);
-    }
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
 }
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
 
 /************ Skills Css ************/
-.skill {
-  padding: 0 0 50px 0;
-  position: relative;
-}
-.skill-bx {
-  background: #151515;
-  border-radius: 64px;
-  text-align: center;
-  padding: 60px 50px;
-  margin-top: -60px;
-}
-.skill h2 {
-	font-size: 45px;
-	font-weight: 700;
-}
-.skill p {
-    color: #B8B8B8;
-    font-size: 18px;
-    letter-spacing: 0.8px;
-    line-height: 1.5em;
-    margin: 14px 0 75px 0;
-}
-.skill-slider {
-  width: 80%;
-  margin: 0 auto;
-  position: relative;
-}
-.skill-slider .item img {
-  width: 50%;
-  margin: 0 auto 15px auto;
-}
-.background-image-left {
-  top: 28%;
-  position: absolute;
-  bottom: 0;
-  width: 40%;
-  z-index: -4;
-}
 
 /************ Projects Css ************/
-
 
 /************ Projects Css ************/
 
 /************ Footer Css ************/
-.footer {
-  padding: 0 0 50px 0;
-  /* background-image: url('./assets/img/footer-bg.png'); */
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+
+/* 
 .newsletter-bx {
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 55px;
   color: #121212;
   padding: 85px 125px;
@@ -248,7 +217,7 @@ p.danger {
 }
 .new-email-bx::before {
   content: "";
-  background: linear-gradient(90.21deg, #1a1630 -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg, #1a1630 -5.91%, #4a2fbd 111.58%);
   border-radius: 20px;
   position: absolute;
   z-index: -1;
@@ -277,44 +246,20 @@ p.danger {
   padding: 0 15px;
 }
 .new-email-bx button {
-  background: linear-gradient(90.21deg, #1a1630 -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg, #1a1630 -5.91%, #4a2fbd 111.58%);
   padding: 20px 65px;
   color: #fff;
   font-weight: 500;
   letter-spacing: 0.5px;
   border-radius: 18px;
-}
-.footer img {
-  width: 26%;
-}
-.footer p {
-  font-weight: 400;
-  font-size: 14px;
-  color: #B8B8B8;
-  letter-spacing: 0.5px;
-  margin-top: 20px;
-}
+} */
 
-
-body{
+body {
   background-color: rgba(7, 15, 117, 0.858) !important;
   background-image: url("./assets/img/Shining Stars In Black Night.gif");
   background-position: fixed;
 }
-.title{
-    /* min-width: 50%; */
-    text-align: center;
-    /* padding: 1em; */
-    letter-spacing: 6px;
-    /* border: solid 1px;
-    
-    border-radius: 20px; */
-    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.20220588235294112) 0%); */
-    /* background: linear-gradient(90deg, rgb(0,255,0) 0%, rgba(121, 9, 18, 0.202) 0%); */
-    /* box-shadow:0px 0px 47px 8px rgba(155,154,100, 1); */
+.title {
+  text-align: center;
+  letter-spacing: 6px;
 }
-/* .title::before{
-  content: "";
-  min-width: 100%;
-  border-top: solid 1px red;
-} */

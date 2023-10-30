@@ -1,24 +1,22 @@
 // import logo from "./logo.svg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import { NavBar } from "./com/Navbar/NavBar";
+import { NavBar } from "./com/Navbar";
 import { Banner } from "./components/Banner";
-// import { Skills } from "./components/Skills";
 import "bootstrap/dist/css/bootstrap.css";
 import { Route, Routes } from "react-router-dom";
-// import { ContactInfo } from "./components/ContactInfo";
-import { Footer } from "./components/Footer";
+import { Footer } from "./com/footer";
 import Home from "./components/Home";
 import { Projects } from "./components/pages/projects/Projects";
 import About from "./components/pages/about/";
 import { Contact } from "./components/pages/contact";
-import ResponsiveAppBar from "./com/MuiNavbar";
 // import "font-awesome/css/font-awesome.min.css";
 import { Todos } from "./components/apps/todo";
 
 function App() {
   document.title = "Muhammad Medhat - Wordpress Developer";
-  const baseUrl = "portfolio";
+  const baseUrl = "";
+  // const baseUrl = "portfolio";
   return (
     <div className="App1 color-overlay">
       <NavBar />
