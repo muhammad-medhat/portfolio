@@ -1,6 +1,8 @@
 // import logo from "./logo.svg";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
+// import "./App.css";
+import "./styles/main.css";
+// import "./styles/media.css";
 import { NavBar } from "./com/Navbar";
 import { Banner } from "./components/Banner";
 import "bootstrap/dist/css/bootstrap.css";
@@ -12,16 +14,20 @@ import About from "./components/pages/about/";
 import { Contact } from "./components/pages/contact";
 // import "font-awesome/css/font-awesome.min.css";
 import { Todos } from "./components/apps/todo";
+import { Sidebar } from "./sidebar";
+import "./styles/main.css";
 
 function App() {
   document.title = "Muhammad Medhat - Wordpress Developer";
   const baseUrl = "";
   // const baseUrl = "portfolio";
   return (
-    <div className="App1 color-overlay">
-      <NavBar />
+    // <div className="d-flex justify-content-center1">
+    <div className="" style={{ display: "grid" }}>
+      {/* <NavBar /> */}
       {/* <ResponsiveAppBar /> */}
-      <div className="App">
+      <Sidebar />
+      <div id="main" className="main">
         <Routes>
           <Route exact path={`${baseUrl}/`} element={<Home />} />
           <Route path={`${baseUrl}/projects`} element={<Projects />} />
@@ -29,9 +35,8 @@ function App() {
           <Route path={`${baseUrl}/contact`} element={<Contact />} />
           <Route path={`${baseUrl}/todos`} element={<Todos />} />
         </Routes>
+        <Footer />
       </div>
-
-      <Footer />
     </div>
   );
 }
