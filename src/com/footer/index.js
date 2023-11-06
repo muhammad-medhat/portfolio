@@ -4,8 +4,8 @@ import "./footer.css";
 import Social from "../social";
 export const Footer = () => {
   return (
-    <footer className="footer shiny-box">
-      <Container>
+    <footer className="footer shiny-box" id="footer">
+      <Container className="inner">
         <Row className="align-items-center">
           <Col size={12} sm={6}>
             <img src={logo} alt="Logo" />

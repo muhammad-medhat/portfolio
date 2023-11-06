@@ -25,6 +25,15 @@
   --ff-serif: "Bellefair", serif;
   --ff-sans-cond: "Barlow Condensed", sans-serif;
   --ff-sans-normal: "Barlow", sans-serif;
+
+  --gradient-angle: 180deg;
+
+  --gradient: linear-gradient(
+    var(--gradient-angle, 180deg),
+    rgba(52, 69, 79, 1) 10%,
+    rgba(109, 104, 97, 1) 40%,
+    rgba(70, 57, 50, 1) 82%
+  );
 }
 @media (min-width: 35em) {
   :root {

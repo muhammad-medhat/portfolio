@@ -5,7 +5,18 @@
     color: red;
     font-size: 0.5em;
   }
+  @media (max-width: 969px) {
+    #header ul li {
+      display: block;
+    }
+  }
   #header > .inner {
     background-color: red;
+  }
+}
+@media (max-width: 456px) {
+  .btn-sm {
+    color: red;
+    padding: 0.5rem;
   }
 }

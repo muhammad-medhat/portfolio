@@ -1,0 +1,15 @@
+.btn-sm {
+  margin: 1rem;
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  background: rgb(70, 57, 50);
+  background: linear-gradient(
+    49deg,
+    rgba(70, 57, 50, 1) 0%,
+    rgba(109, 104, 97, 1) 44%,
+    rgba(62, 57, 50, 1) 100%
+  );
+  border-radius: 20px;
+}

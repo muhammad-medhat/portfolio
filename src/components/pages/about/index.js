@@ -1,5 +1,5 @@
 import React from "react";
-import { Banner } from "../../Banner";
+import { Banner } from "../../../com/Banner";
 import { Animate } from "react-simple-animate";
 import "./about.css";
 import "./styles.scss";
@@ -57,8 +57,7 @@ export default function About() {
           }}
           end={{
             transform: "translatex(0px)",
-          }}
-        >
+          }}>
           <h3>WordPress Developer</h3>
           <p>{jobSummary}</p>
         </Animate>
@@ -72,8 +71,7 @@ export default function About() {
           }}
           end={{
             transform: "translatex(0px)",
-          }}
-        >
+          }}>
           <h3 className="personalInformationHeaderText">
             <i className="fa-sharp fa-regular fa-address-card"></i>
             Personal Information
