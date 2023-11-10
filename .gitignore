@@ -50,5 +50,6 @@ temp
 resize
 .gitignore
 ### remove on deploy
+build
 # public
 # assets
