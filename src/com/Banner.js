@@ -20,7 +20,7 @@ export const Banner = () => {
         <img className="image avatar" src={profileImg} alt="Muhammad Medhat" />
       </Link>
       <div className="capitalize">
-        <h1>Hi! I'm Muhammad Medhat</h1>
+        <h1>Muhammad Medhat</h1>
         <h3>professional Web Developer</h3>
         <h4>(Mern Stack, Wordpress)</h4>
       </div>

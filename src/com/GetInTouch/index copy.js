@@ -5,7 +5,6 @@ import emailjs from "@emailjs/browser";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { ContactInfo } from "../ContactInfo";
 
 const GetinTouch = ({ label, msg }) => {
   const formInitialDetails = {
@@ -16,6 +15,8 @@ const GetinTouch = ({ label, msg }) => {
   };
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState("Send");
+  const [status, setStatus] = useState({});
+
   const onFormUpdate = (category, value) => {
     setFormDetails({
       ...formDetails,
@@ -73,7 +74,7 @@ const GetinTouch = ({ label, msg }) => {
         <h2>{label}</h2>
         <p>{msg}</p>
         <Row>
-          <div class="col-8 col-12-small">
+          <div class="col-12 col-12-small">
             <form ref={form} onSubmit={handleSubmit}>
               <div class="row gtr-uniform gtr-50">
                 <div class="col-6 col-12-xsmall">
@@ -116,9 +117,6 @@ const GetinTouch = ({ label, msg }) => {
               </ul>
             </form>
           </div>
-          <div class="col-4 col-12-small">
-            <ContactInfo />
-          </div>
         </Row>
       </Container>
     </div>
@@ -126,6 +124,6 @@ const GetinTouch = ({ label, msg }) => {
 };
 GetinTouch.defaultProps = {
   label: "Get In Touch",
-  msg: "Please fill out the form below to send me a message regarding hiring or any general inquiries you may have. I will get back to you as soon as possible.",
+  msg: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, deleniti.",
 };
 export default GetinTouch;

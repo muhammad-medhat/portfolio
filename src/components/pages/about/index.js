@@ -1,9 +1,9 @@
 import React from "react";
 import { Banner } from "../../../com/Banner";
 import { Animate } from "react-simple-animate";
-import "./about.css";
-import "./styles.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import "./about.css";
+// import "./styles.scss";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function About() {
   const ageDiff = new Date().getFullYear() - 1983;

@@ -49,3 +49,6 @@ old.port
 temp
 resize
 .gitignore
+### remove on deploy
+# public
+# assets

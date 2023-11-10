@@ -1,0 +1,36 @@
+#tools h3 {
+  line-height: 0.25em;
+  margin-top: 1em;
+}
+a.nav-link,
+.nav-pills .nav-link {
+  border: 1px solid hsla(0, 26%, 9%, 0.5);
+}
+.nav-item:first-child > a {
+  border-radius: 55px 0 0 55px;
+}
+.nav-item:last-child > a {
+  border-radius: 0 55px 55px 0;
+}
+.nav-item > a:hover {
+  background-color: rgb(118, 163, 202);
+}
+@media (max-width: 587px) {
+  main {
+    /* background-color: red; */
+  }
+
+  .nav-pills {
+    justify-content: start !important;
+    align-items: start !important;
+  }
+  .nav-item:first-child > a {
+    border-radius: 5px;
+  }
+  .nav-item:last-child > a {
+    border-radius: 5px;
+  }
+  .nav-item {
+    margin: 0.5em;
+  }
+}

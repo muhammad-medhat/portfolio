@@ -2,15 +2,8 @@
 
 .footer {
   padding-top: 1rem;
-  background-image: url("../../assets/img/footer-bg.png");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
-.footer img {
-  width: 26%;
-}
 .footer p {
   font-weight: 400;
   font-size: 14px;

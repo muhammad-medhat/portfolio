@@ -1,7 +1,7 @@
 import React from "react";
-import projects from "../projectsData.js";
-import { ProjectCard } from "../com/ProjectCard/index.js";
 import { Row } from "react-bootstrap";
+import { ProjectCard } from "../com/ProjectCard/index.js";
+import projects from "../projectsData.js";
 
 export const ProjectsList = () => {
   const wp = projects.filter((p) => p.cat === 1);
