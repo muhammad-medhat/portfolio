@@ -10,7 +10,9 @@
       content="Web site created using create-react-app" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <base href="%PUBLIC_URL%/" />
-<meta name="google-site-verification" content="uFirwycbdw5QLZzWjENfsbj7gw8wKFJ_yno6VSUmYdU" />
+    <meta
+      name="google-site-verification"
+      content="uFirwycbdw5QLZzWjENfsbj7gw8wKFJ_yno6VSUmYdU" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -66,6 +68,26 @@ wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="a
           usePopupCaption: true,
           overlayColor: "#000",
           usePopupNav: true,
+
+          preload: false,
+
+          baseZIndex: 1000,
+
+          usePopupEasyClose: false, // If true, popup can be closed by clicking on
+          // it anywhere
+
+          usePopupLoader: true, // If true, show the popup loader
+          usePopupCloser: true, // If true, show the popup closer button/link
+          usePopupDefaultStyling: false, // If true, default popup styling will be applied
+          // (background color, text color, etc)
+
+          popupClass: "poptrox-popup", // Popup class
+
+          popupLoaderSelector: ".loader", // (Advanced) Popup Loader selector
+          popupCloserSelector: ".closer", // (Advanced) Popup Closer selector
+          popupCaptionSelector: ".caption", // (Advanced) Popup Caption selector
+          popupNavPreviousSelector: ".nav-previous", // (Advanced) Popup Nav Previous selector
+          popupNavNextSelector: ".nav-next", // (Advanced) Popup Nav Next selector
         });
       });
     </script>
