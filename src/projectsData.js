@@ -1,5 +1,13 @@
 const projects = [
   {
+    title: "WWW Company",
+    slug: "www",
+    desc: "A company website made with wordpress",
+    image: "img/www.png",
+
+    cat: 1,
+  },
+  {
     title: "The pets now",
     slug: "tpn",
     desc: "A WordPress blog for cats",

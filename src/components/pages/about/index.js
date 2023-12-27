@@ -35,6 +35,11 @@ export default function About() {
         about creating beautiful and functional websites that not only look
         great but also provide a seamless user experience.
       </p>
+      <h3>my experience</h3>
+      {/* <ul>
+        <li>created multiple websites using joomla</li>
+        <li></li>
+      </ul> */}
 
       <p className="no-border">
         Thank you for taking the time to read my about me page. I would love to
@@ -48,73 +53,40 @@ export default function About() {
   return (
     <div className="about__content">
       <div className="about__content__personalWrapper">
-        <Animate
-          play
-          duration={1.5}
-          delay={1}
-          start={{
-            transform: "translateX(-900px)",
-          }}
-          end={{
-            transform: "translatex(0px)",
-          }}>
-          <h3>WordPress Developer</h3>
-          <p>{jobSummary}</p>
-        </Animate>
+        <div className="d-flex">
+          <div>
+            <h3>WordPress Developer</h3>
+            <p>{jobSummary}</p>
+          </div>
 
-        <Animate
-          play
-          duration={1.5}
-          delay={1}
-          start={{
-            transform: "translateX(500px)",
-          }}
-          end={{
-            transform: "translatex(0px)",
-          }}>
-          <h3 className="personalInformationHeaderText">
-            <i className="fa-sharp fa-regular fa-address-card"></i>
-            Personal Information
-          </h3>
-          <h4>
-            {name}
-            {/* <span className="sm">{ageDiff} Years</span> */}
-          </h4>
-          <ul>
-            {personalDetails.map((item, i) => (
-              //cls = item.noBorder? "no-border":""
+          <div className="info">
+            <h3 className="personalInformationHeaderText">
+              <i className="fa-sharp fa-regular fa-address-card"></i>
+              Personal Information
+            </h3>
+            <h4>
+              {name}
+              {/* <span className="sm">{ageDiff} Years</span> */}
+            </h4>
+            <ul>
+              {personalDetails.map((item, i) => (
+                //cls = item.noBorder? "no-border":""
 
-              <li key={i} className={item.noBorder}>
-                {item.label ? <span className="title"></span> : ""}
+                <li key={i} className={item.noBorder}>
+                  {item.label ? <span className="title"></span> : ""}
 
-                {item.icon ? (
-                  <span className="title">
-                    <i className={item.icon}></i>
-                  </span>
-                ) : (
-                  ""
-                )}
-                <span className="value">{item.value}</span>
-              </li>
-            ))}
-          </ul>
-        </Animate>
-      </div>
-
-      <div className="about__content__servicesWrapper__innerContent">
-        <div>
-          <i className="fa fa-brands fa-wordpress" size="fa-2xl"></i>
-          {/* <FontAwesomeIcon icon="wordpress-simple" /> */}
-        </div>
-        <div>
-          <i className=" fa fa-brands fa-react" size="fa-2xl" />
-        </div>
-        <div>
-          <i className=" fa fa-solid fa-database" size="fa-2xl" />
-        </div>
-        <div>
-          <i className=" fa fa-brands fa-node-js" size="fa-2xl" />
-          {/* <FontAwesomeIcon icon={faNode.jsJS} /> */}
+                  {item.icon ? (
+                    <span className="title">
+                      <i className={item.icon}></i>
+                    </span>
+                  ) : (
+                    ""
+                  )}
+                  <span className="value">{item.value}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </div>

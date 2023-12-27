@@ -19,13 +19,13 @@ export const Brief = () => {
         When I'm not coding, you can find me exploring new hiking trails or
         catching up on the latest tech news.
       </p>
-      <ul className="actions">
+      {/* <ul className="actions">
         <li>
           <Link to="/about" className="button">
             Learn More
           </Link>
         </li>
-      </ul>
+      </ul> */}
     </section>
   );
 };
