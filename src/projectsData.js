@@ -1,11 +1,23 @@
 const projects = [
   {
+    title: "platinum",
+    slug: "pl",
+    desc: "A real estate agency website made with wordpress",
+    image: "img/platinum.jpg",
+
+    cat: 1,
+    longDesc:
+      "A WordPress enterprise website showcasing my expertise. Plugins used: Yoast SEO (search engine optimization), Contact Form 7 (communication), WP Rocket (performance), Akismet (spam protection),Poly lang (multiple languages), Elementor, OceanWP (Theme), OceanWP Extra(extra options for the theme).",
+  },
+  {
     title: "WWW Company",
     slug: "www",
     desc: "A company website made with wordpress",
     image: "img/www.png",
 
     cat: 1,
+    longDesc:
+      "A WordPress enterprise website showcasing my expertise. Plugins used: Yoast SEO (search engine optimization), Contact Form 7 (communication), WP Rocket (performance), Akismet (spam protection),Poly lang (multiple languages), Elementor, OceanWP (Theme), OceanWP Extra(extra options for the theme).",
   },
   {
     title: "The pets now",

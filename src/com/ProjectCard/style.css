@@ -9,3 +9,6 @@
 .image {
   position: relative;
 }
+article img {
+  max-height: 17rem !important;
+}

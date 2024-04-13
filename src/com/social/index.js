@@ -1,5 +1,6 @@
 import React from "react";
 import "./social.css";
+import frontendMentorLogo from "../../assets/img/social/frontendmentor.svg";
 
 export default function Social() {
   return (
@@ -24,6 +25,27 @@ export default function Social() {
           target="_blank"
           href="https://www.facebook.com/muhammad.medhat.1983/">
           <i className="fa-brands fa-facebook-f"></i>
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://www.youtube.com/@muhammadmedhat1">
+          <i className="fa-brands fa-youtube"></i>
+        </a>
+      </li>
+      <li>
+        <a
+          target="_blank"
+          href="https://www.frontendmentor.io/profile/muhammad-medhat">
+          <img src={frontendMentorLogo} alt="" />
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://dev.to/muhammadmedhat">
+          {/* <img src="../../assets/img/dev.png" alt="" /> */}
+          <img
+            src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
+            alt="dev.to"
+          />
         </a>
       </li>
     </ul>
