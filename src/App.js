@@ -23,7 +23,6 @@ function App() {
       <Sidebar />
 
       <div id="main" className="main">
-        {" "}
         <main>
           <Routes>
             <Route exact path={`/`} element={<Home />} />

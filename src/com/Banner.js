@@ -26,12 +26,9 @@ export const Banner = () => {
         <img
           src={Logo}
           alt="Logo"
-          style={
-            {
-              // maxWidth: "3rem",
-              // maxHeight: "3rem",
-            }
-          }
+          style={{
+            maxHeight: "6rem",
+          }}
         />
         {/* <h3>professional Web Developer</h3>
         <h4>(Mern Stack, Wordpress)</h4> */}
