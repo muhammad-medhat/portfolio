@@ -1,10 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/md/logo-img.svg";
 
 export const Brief = () => {
   return (
     <section id="one">
-      <header className="major capitalize">
+      <header className="major capitalize flex">
+        <img
+          src={logo}
+          alt="Logo"
+          style={{
+            maxWidth: "3rem",
+            maxHeight: "3rem",
+          }}
+        />
         <h2>professional WordPress developer</h2>
       </header>
       <p>

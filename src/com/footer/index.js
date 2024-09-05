@@ -12,7 +12,7 @@ export const Footer = () => {
             <img src={logo} alt="" style={{ width: 150, height: 150 }} />
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
-            <Social />
+            <Social iconsToShow={["fem", "dt", "ln"]} />
             <p>Copyright {new Date().getFullYear()}. All Rights Reserved</p>
           </Col>
         </Row>

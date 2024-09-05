@@ -3,7 +3,7 @@ const projects = [
     title: "platinum",
     slug: "pl",
     desc: "A real estate agency website made with wordpress",
-    image: "img/platinum.jpg",
+    image: "img/platinum.png",
 
     cat: 1,
     longDesc:
