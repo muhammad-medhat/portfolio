@@ -5,13 +5,12 @@ import logo from "../assets/md/logo-img.svg";
 export const Brief = () => {
   return (
     <section id="one">
-      <header className="major capitalize flex">
+      <header className="major capitalize flex align-items-center">
         <img
           src={logo}
           alt="Logo"
           style={{
-            maxWidth: "3rem",
-            maxHeight: "3rem",
+            maxWidth: "10rem",
           }}
         />
         <h2>professional WordPress developer</h2>

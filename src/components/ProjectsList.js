@@ -11,10 +11,12 @@ export const ProjectsList = () => {
 
   return (
     <div id="projects">
-      <h3>ProjectsList</h3>
+      <h3>Projects List</h3>
       <Row>
         {wp.map((p, i) => (
-          <ProjectCard project={p} key={`${i}--${p.title}`} />
+          <>
+            <ProjectCard project={p} key={`${i}--${p.title}`} />
+          </>
         ))}
       </Row>
     </div>

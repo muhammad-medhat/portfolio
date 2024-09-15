@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 export const ProjectCard = ({ project }) => {
   return (
-    <article className="col-6 col-12-sm work-item">
+    <article className="col-md-6 col-sm-12 work-item">
       <a href={`./${project.image}`} className="image fit thumb">
         <div className="overlay">&nbsp;</div>
         <img

@@ -7,12 +7,10 @@ import Home from "./components/pages/Home";
 // import { Projects } from "./components/pages/projects/Projects";
 import About from "./components/pages/about/";
 import { Contact } from "./components/pages/contact";
-// import "font-awesome/css/font-awesome.min.css";
 import { Sidebar } from "./com/Sidebar";
-// import "./styles/main.css";
-// import "./styles/media.css";
-// import "./styles/components.css";
-import "./assets/sass/main.scss";
+
+import "./assets/sass/main-md.scss";
+
 import { MyTools } from "./components/pages/MyTools";
 
 function App() {
@@ -20,8 +18,9 @@ function App() {
 
   return (
     <div className="wrapper">
-      <Sidebar />
-
+      <header id="header" className="flex flex-column justify-content-around">
+        <Sidebar />
+      </header>
       <div id="main" className="main">
         <main>
           <Routes>
