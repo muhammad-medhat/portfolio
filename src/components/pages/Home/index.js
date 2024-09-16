@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Banner } from "../../../com/Banner";
 
 import { Brief } from "../../../com/brief";
 import { ProjectsList } from "../../ProjectsList";
 import GetinTouch from "../../../com/GetInTouch";
 
-function Home() {
+const Home = () => {
+  useEffect(() => {
+    const contentDiv = document.getElementById("main");
+    if (contentDiv) {
+      contentDiv.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, []);
   return (
     <div className="App color-overlay">
       <Brief />
@@ -30,6 +36,6 @@ function Home() {
 </script> */}
     </div>
   );
-}
+};
 
 export default Home;

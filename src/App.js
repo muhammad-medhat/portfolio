@@ -6,12 +6,12 @@ import { Footer } from "./com/footer";
 import Home from "./components/pages/Home";
 // import { Projects } from "./components/pages/projects/Projects";
 import About from "./components/pages/about/";
-import { Contact } from "./components/pages/contact";
+import Contact from "./components/pages/contact";
 import { Sidebar } from "./com/Sidebar";
 
 import "./assets/sass/main-md.scss";
 
-import { MyTools } from "./components/pages/MyTools";
+import MyTools from "./components/pages/MyTools";
 
 function App() {
   document.title = "Muhammad Medhat - Wordpress Developer";

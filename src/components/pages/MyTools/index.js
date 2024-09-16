@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Nav, Tab } from "react-bootstrap";
 import "./styles.css";
 import { VsExtensions } from "./vsExtensions";
 import { WordpressTools } from "./wordPressTools";
 
-export const MyTools = () => {
+const MyTools = () => {
+  useEffect(() => {
+    const contentDiv = document.getElementById("main");
+    if (contentDiv) {
+      contentDiv.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, []);
   return (
     <div id="tools">
       <h2>Welcome to my Essential Tools page!</h2>
@@ -43,3 +49,4 @@ export const MyTools = () => {
     </div>
   );
 };
+export default MyTools;

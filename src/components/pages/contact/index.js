@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import GetinTouch from "../../../com/GetInTouch";
 
-export const Contact = () => {
+const Contact = () => {
+  useEffect(() => {
+    const contentDiv = document.getElementById("main");
+    if (contentDiv) {
+      contentDiv.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, []);
   return (
-    <div>
+    <div className="contact">
       <GetinTouch label="hire me" />
     </div>
   );
 };
+export default Contact;
