@@ -1,9 +1,18 @@
 import React from "react";
 import { Banner } from "../Banner";
 import Social from "../social";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export const Sidebar = () => {
+  const navigate = useNavigate();
+  const handleNavigation = (path) => {
+    navigate(path);
+    const contentDiv = document.getElementById("main");
+    if (contentDiv) {
+      contentDiv.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     // <!-- Header -->
     <>
@@ -11,16 +20,22 @@ export const Sidebar = () => {
         <Banner />
       </div>
       <ul id="menu">
-        <li className="btn btn-sm uppercase">
+        <li
+          className="btn btn-sm uppercase"
+          onClick={() => handleNavigation("/")}>
           <Link to="/">home</Link>
         </li>
-        {/* <li className="btn btn-sm uppercase">
+        {/* <li className="btn btn-sm uppercase" onClick={()=>handleNavigation('/')}>
             <Link to="/about">about</Link>
           </li> */}
-        <li className="btn btn-sm uppercase">
+        <li
+          className="btn btn-sm uppercase"
+          onClick={() => handleNavigation("/tools")}>
           <Link to="/tools">my tools</Link>
         </li>
-        <li className="btn btn-sm uppercase">
+        <li
+          className="btn btn-sm uppercase"
+          onClick={() => handleNavigation("/contact")}>
           <Link to="/contact">contact</Link>
         </li>
       </ul>

@@ -5,7 +5,7 @@ import { Brief } from "../../../com/brief";
 import { ProjectsList } from "../../ProjectsList";
 import GetinTouch from "../../../com/GetInTouch";
 
-const Home = () => {
+const Home = ({ scrollTop }) => {
   useEffect(() => {
     const contentDiv = document.getElementById("main");
     if (contentDiv) {
@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <div className="App color-overlay">
       <Brief />
-      <ProjectsList />
+      <ProjectsList scrollTop={scrollTop} />
       <GetinTouch />
       {/* <!--
     PeoplePerHour Profile Widget

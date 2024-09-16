@@ -40,3 +40,14 @@
 @import "main-md/structureElements";
 @import "main-md/proptrox";
 @import "main-md/responsive";
+.move-top {
+  justify-content: flex-end !important;
+  p {
+    padding: 1rem 2rem;
+    font-size: large;
+    font-weight: bold;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    // background: var(--gradient);
+  }
+}
