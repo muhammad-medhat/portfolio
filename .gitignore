@@ -11,7 +11,7 @@
 /coverage
 
 # production
-# /build
+/build
 
 # misc
 .DS_Store
@@ -49,8 +49,3 @@ old.port
 temp
 resize
 .gitignore
-### remove on deploy
-# build
-# public
-# assets
-# md
