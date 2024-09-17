@@ -17,7 +17,7 @@ export const Sidebar = () => {
     // <!-- Header -->
     <>
       <div class="inner flex flex-column justify-center align-center">
-        <Banner />
+        <Banner handleNavigation={handleNavigation} />
       </div>
       <ul id="menu">
         <li

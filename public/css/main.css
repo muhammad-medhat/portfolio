@@ -2520,10 +2520,10 @@ body.is-touch .poptrox-popup .closer {
     margin-left: 0;
     padding-left: 0;
   }
-}   margin-left: 0;
-    padding-left: 0;
+} {
+    padding: 0.5em;
   }
-}{
+  #main > section {
     margin: 2.25em 0 0 0;
     padding: 2.25em 0 0 0;
   }

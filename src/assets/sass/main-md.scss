@@ -51,3 +51,20 @@
     // background: var(--gradient);
   }
 }
+#wrapper {
+}
+.avatar {
+  // width: 200px;
+  // height: 200px;
+  // border-radius: 50%;
+  // box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+  // object-fit: cover;
+  // border-radius: 50%;
+  width: 10em;
+  transition: all 0.5s;
+  :hover {
+    // width: 15em;
+    background: #e0e0e0;
+    box-shadow: 0px 10px 20px #bebebe, 0px -10px 20px #ffffff;
+  }
+}
