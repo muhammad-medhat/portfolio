@@ -1,0 +1,27 @@
+// Breakpoint map
+$breakpoints: (
+  //"xs": 0px,// No media query for `xs` since this is the default in Bootstrap
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px
+);
+
+// Mixin for media queries
+@mixin media($breakpoint) {
+  // $point: map-get($breakpoints, $breakpoint);
+  // @debug $point;
+  // @media (min-width: $point) {
+  //   @content;
+  // }
+  @debug "Breakpoint : '#{$breakpoint}'";
+  // Check if the key exists in the breakpoints map
+  @if map-has-key($breakpoints, $breakpoint) {
+    $min-width: map-get($breakpoints, $breakpoint);
+    @media (min-width: #{$min-width}) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint '#{$breakpoint}' not found in map!";
+  }
+}

@@ -1,0 +1,20 @@
+/* Work Item */
+
+.work-item {
+  margin: 0 0 _size(element-margin) 0;
+
+  .image {
+    margin: 0 0 (_size(element-margin) * 0.75) 0;
+  }
+
+  h3 {
+    font-size: 1em;
+    margin: 0 0 (_size(element-margin) * 0.25) 0;
+  }
+
+  p {
+    font-size: 0.8em;
+    line-height: 1.5em;
+    margin: 0;
+  }
+}
