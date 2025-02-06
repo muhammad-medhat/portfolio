@@ -4,8 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
-/public/img/res
-/public/img/org
+
 
 # testing
 /coverage
@@ -38,16 +37,22 @@ bower_components
 
 *.sublime*
 
-psd
+*.psd
 thumb
 sketch
 
 # End of https://www.toptal.com/developers/gitignore/api/react
 
+
+# my folders
 downloads
-old.port
 temp
-resize
+old.port
+/public/img/org
+/public/img/res
+/public/img/resize
+/public/img/social
+
 .gitignore
 ### remove on deploy
 # build

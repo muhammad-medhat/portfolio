@@ -1,8 +1,19 @@
 const projects = [
   {
+    title: "livestores",
+    slug: "ls",
+    desc: "Accessories for digital gadgets website ",
+    image: "img/Livestores.png",
+
+    cat: 1,
+    longDesc:
+      "A WordPress enterprise website showcasing my expertise. Plugins used: Yoast SEO (search engine optimization), Contact Form 7 (communication), WP Rocket (performance), Akismet (spam protection),Poly lang (multiple languages), Elementor, OceanWP (Theme), OceanWP Extra(extra options for the theme).",
+  },
+
+  {
     title: "platinum",
     slug: "pl",
-    desc: "A real estate agency website made with wordpress",
+    desc: "A real estate agency website ",
     image: "img/platinum.png",
 
     cat: 1,
@@ -12,7 +23,7 @@ const projects = [
   {
     title: "WWW Company",
     slug: "www",
-    desc: "A company website made with wordpress",
+    desc: "A company website ",
     image: "img/www.png",
 
     cat: 1,
