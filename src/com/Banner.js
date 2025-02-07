@@ -10,7 +10,7 @@ export const Banner = ({ handleNavigation }) => {
   return (
     <>
       {/* <Link className="image avatar" to="/about" style={{ marginTop: "5rem" }}> */}
-      <Link className="image avatar" to="/" style={{ marginTop: "5rem" }}>
+      <Link className="image avatar" to="/">
         <img
           className="image avatar"
           onClick={() => handleNavigation("/")}

@@ -25,9 +25,11 @@ export const Sidebar = () => {
           onClick={() => handleNavigation("/")}>
           <Link to="/">home</Link>
         </li>
-        {/* <li className="btn btn-sm uppercase" onClick={()=>handleNavigation('/')}>
-            <Link to="/about">about</Link>
-          </li> */}
+        <li
+          className="btn btn-sm uppercase"
+          onClick={() => handleNavigation("/about")}>
+          <Link to="/about">about</Link>
+        </li>
         <li
           className="btn btn-sm uppercase"
           onClick={() => handleNavigation("/tools")}>
@@ -41,7 +43,7 @@ export const Sidebar = () => {
       </ul>
       <footer className="flex flex-column justify-center align-center my-4">
         <Social iconsToShow={["gh", "ln", "yt", "fb", "tw"]} />
-        <p>Copyright {new Date().getFullYear()}. All Rights Reserved</p>
+        <p>Copyright©️ {new Date().getFullYear()}. All Rights Reserved</p>
       </footer>
     </>
   );
