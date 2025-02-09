@@ -3,9 +3,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import profileImg from "../assets/img/profile-img.jpeg";
 import { Link } from "react-router-dom";
 import Logo from "../assets/md/logo.svg";
+import styled from "styled-components";
 
 export const Banner = ({ handleNavigation }) => {
-  useEffect(() => {}, []);
+  const [isHovered, setIsHovered] = useState(false);
 
   return (
     <>
@@ -19,13 +20,19 @@ export const Banner = ({ handleNavigation }) => {
         />
       </Link>
       <div className="capitalize">
-        <img
-          src={Logo}
-          alt="Muhammad Medhat"
-          style={{
-            maxHeight: "6rem",
-          }}
-        />
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <img
+            className=" "
+            src={Logo}
+            alt="Muhammad Medhat"
+            style={{
+              maxHeight: "6rem",
+              opacity: isHovered ? 1 : 0.5,
+            }}
+            onMouseOver={() => setIsHovered(true)}
+            onMouseOut={() => setIsHovered(false)}
+          />
+        </Link>
       </div>
     </>
   );

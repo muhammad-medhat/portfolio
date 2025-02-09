@@ -22,11 +22,6 @@ export const Sidebar = () => {
       <ul id="menu">
         <li
           className="btn btn-sm uppercase"
-          onClick={() => handleNavigation("/")}>
-          <Link to="/">home</Link>
-        </li>
-        <li
-          className="btn btn-sm uppercase"
           onClick={() => handleNavigation("/about")}>
           <Link to="/about">about</Link>
         </li>
@@ -34,6 +29,11 @@ export const Sidebar = () => {
           className="btn btn-sm uppercase"
           onClick={() => handleNavigation("/tools")}>
           <Link to="/tools">my tools</Link>
+        </li>
+        <li
+          className="btn btn-sm uppercase"
+          onClick={() => handleNavigation("/tools")}>
+          <Link to="/tools">articles</Link>
         </li>
         <li
           className="btn btn-sm uppercase"
