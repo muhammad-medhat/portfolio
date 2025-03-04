@@ -105,15 +105,12 @@ const GetinTouch = ({ label, msg }) => {
                     }></textarea>
                 </div>
               </div>
-              <ul class="actions">
-                <li>
-                  <input
-                    type="submit"
-                    value={buttonText}
-                    style={{ marginTop: "1em" }}
-                  />
-                </li>
-              </ul>
+
+              <input
+                type="submit"
+                value={buttonText}
+                style={{ marginTop: "1em", width: "100%" }}
+              />
             </form>
           </div>
           <div class="col-4 col-12-small">
