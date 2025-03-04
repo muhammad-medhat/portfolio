@@ -59,3 +59,5 @@ old.port
 # public
 # assets
 # md
+# delete files
+components/ContactInfo.js

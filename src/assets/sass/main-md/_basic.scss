@@ -59,8 +59,10 @@ a {
 
   &:hover {
     border-bottom-color: transparent;
-    color: _palette(accent1, bg) !important;
+    // color: _palette(accent1, bg) !important;
+    // font-weight: bold;
     text-decoration: none;
+    color: #392222 !important;
   }
 }
 
