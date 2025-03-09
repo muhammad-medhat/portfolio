@@ -1,5 +1,5 @@
 import React from "react";
-import { Banner } from "../../../com/Banner";
+import { Banner } from "../../com/Banner";
 import { Animate } from "react-simple-animate";
 // import "./about.css";
 // import "./styles.scss";

@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import { Banner } from "../../../com/Banner";
+// import { Banner } from "../../../com/Banner";
 
-import { Brief } from "../../../com/brief";
-import { ProjectsList } from "../../ProjectsList";
-import GetinTouch from "../../../com/GetInTouch";
+import { Brief } from "../../com/brief";
+import { ProjectsList } from "../../com/ProjectsList";
+import GetinTouch from "../../com/GetInTouch";
 
 const Home = ({ scrollTop }) => {
   useEffect(() => {

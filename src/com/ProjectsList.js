@@ -1,6 +1,6 @@
 import React from "react";
 import { Row } from "react-bootstrap";
-import { ProjectCard } from "../com/ProjectCard/index.js";
+import { ProjectCard } from "./ProjectCard/index.js";
 import projects from "../projectsData.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";

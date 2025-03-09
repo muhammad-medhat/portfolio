@@ -3,12 +3,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/css/bootstrap.css";
 import { Route, Routes } from "react-router-dom";
 import { Footer } from "./com/footer";
-import Home from "./components/pages/Home";
-// import { Projects } from "./components/pages/projects/Projects";
-import About from "./components/pages/about/";
-import Contact from "./components/pages/contact";
+import Home from "./pages/Home";
+// import { Projects } from "./pages/projects/Projects";
+import About from "./pages/about/";
+import Contact from "./pages/contact";
 import { Sidebar } from "./com/Sidebar";
-import MyTools from "./components/pages/MyTools";
+import MyTools from "./pages/MyTools";
 
 import "./assets/sass/main-md.scss";
 

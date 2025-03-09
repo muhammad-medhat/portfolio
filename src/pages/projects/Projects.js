@@ -1,9 +1,9 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import { ProjectCard } from "./ProjectCard";
+import { ProjectCard } from "./ProjectCard.js";
 
 import "animate.css";
 import TrackVisibility from "react-on-screen";
-import projects from "../../../projectsData.js";
+import projects from "../../projectsData.js";
 import "./projects.css";
 
 export const Projects = () => {
@@ -36,8 +36,7 @@ export const Projects = () => {
                     <Nav
                       variant="pills"
                       className="nav-pills mb-5 justify-content-center align-items-center row1"
-                      id="pills-tab"
-                    >
+                      id="pills-tab">
                       <Nav.Item>
                         <Nav.Link className="" eventKey="cms">
                           Cms: Joomla, WordPress
@@ -63,8 +62,7 @@ export const Projects = () => {
                       id="slideInUp"
                       className={
                         isVisible ? "animate__animated animate__slideInUp" : ""
-                      }
-                    >
+                      }>
                       <Tab.Pane eventKey="cms">
                         <Row>
                           <div className="tab-cont">
