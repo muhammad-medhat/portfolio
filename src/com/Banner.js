@@ -10,7 +10,6 @@ export const Banner = ({ handleNavigation }) => {
 
   return (
     <>
-      {/* <Link className="image avatar" to="/about" style={{ marginTop: "5rem" }}> */}
       <Link className="image avatar" to="/">
         <img
           className="image avatar"
@@ -20,19 +19,18 @@ export const Banner = ({ handleNavigation }) => {
         />
       </Link>
       <div className="capitalize">
-        <Link to="/" style={{ textDecoration: "none" }}>
-          <img
-            className=" "
-            src={Logo}
-            alt="Muhammad Medhat"
-            style={{
-              maxHeight: "6rem",
-              opacity: isHovered ? 1 : 0.5,
-            }}
-            onMouseOver={() => setIsHovered(true)}
-            onMouseOut={() => setIsHovered(false)}
-          />
-        </Link>
+        <img
+          className=" "
+          src={Logo}
+          alt="Muhammad Medhat"
+          style={{
+            maxHeight: "6rem",
+            opacity: isHovered ? 1 : 0.5,
+          }}
+          onMouseOver={() => setIsHovered(true)}
+          onMouseOut={() => setIsHovered(false)}
+          onClick={() => handleNavigation("/")}
+        />
       </div>
     </>
   );
