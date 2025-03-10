@@ -58,7 +58,7 @@ export default function Social({ iconsToShow = [] }) {
           .filter((item) => iconsToShow.includes(item.id))
           .map((item) => (
             <li key={item.id}>
-              <a href={item.href} target="_blank">
+              <a href={item.href} target="_blank" rel="noreferrer">
                 {item.img ? (
                   <img src={item.img.src} alt={item.img.alt} />
                 ) : (

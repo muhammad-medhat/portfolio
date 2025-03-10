@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import logo from "../assets/md/logo-img.svg";
 
 export const Brief = () => {

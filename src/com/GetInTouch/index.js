@@ -1,6 +1,6 @@
 import React from "react";
 import { useRef, useState } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
 
 import { ToastContainer, toast } from "react-toastify";
@@ -29,9 +29,9 @@ const GetinTouch = ({ label, msg }) => {
     console.log("form", formDetails);
     setButtonText("Sending...");
     if (
-      formDetails.userName == "" ||
-      formDetails.email == "" ||
-      formDetails.message == ""
+      formDetails.userName === "" ||
+      formDetails.email === "" ||
+      formDetails.message === ""
     ) {
       showToastMessageError("Please Check your input");
     } else {
