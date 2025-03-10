@@ -7,8 +7,8 @@ import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 export const ProjectsList = ({ scrollTop }) => {
   const wp = projects.filter((p) => p.cat === 1);
-  const js = projects.filter((p) => p.cat === 2);
-  const ud = projects.filter((p) => p.cat === 3);
+  // const js = projects.filter((p) => p.cat === 2);
+  // const ud = projects.filter((p) => p.cat === 3);
   console.log("wp", wp);
 
   return (

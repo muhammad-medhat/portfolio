@@ -30,11 +30,11 @@ export const Sidebar = () => {
           onClick={() => handleNavigation("/tools")}>
           <Link to="/tools">my tools</Link>
         </li>
-        <li
+        {/* <li
           className="btn btn-sm uppercase"
           onClick={() => handleNavigation("/tools")}>
           <Link to="/tools">articles</Link>
-        </li>
+        </li> */}
         <li
           className="btn btn-sm uppercase"
           onClick={() => handleNavigation("/contact")}>

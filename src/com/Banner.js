@@ -1,9 +1,7 @@
-import { useState, useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { useState } from "react";
 import profileImg from "../assets/img/profile-img.jpeg";
 import { Link } from "react-router-dom";
 import Logo from "../assets/md/logo.svg";
-import styled from "styled-components";
 
 export const Banner = ({ handleNavigation }) => {
   const [isHovered, setIsHovered] = useState(false);
