@@ -73,10 +73,10 @@ const GetinTouch = ({ label, msg }) => {
         <h2>{label}</h2>
         <p>{msg}</p>
         <Row>
-          <div class="col-8 col-12-small">
+          <div className="col-8 col-12-small">
             <form ref={form} onSubmit={handleSubmit}>
-              <div class="row gtr-uniform gtr-50">
-                <div class="col-6 col-12-xsmall">
+              <div className="row gtr-uniform gtr-50">
+                <div className="col-6 col-12-xsmall">
                   <input
                     type="text"
                     value={formDetails.userName}
@@ -85,7 +85,7 @@ const GetinTouch = ({ label, msg }) => {
                     onChange={(e) => onFormUpdate("userName", e.target.value)}
                   />
                 </div>
-                <div class="col-6 col-12-xsmall">
+                <div className="col-6 col-12-xsmall">
                   <input
                     type="email"
                     value={formDetails.email}
@@ -94,7 +94,7 @@ const GetinTouch = ({ label, msg }) => {
                     onChange={(e) => onFormUpdate("email", e.target.value)}
                   />
                 </div>
-                <div class="col-12">
+                <div className="col-12">
                   <textarea
                     rows="6"
                     value={formDetails.message}
@@ -113,7 +113,7 @@ const GetinTouch = ({ label, msg }) => {
               />
             </form>
           </div>
-          <div class="col-4 col-12-small">
+          <div className="col-4 col-12-small">
             <ContactInfo />
           </div>
         </Row>

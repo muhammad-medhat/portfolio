@@ -9,7 +9,7 @@ export const ProjectsList = ({ scrollTop }) => {
   const wp = projects.filter((p) => p.cat === 1);
   // const js = projects.filter((p) => p.cat === 2);
   // const ud = projects.filter((p) => p.cat === 3);
-  console.log("wp", wp);
+  // console.log("wp", wp);
 
   return (
     <div id="projects">
@@ -17,7 +17,10 @@ export const ProjectsList = ({ scrollTop }) => {
       <Row>
         {wp.map((p, i) => (
           <>
-            <ProjectCard project={p} key={`${i}--${p.title}`} />
+            <ProjectCard
+              project={p}
+              key={`${i + "---" + Math.random()}--${p.title}`}
+            />
           </>
         ))}
         <div className="d-flex align-items-center justify-content-center move-top">

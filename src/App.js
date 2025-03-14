@@ -11,6 +11,7 @@ import { Sidebar } from "./com/Sidebar";
 import MyTools from "./pages/MyTools";
 
 import "./assets/sass/main-md.scss";
+import RSSApp from "./com/RssApp";
 
 function App() {
   document.title = "Muhammad Medhat - Wordpress Developer";
@@ -39,6 +40,7 @@ function App() {
               path={`/tools`}
               element={<MyTools scrollTop={scrollTop} />}
             />
+            <Route path={`/rss`} element={<RSSApp scrollTop={scrollTop} />} />
           </Routes>
         </main>
         <Footer />

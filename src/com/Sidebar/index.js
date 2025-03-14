@@ -16,7 +16,7 @@ export const Sidebar = () => {
   return (
     // <!-- Header -->
     <>
-      <div class="inner flex flex-column justify-center align-center">
+      <div className="inner flex flex-column justify-center align-center">
         <Banner handleNavigation={handleNavigation} />
       </div>
       <ul id="menu">
@@ -30,11 +30,11 @@ export const Sidebar = () => {
           onClick={() => handleNavigation("/tools")}>
           <Link to="/tools">my tools</Link>
         </li>
-        {/* <li
+        <li
           className="btn btn-sm uppercase"
-          onClick={() => handleNavigation("/tools")}>
-          <Link to="/tools">articles</Link>
-        </li> */}
+          onClick={() => handleNavigation("/rss")}>
+          <Link to="/rss">articles</Link>
+        </li>
         <li
           className="btn btn-sm uppercase"
           onClick={() => handleNavigation("/contact")}>
