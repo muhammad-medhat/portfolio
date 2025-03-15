@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import RssItem from "./RssItem";
+import "./RssFeedReader.css";
 
 const RSSFeedReader = ({ feedUrl }) => {
   const [feedItems, setFeedItems] = useState([]);
@@ -48,36 +49,6 @@ const RSSFeedReader = ({ feedUrl }) => {
 
   return (
     <div className="container my-4">
-      <style>{`
-        .card-uniform {
-          height: 100%; /* Ensure card fills column height */
-          display: flex;
-          flex-direction: column;
-        }
-        .card-img-top, .card-img-placeholder {
-          height: 200px; /* Fixed height for image or placeholder */
-          object-fit: cover; /* Crop images to fit */
-        }
-        .card-img-placeholder {
-          background-color: #f8f9fa; /* Light gray background */
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: #6c757d; /* Muted text color */
-        }
-        .card-body {
-          flex-grow: 1; /* Allow body to expand */
-          display: flex;
-          flex-direction: column;
-        }
-        .card-text {
-          flex-grow: 1; /* Ensure text takes available space */
-          margin-bottom: 1rem; /* Consistent spacing */
-        }
-        .card-meta {
-          margin-bottom: 1rem; /* Consistent spacing */
-        }
-      `}</style>
       <h2 className="mb-4">Dev.to Articles</h2>
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         {feedItems.map((item, index) => (
