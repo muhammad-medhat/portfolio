@@ -1,110 +1,117 @@
 .card-uniform {
-  height: 100%; /* Ensure card fills column height */
+  height: 100%;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
+
 .card-img-top,
 .card-img-placeholder {
-  height: 200px; /* Fixed height for image or placeholder */
-  object-fit: cover; /* Crop images to fit */
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+  max-width: 100%;
 }
+
 .card-img-placeholder {
-  background-color: #f8f9fa; /* Light gray background */
+  background-color: #f8f9fa;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #6c757d; /* Muted text color */
+  color: #6c757d;
 }
+
 .card-body {
-  flex-grow: 1; /* Allow body to expand */
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
 }
+
 .card-title {
   margin-bottom: 0.5rem;
-  white-space: nowrap; /* Prevent wrapping */
-  overflow: hidden; /* Hide excess text */
-  text-overflow: ellipsis; /* Add ellipsis */
-  position: relative; /* Still needed for positioning context */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  line-height: 1.2;
 }
+
 .card-title a {
-  text-decoration: none; /* Remove underline from link */
-  display: block; /* Ensure full width hover area */
-  white-space: nowrap; /* Ensure truncation applies */
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.card-title a:hover::after {
-  content: attr(data-full-title); /* Use data attribute from <a> */
-  position: absolute;
-  top: -2.5rem; /* Position above title */
-  left: 0;
-  background: #333;
-  color: #fff;
-  padding: 0.5rem;
-  border-radius: 4px;
-  font-size: 0.9rem;
-  white-space: normal; /* Allow wrapping in tooltip */
-  z-index: 10;
-  max-width: 300px; /* Limit tooltip width */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional shadow */
-}
+
 .card-text {
-  flex-grow: 1; /* Ensure text takes available space */
-  margin-bottom: 1rem; /* Consistent spacing */
+  flex-grow: 1;
+  margin-bottom: 1rem;
   text-align: start;
 }
+
 .card-meta {
-  margin-bottom: 1rem; /* Consistent spacing */
+  margin-bottom: 1rem;
 }
 
-/* New metadata styling */
 .metadata {
   display: flex;
-  flex-wrap: wrap; /* Allow wrapping on small screens */
-  gap: 1rem; /* Space between items */
-  font-size: 0.9rem; /* Slightly smaller text */
-  color: #6c757d; /* Bootstrap muted color */
-  background: #f8f9fa; /* Light gray background */
-  padding: 0.5rem 1rem; /* Padding for comfort */
-  border-radius: 8px; /* Rounded corners */
-  margin-bottom: 1rem; /* Consistent spacing */
-}
-.metadata span {
-  display: flex;
-  align-items: center; /* Center items vertically */
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: #6c757d;
+  background: #f8f9fa;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
-/**********/
+.metadata span {
+  display: flex;
+  align-items: center;
+}
+
 div.published {
   font-weight: bold;
 }
-.metadata span::before {
-  font-family: "Font Awesome 5 Free";
-}
-div.published::before {
-  content: "\1F4C5"; /* Calendar icon for Published */
-  margin-right: 0.5rem;
-}
-.metadata .reading-time::before {
-  content: "\23F3"; /* Hourglass icon for Reading Time */
-  margin-right: 0.5rem;
-}
-.metadata .reactions::before {
-  content: "\2764"; /* Heart icon for Reactions */
-  margin-right: 0.5rem;
-}
-.metadata .comments::before {
-  content: "\1F4AC"; /* Speech bubble icon for Comments */
-  margin-right: 0.5rem;
-}
-/**********/
 
-.metadata span::before {
-  content: ""; /* Placeholder for icons or bullets */
-  display: inline-block;
-  margin-right: 0.5rem; /* Space before text */
+div.published::before {
+  content: "\1F4C5";
+  margin-right: 0.5rem;
 }
-/* .metadata span.reading-time::before {
-  content: "\f017";
-} */
+
+.metadata .reading-time::before {
+  content: "\23F3";
+  margin-right: 0.5rem;
+}
+
+.metadata .reactions::before {
+  content: "\2764";
+  margin-right: 0.5rem;
+}
+
+.metadata .comments::before {
+  content: "\1F4AC";
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 767.98px) {
+  .card-uniform {
+    margin: 0;
+  }
+  .card-img-top,
+  .card-img-placeholder {
+    height: 150px;
+  }
+  .metadata {
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    padding: 0.25rem 0.5rem;
+  }
+  .metadata span {
+    white-space: normal;
+  }
+}

@@ -49,10 +49,11 @@ const RSSFeedReader = ({ feedUrl }) => {
 
   return (
     <div className="container my-4">
-      <h2 className="mb-4">Dev.to Articles</h2>
-      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <h2 className="mb-4">Dev Articles</h2>
+      {/* <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"> */}
+      <div className="row">
         {feedItems.map((item, index) => (
-          <RssItem item={item} key={index} />
+          <RssItem item={item} index={index} key={index} />
         ))}
       </div>
     </div>

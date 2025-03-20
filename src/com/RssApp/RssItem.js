@@ -1,13 +1,16 @@
 import React from "react";
+import "./speech-bubble.css";
+export default function RssItem({ item, index }) {
+  // console.log(item);
+  // document.getElementById("speech-bubble").style.display = "none";
 
-export default function RssItem({ item }) {
-  console.log(item);
   // Format date as "Month-Year"
   const formatDate = (dateString) => {
     if (!dateString) return "Unknown date";
     const date = new Date(dateString);
     return date.toLocaleDateString("en-US", {
-      month: "long", // Full month name (e.g., "March")
+      // month: "long", // Full month name (e.g., "March")
+      month: "short", // short month name (e.g., "Mar")
       year: "numeric", // Full year (e.g., "2025")
     });
   };
@@ -20,8 +23,8 @@ export default function RssItem({ item }) {
     return words.slice(0, wordLimit).join(" ") + "...";
   };
   return (
-    <div className="col">
-      <div className="card card-uniform">
+    <div className="col-sm-12 col-md-4">
+      <div className={`card card-uniform rss-item-${index}`}>
         {item.thumbnail && (
           <img
             src={item.thumbnail}
@@ -36,11 +39,23 @@ export default function RssItem({ item }) {
               href={item.link}
               target="_blank"
               rel="noopener noreferrer"
-              title={item.title}
+              // title={item.title}
               // data-full-title={item.title} // Custom attribute for tooltip
-              className="text-primary">
+              className="text-primary"
+              onMouseMove={(e) => {
+                // debugger;
+                const cardTitle = document.querySelector(
+                  `.rss-item-${index} .card-title`
+                );
+                cardTitle.style.whiteSpace = "normal";
+                cardTitle.style.overflow = "visible";
+                // console.log("item.title", item.title);
+              }}>
               {item.title}
             </a>
+            <div id={`speech-bubble-${index}`} className="speech-bubble">
+              {item.title}
+            </div>
           </h3>
 
           <div className="published" title="published">
