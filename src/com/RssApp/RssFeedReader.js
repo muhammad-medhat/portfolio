@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import RssItem from "./RssItem";
-import "./RssFeedReader.css";
+// import "./RssFeedReader.css";
+import "./RssFeedReader.new.css";
+import "./RssCard.css";
 
 const RSSFeedReader = ({ feedUrl }) => {
   const [feedItems, setFeedItems] = useState([]);

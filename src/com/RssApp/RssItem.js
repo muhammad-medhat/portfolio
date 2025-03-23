@@ -1,5 +1,5 @@
 import React from "react";
-import "./speech-bubble.css";
+// import "./speech-bubble.css";
 export default function RssItem({ item, index }) {
   // console.log(item);
   // document.getElementById("speech-bubble").style.display = "none";
@@ -24,70 +24,36 @@ export default function RssItem({ item, index }) {
   };
   return (
     <div className="col-sm-12 col-md-4">
-      <div className={`card card-uniform rss-item-${index}`}>
-        {item.thumbnail && (
-          <img
-            src={item.thumbnail}
-            className="card-img-top"
-            alt={item.title}
-            style={{ maxHeight: "200px", objectFit: "cover" }}
-          />
-        )}
+      <div
+        className={`md-card card-uniform rss-item-${index}`}
+        style={{
+          background: `url(${item?.thumbnail})`,
+        }}>
         <div className="card-body">
-          <h3 className="card-title">
-            <a
-              href={item.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              // title={item.title}
-              // data-full-title={item.title} // Custom attribute for tooltip
-              className="text-primary"
-              onMouseMove={(e) => {
-                // debugger;
-                const cardTitle = document.querySelector(
-                  `.rss-item-${index} .card-title`
-                );
-                cardTitle.style.whiteSpace = "normal";
-                cardTitle.style.overflow = "visible";
-                // console.log("item.title", item.title);
-              }}>
-              {item.title}
-            </a>
-            <div id={`speech-bubble-${index}`} className="speech-bubble">
-              {item.title}
-            </div>
-          </h3>
-
-          <div className="published" title="published">
-            {item.pubDate ? formatDate(item.pubDate) : "Unknown date"}
-          </div>
-          <p className="card-text">{getExcerpt(item.description)}</p>
-          <div className="mb-2">
-            {item.tags?.length > 0
-              ? item.tags.map((tag, i) => (
-                  <span key={i} className="badge bg-secondary me-1">
-                    {tag}
-                  </span>
-                ))
-              : "No tags"}
-          </div>
-          {/* <div className="text-muted small mb-2"> */}
+          <div className="card-title">{item.title}</div>
           <div className="metadata">
-            <span className="reading-time" title="Reading Time">
-              : {item.readingTime} min
-            </span>
-            <span className="reactions" title="Reactions">
-              {item.reactions}
-            </span>
-            <span className="comments" title="Comments">
-              {item.comments}
-            </span>
+            <div className="meta-top">
+              <span className="published">
+                {item.pubDate ? formatDate(item.pubDate) : "Unknown date"}
+              </span>
+            </div>
+            <div className="meta-bottom d-flex">
+              <span className="reading-time" title="Reading Time">
+                {item.readingTime} min
+              </span>
+              <span className="reactions" title="Reactions">
+                {item.reactions}
+              </span>
+              <span className="comments" title="Comments:">
+                {item.comments}
+              </span>
+            </div>
           </div>
           <a
             href={item.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-outline-primary btn-sm">
+            className="btn btn-outline-light btn-sm">
             Read More
           </a>
         </div>

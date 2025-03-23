@@ -106,7 +106,7 @@ div.published::before {
     height: 150px;
   }
   .metadata {
-    flex-direction: column;
+    /* flex-direction: column; */
     gap: 0.5rem;
     font-size: 0.85rem;
     padding: 0.25rem 0.5rem;
