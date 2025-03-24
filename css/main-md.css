@@ -2227,7 +2227,6 @@ input[type=button]:disabled,
 }
 #header .btn-sm a {
   color: rgba(255, 255, 255, 0.5);
-  font-size: 130%;
   letter-spacing: 2px;
   text-decoration: none;
 }
@@ -2299,7 +2298,6 @@ input[type=button]:disabled,
 
 /* Main */
 #main {
-  padding: 3rem 1rem;
   text-align: center;
   line-height: 1.2em;
 }
@@ -2316,6 +2314,14 @@ input[type=button]:disabled,
 
 .wrapper {
   display: grid;
+  grid-template-columns: auto 1fr;
+  min-height: 100vh;
+}
+@media screen and (max-width: 980px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+  }
 }
 
 /* Header */
@@ -2338,10 +2344,12 @@ input[type=button]:disabled,
   height: 100%;
   left: 0;
   padding: 2em;
-  position: fixed;
   text-align: right;
   top: 0;
-  width: 35%;
+  position: sticky;
+  top: 0; /* Stick to the top of the viewport */
+  height: 100vh; /* Full viewport height */
+  overflow-y: auto;
 }
 #header ul#menu li {
   display: block;
@@ -2357,7 +2365,6 @@ input[type=button]:disabled,
 }
 #header .btn-sm a {
   color: rgba(255, 255, 255, 0.5);
-  font-size: 130%;
   letter-spacing: 2px;
   text-decoration: none;
 }
@@ -2427,12 +2434,8 @@ input[type=button]:disabled,
 }
 
 /* Main */
-#main {
-  margin-left: 35%;
-  width: calc(100% - 35%);
-}
-#main main {
-  padding: 4em 2em 2em 2em;
+#main .inner {
+  padding: 0 1rem;
 }
 #main > section {
   border-top: solid 2px #efefef;
