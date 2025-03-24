@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import RssItem from "./RssItem";
-// import "./RssFeedReader.css";
-import "./RssFeedReader.new.css";
-import "./RssCard.css";
 
 const RSSFeedReader = ({ feedUrl }) => {
   const [feedItems, setFeedItems] = useState([]);
@@ -52,7 +49,6 @@ const RSSFeedReader = ({ feedUrl }) => {
   return (
     <div className="container my-4">
       <h2 className="mb-4">Dev Articles</h2>
-      {/* <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"> */}
       <div className="row">
         {feedItems.map((item, index) => (
           <RssItem item={item} index={index} key={index} />

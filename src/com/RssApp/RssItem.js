@@ -1,4 +1,5 @@
 import React from "react";
+import "./RssCard.sass";
 // import "./speech-bubble.css";
 export default function RssItem({ item, index }) {
   // console.log(item);
@@ -23,19 +24,30 @@ export default function RssItem({ item, index }) {
     return words.slice(0, wordLimit).join(" ") + "...";
   };
   return (
-    <div className="col-sm-12 col-md-4">
+    <div className="col-sm-6 col-md-4 ">
       <div
-        className={`md-card card-uniform rss-item-${index}`}
+        className={`card card-uniform rss-item-${index}`}
         style={{
           background: `url(${item?.thumbnail})`,
         }}>
-        <div className="card-body">
-          <div className="card-title">{item.title}</div>
+        <div className="info">
+          <p className="card-title">{item.title}</p>
+
           <div className="metadata">
             <div className="meta-top">
               <span className="published">
                 {item.pubDate ? formatDate(item.pubDate) : "Unknown date"}
               </span>
+              {/* <!--tags--> */}
+              <div className="mb-2 d-flex flex-wrap gap-1 px-2 justify-content-start1">
+                {item.tags?.length > 0
+                  ? item.tags.map((tag, i) => (
+                      <span key={i} className="badge bg-secondary me-1">
+                        {tag}
+                      </span>
+                    ))
+                  : "No tags"}
+              </div>
             </div>
             <div className="meta-bottom d-flex">
               <span className="reading-time" title="Reading Time">
@@ -49,6 +61,7 @@ export default function RssItem({ item, index }) {
               </span>
             </div>
           </div>
+
           <a
             href={item.link}
             target="_blank"
