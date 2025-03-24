@@ -2227,7 +2227,6 @@ input[type=button]:disabled,
 }
 #header .btn-sm a {
   color: rgba(255, 255, 255, 0.5);
-  font-size: 130%;
   letter-spacing: 2px;
   text-decoration: none;
 }
@@ -2299,7 +2298,6 @@ input[type=button]:disabled,
 
 /* Main */
 #main {
-  padding: 3rem 1rem;
   text-align: center;
   line-height: 1.2em;
 }
@@ -2357,7 +2355,6 @@ input[type=button]:disabled,
 }
 #header .btn-sm a {
   color: rgba(255, 255, 255, 0.5);
-  font-size: 130%;
   letter-spacing: 2px;
   text-decoration: none;
 }
@@ -2430,9 +2427,6 @@ input[type=button]:disabled,
 #main {
   margin-left: 35%;
   width: calc(100% - 35%);
-}
-#main main {
-  padding: 4em 2em 2em 2em;
 }
 #main > section {
   border-top: solid 2px #efefef;

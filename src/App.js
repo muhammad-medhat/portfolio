@@ -26,7 +26,7 @@ function App() {
       <header id="header" className="flex flex-column justify-content-around">
         <Sidebar />
       </header>
-      <div id="main" className="main">
+      <div id="main" className="main flex flex-column">
         <main>
           <Routes>
             <Route exact path={`/`} element={<Home scrollTop={scrollTop} />} />

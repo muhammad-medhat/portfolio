@@ -40,7 +40,6 @@
     border-radius: 20px;
     a {
       color: _palette(accent2, fg);
-      font-size: 130%;
       letter-spacing: 2px;
       text-decoration: none;
     }
@@ -133,8 +132,8 @@
 
   width: calc(100% - #{$size-header-width});
   main {
-    padding: ($size-header-pad * 2) $size-header-pad $size-header-pad
-      $size-header-pad;
+    // padding: ($size-header-pad * 2) $size-header-pad $size-header-pad
+    //   $size-header-pad;
   }
   > section {
     border-top: solid 2px _palette(border);

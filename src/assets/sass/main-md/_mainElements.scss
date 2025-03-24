@@ -56,7 +56,6 @@
     border-radius: 20px;
     a {
       color: _palette(accent2, fg);
-      font-size: 130%;
       letter-spacing: 2px;
       text-decoration: none;
     }
@@ -144,7 +143,7 @@ main {
   //background: red;
 }
 #main {
-  padding: 3rem 1rem;
+  // padding: 3rem 1rem;
   text-align: center;
   line-height: 1.2em;
   // margin-left: $size-header-width;
