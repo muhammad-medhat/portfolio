@@ -15,8 +15,11 @@ export const Footer = () => {
             <img src={logo} alt="Muhammad Medhat" style={{}} />
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
-            <Social iconsToShow={["fem", "dt", "ln"]} />
-            <p>Copyright {new Date().getFullYear()}. All Rights Reserved</p>
+            <Social iconsToShow={["gh", "dt", "ln", "fb", "tw"]} />
+            <p>
+              Copyright &copy; 2023 - {new Date().getFullYear()}. All Rights
+              Reserved
+            </p>
           </Col>
         </Row>
       </Container>

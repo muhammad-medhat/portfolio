@@ -1,10 +1,15 @@
 .wrapper {
   display: grid;
+  grid-template-columns: auto 1fr;
+  min-height: 100vh;
+  @include breakpoint("<=medium") {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+  }
 }
 /* Header */
 
 #header {
-  // grid-area: side;
   @include vendor("display", "flex");
   @include vendor("flex-direction", "column");
   @include vendor("align-items", "flex-end");
@@ -16,12 +21,14 @@
   color: _palette(accent2, fg);
   height: 100%;
   left: 0;
-  // padding: ($size-header-pad * 2) $size-header-pad;
   padding: $size-header-pad;
-  position: fixed;
+
   text-align: right;
   top: 0;
-  width: $size-header-width;
+  position: sticky;
+  top: 0; /* Stick to the top of the viewport */
+  height: 100vh; /* Full viewport height */
+  overflow-y: auto;
   ul#menu li {
     display: block;
     margin-top: 1rem;
@@ -127,13 +134,16 @@
 
 #main {
   // grid-area: main;
-  margin-left: $size-header-width;
+  // margin-left: $size-header-width;
   // max-width: 50em + $size-header-pad;
 
-  width: calc(100% - #{$size-header-width});
+  // width: calc(100% - #{$size-header-width});
   main {
     // padding: ($size-header-pad * 2) $size-header-pad $size-header-pad
     //   $size-header-pad;
+  }
+  .inner {
+    padding: 0 1rem;
   }
   > section {
     border-top: solid 2px _palette(border);

@@ -26,8 +26,8 @@ function App() {
       <header id="header" className="flex flex-column justify-content-around">
         <Sidebar />
       </header>
-      <div id="main" className="main flex flex-column">
-        <main>
+      <main id="main" className="main flex flex-column justify-content-between">
+        <div className="inner">
           <Routes>
             <Route exact path={`/`} element={<Home scrollTop={scrollTop} />} />
             {/* <Route path={`/projects`} element={<Projects scrollTop={scrollTop}/>} /> */}
@@ -42,9 +42,9 @@ function App() {
             />
             <Route path={`/rss`} element={<RSSApp scrollTop={scrollTop} />} />
           </Routes>
-        </main>
+        </div>
         <Footer />
-      </div>
+      </main>
     </div>
   );
 }
