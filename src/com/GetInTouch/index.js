@@ -70,7 +70,10 @@ const GetinTouch = ({ label, msg }) => {
     <div>
       <ToastContainer />
       <Container>
-        <h2>{label}</h2>
+        <h2 className="inner-title">
+          <i className="fa-regular fa-address-book"></i>
+          {label}
+        </h2>
         <p>{msg}</p>
         <Row>
           <div className="col-8 col-12-small">

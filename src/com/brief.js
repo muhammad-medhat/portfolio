@@ -14,7 +14,7 @@ export const Brief = () => {
         />
         <h2>professional WordPress developer</h2>
       </header>
-      <p>
+      <p className="text-start">
         Hi there! I am a web developer with expertise in JavaScript, React,
         WordPress, and PHP. I have a passion for creating beautiful and
         functional websites that provide a seamless user experience. With

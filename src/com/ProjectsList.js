@@ -13,7 +13,7 @@ export const ProjectsList = ({ scrollTop }) => {
 
   return (
     <div id="projects">
-      <h3>Projects List</h3>
+      {/* <h3>Projects List</h3> */}
       <Row>
         {wp.map((p, i) => (
           <>

@@ -10,7 +10,7 @@ const Contact = () => {
   }, []);
   return (
     <div className="contact">
-      <GetinTouch label="hire me" />
+      <GetinTouch label="contact me" />
     </div>
   );
 };

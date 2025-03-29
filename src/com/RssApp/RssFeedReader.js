@@ -47,8 +47,10 @@ const RSSFeedReader = ({ feedUrl }) => {
   if (error) return <div className="text-center py-4 text-danger">{error}</div>;
 
   return (
-    <div className="container my-4">
-      <h2 className="mb-4">Dev Articles</h2>
+    <div className="container">
+      <h2 className="inner-title">
+        <i className="fa-brands fa-readme"></i>Dev Articles
+      </h2>
       <div className="row">
         {feedItems.map((item, index) => (
           <RssItem item={item} index={index} key={index} />

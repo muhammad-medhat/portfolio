@@ -27,7 +27,7 @@ function App() {
         <Sidebar />
       </header>
       <main id="main" className="main flex flex-column justify-content-between">
-        <div className="inner">
+        <div className="inner flex flex-column justify-content-between">
           <Routes>
             <Route exact path={`/`} element={<Home scrollTop={scrollTop} />} />
             {/* <Route path={`/projects`} element={<Projects scrollTop={scrollTop}/>} /> */}

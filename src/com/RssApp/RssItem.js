@@ -42,7 +42,7 @@ export default function RssItem({ item, index }) {
               <div className="mb-2 d-flex flex-wrap gap-1 px-2 justify-content-start1">
                 {item.tags?.length > 0
                   ? item.tags.map((tag, i) => (
-                      <span key={i} className="badge bg-secondary me-1">
+                      <span key={i} className="badge bg-secondary ">
                         {tag}
                       </span>
                     ))
@@ -51,7 +51,7 @@ export default function RssItem({ item, index }) {
             </div>
             <div className="meta-bottom d-flex">
               <span className="reading-time" title="Reading Time">
-                {item.readingTime} min
+                {item.readingTime}
               </span>
               <span className="reactions" title="Reactions">
                 {item.reactions}
@@ -66,7 +66,7 @@ export default function RssItem({ item, index }) {
             href={item.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-outline-light btn-sm">
+            className="btn btn-outline-light btn-sm mt-3">
             Read More
           </a>
         </div>

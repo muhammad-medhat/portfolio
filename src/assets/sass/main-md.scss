@@ -56,12 +56,6 @@
 #wrapper {
 }
 .avatar {
-  // width: 200px;
-  // height: 200px;
-  // border-radius: 50%;
-  // box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow effect */
-  // object-fit: cover;
-  // border-radius: 50%;
   width: 10em;
   transition: all 0.5s;
   :hover {
@@ -72,4 +66,26 @@
 }
 blockquote {
   text-align: left;
+}
+.inner-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #eee;
+}
+.inner-title {
+  text-align: center;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.75rem 0;
+  background: var(--gradient);
+  color: _palette(accent2, fg);
+  font-size: 200%;
+  margin-left: -1rem;
+  i {
+    margin-right: 0.5rem;
+  }
 }
