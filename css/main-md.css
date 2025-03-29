@@ -2840,8 +2840,17 @@ blockquote {
   text-align: left;
 }
 
+.inner-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #eee;
+}
+
 .inner-title {
   text-align: center;
+  text-transform: capitalize;
   display: flex;
   justify-content: center;
   align-items: center;
