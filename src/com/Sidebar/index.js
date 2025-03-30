@@ -51,7 +51,7 @@ export const Sidebar = () => {
         </li>
       </ul>
       <footer className="flex flex-column justify-center align-center my-4">
-        <Social iconsToShow={["gh", "ln", "dt"]} />
+        <Social iconsToShow={["gh", "ln", "dt", "yt"]} />
         <p>
           Copyright &copy; 2023 - {new Date().getFullYear()}. All Rights
           Reserved
