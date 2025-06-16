@@ -44,6 +44,13 @@ export const Sidebar = () => {
         </li>
         <li
           className="btn btn-sm uppercase"
+          onClick={() => handleNavigation("/youtube")}>
+          <Link to="/youtube">
+            <i className="fa-brands fa-youtube"></i>youtube
+          </Link>
+        </li>
+        <li
+          className="btn btn-sm uppercase"
           onClick={() => handleNavigation("/contact")}>
           <Link to="/contact">
             <i className="fa-regular fa-address-book"></i>contact

@@ -12,6 +12,7 @@ import MyTools from "./pages/MyTools";
 
 import "./assets/sass/main-md.scss";
 import RSSApp from "./com/RssApp";
+import YoutubeChannelVideos from "./com/youtube/YoutubeChannelVideos";
 
 function App() {
   document.title = "Muhammad Medhat - Wordpress Developer";
@@ -41,6 +42,16 @@ function App() {
               element={<MyTools scrollTop={scrollTop} />}
             />
             <Route path={`/rss`} element={<RSSApp scrollTop={scrollTop} />} />
+            <Route
+              path={`/youtube`}
+              element={
+                <YoutubeChannelVideos
+                  apiKey={"AIzaSyAyd7uDEf5pKNOJRyhuQI2D2xhpaUm-h8Q"}
+                  channelId={"UCiLy-biaIPs3QddeMLIo2bw"}
+                  scrollTop={scrollTop}
+                />
+              }
+            />
           </Routes>
         </div>
         <Footer />
