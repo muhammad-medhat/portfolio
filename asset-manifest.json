@@ -1,7 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.e4881196.css",
-    "main.js": "/portfolio/static/js/main.b2722cd5.js",
+    "main.css": "/portfolio/static/css/main.4b60f832.css",
+    "main.js": "/portfolio/static/js/main.43b22283.js",
+    "reactPlayerYouTube.js": "/portfolio/static/js/reactPlayerYouTube.05ccec8e.chunk.js",
+    "reactPlayerSoundCloud.js": "/portfolio/static/js/reactPlayerSoundCloud.3f358c16.chunk.js",
+    "reactPlayerVimeo.js": "/portfolio/static/js/reactPlayerVimeo.e193c36c.chunk.js",
+    "reactPlayerMux.js": "/portfolio/static/js/reactPlayerMux.049d016a.chunk.js",
+    "reactPlayerFacebook.js": "/portfolio/static/js/reactPlayerFacebook.acd6c096.chunk.js",
+    "reactPlayerStreamable.js": "/portfolio/static/js/reactPlayerStreamable.f6b5ef64.chunk.js",
+    "reactPlayerWistia.js": "/portfolio/static/js/reactPlayerWistia.956f681e.chunk.js",
+    "reactPlayerTwitch.js": "/portfolio/static/js/reactPlayerTwitch.949560ef.chunk.js",
+    "reactPlayerDailyMotion.js": "/portfolio/static/js/reactPlayerDailyMotion.3b39c2f3.chunk.js",
+    "reactPlayerMixcloud.js": "/portfolio/static/js/reactPlayerMixcloud.7f18b618.chunk.js",
+    "reactPlayerVidyard.js": "/portfolio/static/js/reactPlayerVidyard.d000a578.chunk.js",
+    "reactPlayerKaltura.js": "/portfolio/static/js/reactPlayerKaltura.fe9ada41.chunk.js",
+    "reactPlayerFilePlayer.js": "/portfolio/static/js/reactPlayerFilePlayer.c6d94719.chunk.js",
+    "reactPlayerPreview.js": "/portfolio/static/js/reactPlayerPreview.d6dfef32.chunk.js",
     "static/media/fa-solid-900.svg": "/portfolio/static/media/fa-solid-900.45690f4345fd0e303e35.svg",
     "static/media/fa-brands-400.svg": "/portfolio/static/media/fa-brands-400.675f6734fc707ee98601.svg",
     "static/media/logo.svg": "/portfolio/static/media/logo.3e2d41f161098edfcf8d2c9bc07b3a1a.svg",
@@ -20,11 +34,25 @@
     "static/media/fa-regular-400.woff": "/portfolio/static/media/fa-regular-400.bb58e57c48a3e911f15f.woff",
     "static/media/fa-regular-400.woff2": "/portfolio/static/media/fa-regular-400.7a3337626410ca2f4071.woff2",
     "index.html": "/portfolio/index.html",
-    "main.e4881196.css.map": "/portfolio/static/css/main.e4881196.css.map",
-    "main.b2722cd5.js.map": "/portfolio/static/js/main.b2722cd5.js.map"
+    "main.4b60f832.css.map": "/portfolio/static/css/main.4b60f832.css.map",
+    "main.43b22283.js.map": "/portfolio/static/js/main.43b22283.js.map",
+    "reactPlayerYouTube.05ccec8e.chunk.js.map": "/portfolio/static/js/reactPlayerYouTube.05ccec8e.chunk.js.map",
+    "reactPlayerSoundCloud.3f358c16.chunk.js.map": "/portfolio/static/js/reactPlayerSoundCloud.3f358c16.chunk.js.map",
+    "reactPlayerVimeo.e193c36c.chunk.js.map": "/portfolio/static/js/reactPlayerVimeo.e193c36c.chunk.js.map",
+    "reactPlayerMux.049d016a.chunk.js.map": "/portfolio/static/js/reactPlayerMux.049d016a.chunk.js.map",
+    "reactPlayerFacebook.acd6c096.chunk.js.map": "/portfolio/static/js/reactPlayerFacebook.acd6c096.chunk.js.map",
+    "reactPlayerStreamable.f6b5ef64.chunk.js.map": "/portfolio/static/js/reactPlayerStreamable.f6b5ef64.chunk.js.map",
+    "reactPlayerWistia.956f681e.chunk.js.map": "/portfolio/static/js/reactPlayerWistia.956f681e.chunk.js.map",
+    "reactPlayerTwitch.949560ef.chunk.js.map": "/portfolio/static/js/reactPlayerTwitch.949560ef.chunk.js.map",
+    "reactPlayerDailyMotion.3b39c2f3.chunk.js.map": "/portfolio/static/js/reactPlayerDailyMotion.3b39c2f3.chunk.js.map",
+    "reactPlayerMixcloud.7f18b618.chunk.js.map": "/portfolio/static/js/reactPlayerMixcloud.7f18b618.chunk.js.map",
+    "reactPlayerVidyard.d000a578.chunk.js.map": "/portfolio/static/js/reactPlayerVidyard.d000a578.chunk.js.map",
+    "reactPlayerKaltura.fe9ada41.chunk.js.map": "/portfolio/static/js/reactPlayerKaltura.fe9ada41.chunk.js.map",
+    "reactPlayerFilePlayer.c6d94719.chunk.js.map": "/portfolio/static/js/reactPlayerFilePlayer.c6d94719.chunk.js.map",
+    "reactPlayerPreview.d6dfef32.chunk.js.map": "/portfolio/static/js/reactPlayerPreview.d6dfef32.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e4881196.css",
-    "static/js/main.b2722cd5.js"
+    "static/css/main.4b60f832.css",
+    "static/js/main.43b22283.js"
   ]
 }
