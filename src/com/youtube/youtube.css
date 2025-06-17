@@ -1,0 +1,116 @@
+/* Container for the main content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: min(2em, 8%);
+}
+
+/* Card grid layout */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2em;
+  margin: 2em 0;
+}
+
+/* Card styling */
+.video-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  transition: transform 0.2s;
+}
+
+.video-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive video player */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 1em;
+}
+
+.video-container iframe,
+.video-container .react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Card title and description */
+
+.video-card p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9em;
+}
+.video-title,
+.video-description {
+  transition: all 0.5s ease;
+}
+.video-title {
+  color: #333;
+  max-height: 1.2em;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.video-description {
+  max-height: 3em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.video-title:hover,
+.video-description:hover {
+  white-space: normal;
+  text-overflow: unset;
+}
+.video-title:hover {
+  max-height: 6em;
+  border-bottom: solid;
+}
+.video-description:hover {
+  max-height: 10em;
+  /* overflow: visible; */
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.video-meta {
+  background-color: #f0f8ff;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+.btn-youtube {
+  background-color: #7fffd4;
+}
+.btn-youtube:hover {
+  background-color: #7ffef7;
+  color: #000;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .video-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1em;
+  }
+  .container {
+    padding: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+    gap: 1em;
+  }
+}

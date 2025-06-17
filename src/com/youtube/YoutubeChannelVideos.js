@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from "react";
 import ReactPlayer from "react-player";
-
+import "./youtube.css";
+import { Title } from "@mui/icons-material";
 const YoutubeChannelVideos = ({ apiKey, channelId }) => {
   const [videos, setVideos] = useState([]);
   const [loading, setLoading] = useState(true);
-  debugger;
 
   useEffect(() => {
     const fetchChannelVideos = async () => {
-      debugger;
       // Step 1: Get the channel's uploads playlist ID
       const channelResponse = await fetch(
         `https://www.googleapis.com/youtube/v3/channels?part=contentDetails&id=${channelId}&key=${apiKey}`
@@ -26,11 +25,17 @@ const YoutubeChannelVideos = ({ apiKey, channelId }) => {
           `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${uploadsPlaylistId}&maxResults=50&key=${apiKey}&pageToken=${nextPageToken}`
         );
         const playlistData = await playlistResponse.json();
-
+        console.log("playlistData", playlistData);
+        const videoItems = playlistData.items.map((item) => ({
+          id: item.snippet.resourceId.videoId,
+          title: item.snippet.title || "xxx",
+          description: item.snippet.description,
+        }));
         const videoIds = playlistData.items.map(
           (item) => item.snippet.resourceId.videoId
         );
-        allVideos = [...allVideos, ...videoIds];
+        // allVideos = [...allVideos, ...videoIds];
+        allVideos = [...allVideos, ...videoItems];
 
         nextPageToken = playlistData.nextPageToken || "";
       } while (nextPageToken);
@@ -43,21 +48,37 @@ const YoutubeChannelVideos = ({ apiKey, channelId }) => {
   }, [apiKey, channelId]);
 
   if (loading) return <div>Loading...</div>;
-
+  console.log("videos...", videos);
   return (
-    <div>
-      <h2>YouTube Channel Videos</h2>
-      <p>Videos from the channel:</p>
-      {videos.map((videoId) => (
-        <div key={videoId} style={{ marginBottom: "2rem" }}>
-          <ReactPlayer
-            url={`https://www.youtube.com/watch?v=${videoId}`}
-            controls
-            width="100%"
-            height="auto"
-          />
-        </div>
-      ))}
+    <div className="container">
+      <div className="video-grid">
+        {videos.map((video) => (
+          <div className="video-card" key={video.id}>
+            <div className="video-container">
+              <ReactPlayer
+                url={`https://www.youtube.com/watch?v=${video.id}`}
+                controls
+              />
+            </div>
+            <div className="video-meta">
+              <h3 className="video-title">{video.title}</h3>
+              <p className="video-description">{video.description}</p>
+              <button
+                className="btn btn-youtube"
+                onClick={() =>
+                  window.open(
+                    `https://www.youtube.com/watch?v=${video.id}`,
+                    "_blank"
+                  )
+                }>
+                <i className="fa-brands fa-youtube"></i>&nbsp; Watch on
+                YouTube...
+              </button>
+              {/* suggestions social share... */}
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
