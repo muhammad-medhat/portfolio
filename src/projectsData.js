@@ -6,6 +6,7 @@ const projects = [
     image: "img/Livestores.png",
 
     cat: 1,
+    url: "https://livestores.co",
     longDesc:
       "A WordPress enterprise website showcasing my expertise. Plugins used: Yoast SEO (search engine optimization), Contact Form 7 (communication), WP Rocket (performance), Akismet (spam protection),Poly lang (multiple languages), Elementor, OceanWP (Theme), OceanWP Extra(extra options for the theme).",
   },
@@ -15,7 +16,7 @@ const projects = [
     slug: "pl",
     desc: "A real estate agency website ",
     image: "img/platinum.png",
-
+    url: "https://platinum-egypt.com",
     cat: 1,
     longDesc:
       "A WordPress enterprise website showcasing my expertise. Plugins used: Yoast SEO (search engine optimization), Contact Form 7 (communication), WP Rocket (performance), Akismet (spam protection),Poly lang (multiple languages), Elementor, OceanWP (Theme), OceanWP Extra(extra options for the theme).",
@@ -35,7 +36,6 @@ const projects = [
     slug: "tpn",
     desc: "A WordPress blog for cats",
     image: "img/tpn.jpg",
-
     cat: 1,
   },
   {
@@ -87,6 +87,7 @@ const projects = [
     desc: "City Compound :: Villas :: Town House :: Quatro :: Hotel :: Golf",
     image: "img/alex-west.jpg",
     cat: 1,
+    url: "https://alexwestegypt.com",
   },
   {
     title: "United Cotton",
@@ -94,6 +95,7 @@ const projects = [
     desc: "City Compound :: Villas :: Town House :: Quatro :: Hotel :: Golf",
     image: "img/united-cotton.jpg",
     cat: 1,
+    url: "https://united-cotton.com/",
   },
   {
     title: "CLT Shuttle",
