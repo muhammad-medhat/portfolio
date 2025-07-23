@@ -1,4 +1,18 @@
 @charset "UTF-8";
+.rss-feed {
+  display: flex;
+  justify-content: center;
+}
+
+.tags-filter {
+  display: flex;
+  justify-content: center;
+}
+.tags-filter span {
+  border: solid 1px;
+  text-transform: uppercase;
+}
+
 .card {
   background-position: center center !important;
   background-size: cover !important;
