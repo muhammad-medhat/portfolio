@@ -79,7 +79,6 @@ const RSSFeedReader = ({ feedUrl }) => {
   // Handle tag change
   const handleTagChange = (tag) => {
     setSelectedTag(tag);
-    debugger;
     setCurrentPage(1); // reset to first page
     if (tag === "All") {
       setFilteredItems(feedItems);
@@ -134,7 +133,7 @@ const RSSFeedReader = ({ feedUrl }) => {
   if (error) return <div className="text-center py-4 text-danger">{error}</div>;
 
   return (
-    <div className="container">
+    <>
       <h2 className="inner-title">
         <i className="fa-brands fa-readme"></i>Dev Articles
       </h2>
@@ -169,7 +168,7 @@ const RSSFeedReader = ({ feedUrl }) => {
           : filteredItems}
       </div>
       {renderPagination()}
-    </div>
+    </>
   );
 };
 
