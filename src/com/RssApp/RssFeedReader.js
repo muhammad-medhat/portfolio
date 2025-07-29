@@ -1,6 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useEffect, useState } from "react";
 import RssItem from "./RssItem";
+import { TopicsGroup } from "./TopicsGroup";
+import { tagGroups } from "./dt";
 
 const RSSFeedReader = ({ feedUrl }) => {
   const [feedItems, setFeedItems] = useState([]);
@@ -18,17 +20,7 @@ const RSSFeedReader = ({ feedUrl }) => {
 
   const currentItems = filteredItems.slice(indexOfFirstItem, indexOfLastItem);
   const totalPages = Math.ceil(filteredItems.length / itemsPerPage);
-  const tagsList = [
-    "All",
-    "wordpress",
-    "javascript",
-    "react",
-    "php",
-    "css",
-    "cli",
-    "plugins",
-    "vscode",
-  ];
+
   useEffect(() => {
     const fetchArticles = async () => {
       try {
@@ -64,31 +56,25 @@ const RSSFeedReader = ({ feedUrl }) => {
       setLoading(false);
     }
   }, [feedUrl]);
-  // Extract unique tags
-  // const uniqueTags = [
-  //   "All",
-  //   ...Array.from(
-  //     new Set(
-  //       feedItems.flatMap((item) =>
-  //         item.tags.map((tag) => tag.toLowerCase().trim())
-  //       )
-  //     )
-  //   ),
-  // ];
-  // console.log("tags", uniqueTags);
+  const filterByTag = (tagKey) => {
+    const relatedTags = tagGroups[tagKey] || [];
+    return feedItems.filter((item) =>
+      item.tags.some(
+        (tag) =>
+          relatedTags.includes(tag.toLowerCase().trim()) ||
+          tag.toLowerCase().trim() === tagKey
+      )
+    );
+  };
+
   // Handle tag change
-  const handleTagChange = (tag) => {
-    setSelectedTag(tag);
+  const handleTagChange = (tagKey) => {
+    setSelectedTag(tagKey);
     setCurrentPage(1); // reset to first page
-    if (tag === "All") {
+    if (tagKey === "all") {
       setFilteredItems(feedItems);
     } else {
-      // const filtered = feedItems.filter((item) => item.tags.includes(tag));
-      const filtered = feedItems.filter((item) =>
-        item.tags.some(
-          (t) => t.toLowerCase().trim() === tag.toLowerCase().trim()
-        )
-      );
+      const filtered = filterByTag(tagKey);
       setFilteredItems(filtered);
     }
   };
@@ -131,6 +117,11 @@ const RSSFeedReader = ({ feedUrl }) => {
   if (loading)
     return <div className="text-center py-4">Loading articles...</div>;
   if (error) return <div className="text-center py-4 text-danger">{error}</div>;
+  const clsSelectedTag = (tag) => {
+    return selectedTag.toLowerCase() === tag.toLowerCase()
+      ? "bg-primary"
+      : "bg-secondary";
+  };
 
   return (
     <>
@@ -139,26 +130,10 @@ const RSSFeedReader = ({ feedUrl }) => {
       </h2>
       {/* 🔽 Tag Selector */}
       <div className="mb-4 text-center">
-        <label htmlFor="tagSelector" className="me-2 fw-bold fs-4">
-          Filter posts by tag:
-        </label>
-        <div className="tags-filter">
-          {tagsList.map((tag, ind) => {
-            return (
-              <span
-                key={ind}
-                className={`badge me-2 p-2 ${
-                  selectedTag.toLowerCase() === tag.toLowerCase()
-                    ? "bg-primary"
-                    : "bg-secondary"
-                }`}
-                onClick={() => handleTagChange(tag)}
-                style={{ cursor: "pointer" }}>
-                {tag}
-              </span>
-            );
-          })}
-        </div>
+        <TopicsGroup
+          clsSelectedTag={clsSelectedTag}
+          handleTagChange={handleTagChange}
+        />
       </div>
       <div className="row rss-feed">
         {currentItems

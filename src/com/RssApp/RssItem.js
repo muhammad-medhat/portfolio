@@ -39,7 +39,7 @@ export default function RssItem({ item, index }) {
                 {item.pubDate ? formatDate(item.pubDate) : "Unknown date"}
               </span>
               {/* <!--tags--> */}
-              <div className="mb-2 d-flex flex-wrap gap-1 px-2 justify-content-start1">
+              <div className="tags mb-2 d-flex flex-wrap gap-1 px-2  mx-3 justify-content-center">
                 {item.tags?.length > 0
                   ? item.tags.map((tag, i) => (
                       <span key={i} className="badge bg-secondary ">
@@ -67,7 +67,7 @@ export default function RssItem({ item, index }) {
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-outline-light btn-sm mt-3">
-            Read More
+            Read More...↗️
           </a>
         </div>
       </div>
