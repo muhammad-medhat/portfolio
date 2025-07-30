@@ -6,6 +6,7 @@ import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { ContactInfo } from "../ContactInfo";
+import { Justify } from "react-bootstrap-icons";
 
 const GetinTouch = ({ label, msg }) => {
   const formInitialDetails = {
@@ -69,15 +70,23 @@ const GetinTouch = ({ label, msg }) => {
   return (
     <div>
       <ToastContainer />
-      <Container>
+      <>
         <h2 className="inner-title">
           <i className="fa-regular fa-address-book"></i>
           {label}
         </h2>
-        <p>{msg}</p>
         <Row>
           <div className="col-8 col-12-small">
             <form ref={form} onSubmit={handleSubmit}>
+              <p
+                className="p-3"
+                style={{
+                  textAlign: "justify",
+                  borderRadius: "5px",
+                  backgroundColor: "rgba(0, 0, 0, 0.1)",
+                }}>
+                {msg}
+              </p>
               <div className="row gtr-uniform gtr-50">
                 <div className="col-6 col-12-xsmall">
                   <input
@@ -95,6 +104,15 @@ const GetinTouch = ({ label, msg }) => {
                     placeholder="Email"
                     name="user_email"
                     onChange={(e) => onFormUpdate("email", e.target.value)}
+                  />
+                </div>
+                <div className="col-12">
+                  <input
+                    type="text"
+                    value={formDetails.subject}
+                    placeholder="Subject"
+                    name="subject"
+                    onChange={(e) => onFormUpdate("subject", e.target.value)}
                   />
                 </div>
                 <div className="col-12">
@@ -120,7 +138,7 @@ const GetinTouch = ({ label, msg }) => {
             <ContactInfo />
           </div>
         </Row>
-      </Container>
+      </>
     </div>
   );
 };
