@@ -1,5 +1,16 @@
 const projects = [
   {
+    title: "sbs-inc",
+    slug: "sbs",
+    desc: "AI Business Automation ",
+    image: "img/sbs.png",
+
+    cat: 1,
+    url: "https://sbs-inc.com",
+    longDesc:
+      "AI Automation for Small Businesses That Saves Time and Grows Revenue",
+  },
+  {
     title: "livestores",
     slug: "ls",
     desc: "Accessories for digital gadgets website ",
