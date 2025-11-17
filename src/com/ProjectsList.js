@@ -12,23 +12,15 @@ export const ProjectsList = ({ scrollTop }) => {
   // console.log("wp", wp);
 
   return (
-    <div id="projects">
-      {/* <h3>Projects List</h3> */}
-      <Row>
-        {wp.map((p, i) => (
-          <>
-            <ProjectCard
-              project={p}
-              key={`${i + "---" + Math.random()}--${p.title}`}
-            />
-          </>
-        ))}
-        <div className="d-flex align-items-center justify-content-center move-top">
-          <p onClick={scrollTop}>
-            Top <FontAwesomeIcon icon={faArrowUp} />
-          </p>
-        </div>
-      </Row>
-    </div>
+    <Row id="projects">
+      {wp.map((p) => (
+        <ProjectCard key={p.slug} project={p} />
+      ))}
+      <div className="d-flex align-items-center justify-content-center move-top">
+        <p onClick={scrollTop}>
+          Top <FontAwesomeIcon icon={faArrowUp} />
+        </p>
+      </div>
+    </Row>
   );
 };

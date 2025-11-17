@@ -65,24 +65,26 @@ wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="a
     <script>
       $(function () {
         $("#projects").poptrox({
+          caption: function ($a) {
+            // $a refers to the anchor element
+            return $a.find(".caption").text();
+          },
           usePopupCaption: true,
           overlayColor: "#000",
+          overlayOpacity: 0.6,
+          windowMargin: 50, // Window margin size (in pixels; only comes into
+          // play when an image is larger than the viewport)
+          popupBlankCaptionText: "(untitled)",
+          selector: "a.image",
+
           usePopupNav: true,
-
-          preload: false,
-
+          preload: true,
           baseZIndex: 1000,
-
-          usePopupEasyClose: false, // If true, popup can be closed by clicking on
-          // it anywhere
-
-          usePopupLoader: true, // If true, show the popup loader
-          usePopupCloser: true, // If true, show the popup closer button/link
-          usePopupDefaultStyling: false, // If true, default popup styling will be applied
-          // (background color, text color, etc)
-
+          usePopupEasyClose: true,
+          usePopupLoader: true,
+          usePopupCloser: false,
+          usePopupDefaultStyling: false,
           popupClass: "poptrox-popup", // Popup class
-
           popupLoaderSelector: ".loader", // (Advanced) Popup Loader selector
           popupCloserSelector: ".closer", // (Advanced) Popup Closer selector
           popupCaptionSelector: ".caption", // (Advanced) Popup Caption selector

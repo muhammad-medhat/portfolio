@@ -15,6 +15,7 @@ export const ProjectCard = ({ project }) => {
             objectFit: "contain",
           }}
         />
+        <div className="caption">{project.longDesc}</div>
       </a>
       <h3 style={{ display: "flex", justifyContent: "space-between" }}>
         <b>{project.title}</b>

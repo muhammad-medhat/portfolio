@@ -12,3 +12,7 @@
 article img {
   max-height: 17rem !important;
 }
+
+a .caption {
+  display: none;
+}
