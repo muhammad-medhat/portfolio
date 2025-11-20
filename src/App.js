@@ -52,6 +52,8 @@ function App() {
                 />
               }
             />
+            {/* handle 404 */}
+            <Route path="*" element={<Home scrollTop={scrollTop} />} />
           </Routes>
         </div>
         <Footer />
