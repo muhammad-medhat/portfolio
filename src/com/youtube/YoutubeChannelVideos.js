@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ReactPlayer from "react-player";
 import "./youtube.css";
-import { Title } from "@mui/icons-material";
 const YoutubeChannelVideos = ({ apiKey, channelId }) => {
   const [videos, setVideos] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -31,9 +30,9 @@ const YoutubeChannelVideos = ({ apiKey, channelId }) => {
           title: item.snippet.title || "xxx",
           description: item.snippet.description,
         }));
-        const videoIds = playlistData.items.map(
-          (item) => item.snippet.resourceId.videoId
-        );
+        // const videoIds = playlistData.items.map(
+        //   (item) => item.snippet.resourceId.videoId
+        // );
         // allVideos = [...allVideos, ...videoIds];
         allVideos = [...allVideos, ...videoItems];
 

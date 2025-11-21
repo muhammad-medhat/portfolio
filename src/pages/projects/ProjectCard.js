@@ -1,8 +1,6 @@
 import { Col } from "react-bootstrap";
-import Popup from "reactjs-popup";
-import "reactjs-popup/dist/index.css";
+// import "reactjs-popup/dist/index.css";
 // import "./components.css";
-import { CheckLg } from "react-bootstrap-icons";
 
 export const ProjectCard = ({ title, desc, image, longDesc }) => {
   // console.log("img", image);
@@ -14,8 +12,7 @@ export const ProjectCard = ({ title, desc, image, longDesc }) => {
           backgroundImage: `url(${image.replace(/\s/g, "%20")})`,
           // backgroundSize: "cover",
           // height: "400px",
-        }}
-      >
+        }}>
         {/* <img src={image} alt={`Project: ${title}`} /> */}
         <div className="proj-txtx">
           <h4>{title}</h4>

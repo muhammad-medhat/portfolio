@@ -1,12 +1,11 @@
 import React from "react";
 import { useRef, useState } from "react";
-import { Container, Row } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { ContactInfo } from "../ContactInfo";
-import { Justify } from "react-bootstrap-icons";
 
 const GetinTouch = ({ label, msg }) => {
   const formInitialDetails = {

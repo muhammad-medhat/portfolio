@@ -17,12 +17,12 @@ export default function RssItem({ item, index }) {
   };
 
   // Truncate description to an excerpt
-  const getExcerpt = (text, wordLimit = 20) => {
-    const plainText = text.replace(/<[^>]+>/g, "");
-    const words = plainText.split(" ");
-    if (words.length <= wordLimit) return plainText;
-    return words.slice(0, wordLimit).join(" ") + "...";
-  };
+  // const getExcerpt = (text, wordLimit = 20) => {
+  //   const plainText = text.replace(/<[^>]+>/g, "");
+  //   const words = plainText.split(" ");
+  //   if (words.length <= wordLimit) return plainText;
+  //   return words.slice(0, wordLimit).join(" ") + "...";
+  // };
   return (
     <div className="col-sm-6 col-md-4 ">
       <div

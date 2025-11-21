@@ -1,32 +1,6 @@
 import React from "react";
-// import { Banner } from "../../com/Banner";
-// import { Animate } from "react-simple-animate";
-// import "./about.css";
-// import "./styles.scss";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function About() {
-  // const ageDiff = new Date().getFullYear() - 1983;
-  // const name = "Muhammad Medhat";
-  // const personalDetails = [
-  //   {
-  //     // label: "Address",
-  //     icon: "fa-sharp fa-solid fa-location-dot",
-  //     value: "Alexandria, Eg",
-  //   },
-  //   {
-  //     // label: "Email",
-  //     icon: "fa-regular fa-envelope",
-  //     value: "muhammad.medhat@gmail.com",
-  //   },
-  //   {
-  //     // label: "Contact No",
-  //     icon: "fa-solid fa-phone",
-  //     value: "+2 01272323297",
-  //     noBorder: "no-border",
-  //   },
-  // ];
-
   const jobSummary = (
     <>
       <h3 className="inner-title">

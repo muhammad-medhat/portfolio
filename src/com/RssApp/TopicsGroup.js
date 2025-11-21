@@ -1,5 +1,5 @@
 import React from "react";
-import { tagGroups, tagGroupKeys } from "./dt";
+import { tagGroupKeys } from "./dt";
 
 export const TopicsGroup = ({ clsSelectedTag, handleTagChange }) => {
   return (
