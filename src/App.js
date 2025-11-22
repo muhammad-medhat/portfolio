@@ -1,18 +1,26 @@
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import "bootstrap/dist/css/bootstrap.css";
 import { Route, Routes } from "react-router-dom";
 import { Footer } from "./com/footer";
-import Home from "./pages/Home";
-// import { Projects } from "./pages/projects/Projects";
-import About from "./pages/about/";
-import Contact from "./pages/contact";
+// import Home from "./pages/Home";
+// import About from "./pages/about/";
+// import Contact from "./pages/contact";
 import { Sidebar } from "./com/Sidebar";
-import MyTools from "./pages/MyTools";
+// import MyTools from "./pages/MyTools";
 
 import "./assets/sass/main-md.scss";
-import RSSApp from "./com/RssApp";
-import YoutubeChannelVideos from "./com/youtube/YoutubeChannelVideos";
+// import RSSApp from "./com/RssApp";
+// import YoutubeChannelVideos from "./com/youtube/YoutubeChannelVideos";
+const Home = React.lazy(() => import("./pages/Home"));
+const About = React.lazy(() => import("./pages/about/"));
+const Contact = React.lazy(() => import("./pages/contact"));
+const RSSApp = React.lazy(() => import("./com/RssApp"));
+const YoutubeChannelVideos = React.lazy(() =>
+  import("./com/youtube/YoutubeChannelVideos")
+);
+// const Projects = React.lazy(() => import("./pages/Projects"));
 
 function App() {
   document.title = "Muhammad Medhat - Wordpress Developer";
@@ -31,16 +39,15 @@ function App() {
         <div className="inner flex flex-column justify-content-between">
           <Routes>
             <Route exact path={`/`} element={<Home scrollTop={scrollTop} />} />
-            {/* <Route path={`/projects`} element={<Projects scrollTop={scrollTop}/>} /> */}
             <Route path={`/about`} element={<About scrollTop={scrollTop} />} />
             <Route
               path={`/contact`}
               element={<Contact scrollTop={scrollTop} />}
             />
-            <Route
+            {/* <Route
               path={`/tools`}
               element={<MyTools scrollTop={scrollTop} />}
-            />
+            /> */}
             <Route path={`/rss`} element={<RSSApp scrollTop={scrollTop} />} />
             <Route
               path={`/youtube`}

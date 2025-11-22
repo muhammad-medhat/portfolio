@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function About() {
+function About() {
   const jobSummary = (
     <>
       <h3 className="inner-title">
@@ -49,3 +49,4 @@ export default function About() {
     </div>
   );
 }
+export default About;

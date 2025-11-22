@@ -1,7 +1,7 @@
 import React from "react";
 
 import RSSFeedReader from "./RssFeedReader";
-export default function RSSApp() {
+function RSSApp() {
   return (
     <div>
       {/* <RSSFeedReader feedUrl="https://api.rss2json.com/v1/api.json?rss_url=https://dev.to/feed/muhammadmedhat" /> */}
@@ -10,3 +10,4 @@ export default function RSSApp() {
     </div>
   );
 }
+export default RSSApp;
