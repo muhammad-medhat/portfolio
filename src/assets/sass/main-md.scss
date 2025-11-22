@@ -89,3 +89,26 @@ blockquote {
     margin-right: 0.5rem;
   }
 }
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.spinner {
+  // @include icon(false, solid);
+  // @include vendor("animation", "spin 1s linear infinite");
+  animation: spin 1s linear infinite;
+  font-size: 1.5em;
+  min-height: 1em;
+  left: 50%;
+  line-height: 1em;
+  margin: -0.5em 0 0 -0.5em;
+}
+.spinner::after {
+  content: "\f110";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}

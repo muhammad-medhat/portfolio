@@ -1,6 +1,4 @@
 import { Col } from "react-bootstrap";
-// import "reactjs-popup/dist/index.css";
-// import "./components.css";
 
 export const ProjectCard = ({ title, desc, image, longDesc }) => {
   // console.log("img", image);
