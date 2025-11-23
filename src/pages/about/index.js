@@ -5,7 +5,7 @@ import React from "react";
 // import "./styles.scss";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-function About() {
+export default function About() {
   const jobSummary = (
     <>
       <h3 className="inner-title">
@@ -54,4 +54,3 @@ function About() {
     </div>
   );
 }
-export default About;
