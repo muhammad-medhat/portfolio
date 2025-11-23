@@ -114,7 +114,8 @@ const RSSFeedReader = ({ feedUrl }) => {
       </ul>
     </nav>
   );
-  if (loading) return <div className="text-center py-4 spinner"></div>;
+  if (loading)
+    return <div className="text-center py-4">Loading articles...</div>;
   if (error) return <div className="text-center py-4 text-danger">{error}</div>;
   const clsSelectedTag = (tag) => {
     return selectedTag.toLowerCase() === tag.toLowerCase()

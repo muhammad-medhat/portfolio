@@ -30,9 +30,9 @@ const YoutubeChannelVideos = ({ apiKey, channelId }) => {
           title: item.snippet.title || "xxx",
           description: item.snippet.description,
         }));
-        const videoIds = playlistData.items.map(
-          (item) => item.snippet.resourceId.videoId
-        );
+        // const videoIds = playlistData.items.map(
+        //   (item) => item.snippet.resourceId.videoId
+        // );
         // allVideos = [...allVideos, ...videoIds];
         allVideos = [...allVideos, ...videoItems];
 
@@ -46,7 +46,7 @@ const YoutubeChannelVideos = ({ apiKey, channelId }) => {
     fetchChannelVideos();
   }, [apiKey, channelId]);
 
-  if (loading) return <div className="text-center py-4 spinner">&nbsp;</div>;
+  if (loading) return <div>Loading...</div>;
   console.log("videos...", videos);
   return (
     <div className="container">

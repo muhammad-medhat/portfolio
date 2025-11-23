@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import "./sidebar.scss";
 import Navmenu from "../NavMenu";
 
-function Sidebar() {
+export const Sidebar = () => {
   const navigate = useNavigate();
   const handleNavigation = (path) => {
     navigate(path);
@@ -30,6 +30,4 @@ function Sidebar() {
       </footer>
     </>
   );
-}
-
-export default Sidebar;
+};
