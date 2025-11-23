@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 // import { Banner } from "../../../com/Banner";
 
-import { Brief } from "../../com/brief";
+import { Brief } from "../../com/Brief/brief";
 import { ProjectsList } from "../../com/ProjectsList";
 import GetinTouch from "../../com/GetInTouch";
 
