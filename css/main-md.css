@@ -2102,16 +2102,16 @@ input[type=submit]:hover,
 input[type=reset]:hover,
 input[type=button]:hover,
 .button:hover {
-  border-color: rgb(209.5, 239, 230.5);
+  border-color: #d2efe7;
   color: #787878 !important;
 }
 input[type=submit]:active,
 input[type=reset]:active,
 input[type=button]:active,
 .button:active {
-  background-color: rgba(182.2, 229.4, 215.8, 0.1);
-  border-color: rgb(182.2, 229.4, 215.8);
-  color: rgb(182.2, 229.4, 215.8) !important;
+  background-color: rgba(182, 229, 216, 0.1);
+  border-color: #b6e5d8;
+  color: #b6e5d8 !important;
 }
 input[type=submit].icon,
 input[type=reset].icon,
@@ -2163,8 +2163,8 @@ input[type=submit].primary:active,
 input[type=reset].primary:active,
 input[type=button].primary:active,
 .button.primary:active {
-  background-color: rgb(242.25, 242.25, 242.25);
-  border-color: rgb(242.25, 242.25, 242.25);
+  background-color: #f2f2f2;
+  border-color: #f2f2f2;
 }
 input[type=submit].disabled, input[type=submit]:disabled,
 input[type=reset].disabled,
@@ -2862,27 +2862,4 @@ blockquote {
 }
 .inner-title i {
   margin-right: 0.5rem;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-.spinner {
-  animation: spin 1s linear infinite;
-  font-size: 1.5em;
-  min-height: 1em;
-  left: 50%;
-  line-height: 1em;
-  margin: -0.5em 0 0 -0.5em;
-}
-
-.spinner::after {
-  content: "\f110";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
 }
