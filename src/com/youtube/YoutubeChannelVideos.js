@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ReactPlayer from "react-player";
 import "./youtube.css";
-const YoutubeChannelVideos = ({ apiKey, channelId }) => {
+function YoutubeChannelVideos({ apiKey, channelId }) {
   const [videos, setVideos] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -80,6 +80,6 @@ const YoutubeChannelVideos = ({ apiKey, channelId }) => {
       </div>
     </div>
   );
-};
+}
 
 export default YoutubeChannelVideos;

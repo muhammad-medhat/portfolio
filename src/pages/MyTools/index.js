@@ -4,7 +4,7 @@ import "./styles.css";
 import { VsExtensions } from "./vsExtensions";
 import { WordpressTools } from "./wordPressTools";
 
-const MyTools = () => {
+function MyTools() {
   useEffect(() => {
     const contentDiv = document.getElementById("main");
     if (contentDiv) {
@@ -48,5 +48,5 @@ const MyTools = () => {
       </Tab.Container>
     </div>
   );
-};
+}
 export default MyTools;

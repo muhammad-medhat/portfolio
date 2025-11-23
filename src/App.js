@@ -7,7 +7,7 @@ import Home from "./pages/Home";
 // import { Projects } from "./pages/projects/Projects";
 import About from "./pages/about/";
 import Contact from "./pages/contact";
-import { Sidebar } from "./com/Sidebar";
+import Sidebar from "./com/Sidebar";
 import MyTools from "./pages/MyTools";
 
 import "./assets/sass/main-md.scss";

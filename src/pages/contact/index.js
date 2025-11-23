@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import GetinTouch from "../../com/GetInTouch";
 
-const Contact = () => {
+function Contact() {
   useEffect(() => {
     const contentDiv = document.getElementById("main");
     if (contentDiv) {
@@ -13,5 +13,5 @@ const Contact = () => {
       <GetinTouch label="contact me" />
     </div>
   );
-};
+}
 export default Contact;

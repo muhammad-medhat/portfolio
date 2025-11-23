@@ -5,7 +5,7 @@ import { Brief } from "../../com/Brief/brief";
 import { ProjectsList } from "../../com/ProjectsList";
 import GetinTouch from "../../com/GetInTouch";
 
-const Home = ({ scrollTop }) => {
+function Home({ scrollTop }) {
   useEffect(() => {
     const contentDiv = document.getElementById("main");
     if (contentDiv) {
@@ -36,6 +36,6 @@ const Home = ({ scrollTop }) => {
 </script> */}
     </div>
   );
-};
+}
 
 export default Home;
