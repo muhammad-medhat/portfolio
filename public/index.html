@@ -63,7 +63,12 @@ wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="a
     <script src="assets/js/main.js"></script>
 
     <script>
-      $(function () {
+      $(document).ready(function () {
+        console.log(
+          "Document is ready. Initializing Poptrox...",
+          $("#projects")
+        );
+        console.log("a.image:", $("a.image"));
         $("#projects").poptrox({
           caption: function ($a) {
             // $a refers to the anchor element
@@ -78,7 +83,7 @@ wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="a
           selector: "a.image",
 
           usePopupNav: true,
-          preload: true,
+          preload: false,
           baseZIndex: 1000,
           usePopupEasyClose: true,
           usePopupLoader: true,
@@ -91,6 +96,7 @@ wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="a
           popupNavPreviousSelector: ".nav-previous", // (Advanced) Popup Nav Previous selector
           popupNavNextSelector: ".nav-next", // (Advanced) Popup Nav Next selector
         });
+        console.log("Poptrox initialization attempted.");
       });
     </script>
   </body>

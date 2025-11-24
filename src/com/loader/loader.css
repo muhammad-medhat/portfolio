@@ -1,0 +1,24 @@
+.loader-wrapper {
+  position: fixed;
+  inset: 0;
+  background: #0d0d0d; /* or your site background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid #444;
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
