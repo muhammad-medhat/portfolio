@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 // import { Banner } from "../../../com/Banner";
 
 import { Brief } from "../../com/Brief/brief";
-import { ProjectsList } from "../../com/ProjectsList";
-import GetinTouch from "../../com/GetInTouch";
+import ProjectsList from "../../com/Projects/ProjectsList";
+import GetinTouch from "../../com/footer/GetInTouch";
 
 function Home({ scrollTop }) {
   useEffect(() => {

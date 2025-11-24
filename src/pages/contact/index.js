@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import GetinTouch from "../../com/GetInTouch";
+import GetinTouch from "../../com/footer/GetInTouch";
 
 function Contact() {
   useEffect(() => {

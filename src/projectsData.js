@@ -1,6 +1,6 @@
 const projects = [
   {
-    title: "sbs-inc",
+    title: "SBS Consultant Inc",
     slug: "sbs",
     desc: "AI Business Automation ",
     image: "img/sbs.png",
@@ -11,7 +11,7 @@ const projects = [
       "AI-powered business automation website designed to streamline processes and help small businesses increase efficiency.",
   },
   {
-    title: "livestores",
+    title: "livestores electronics",
     slug: "ls",
     desc: "Accessories for digital gadgets website ",
     image: "img/Livestores.png",
@@ -23,7 +23,7 @@ const projects = [
   },
 
   {
-    title: "platinum",
+    title: "platinum properties",
     slug: "pl",
     desc: "A real estate agency website ",
     image: "img/platinum.png",
@@ -52,7 +52,7 @@ const projects = [
       "A WordPress blog dedicated to cats, covering tips, guides, and helpful information for cat lovers.",
   },
   {
-    title: "Cook reads",
+    title: "Cook reads cooking blog",
     slug: "cookreads",
     desc: "A WordPress blog to share recipes and cooking tips. Easily search for the perfect dish or learn how to make it yourself. Find new recipes and discover new flavors!",
     image: "img/cookreads.jpg",

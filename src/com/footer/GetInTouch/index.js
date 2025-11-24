@@ -5,7 +5,7 @@ import emailjs from "@emailjs/browser";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { ContactInfo } from "../ContactInfo";
+import { ContactInfo } from "../../ContactInfo";
 
 const GetinTouch = ({ label, msg }) => {
   const formInitialDetails = {

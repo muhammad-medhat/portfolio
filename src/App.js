@@ -13,8 +13,12 @@ import MyTools from "./pages/MyTools";
 import "./assets/sass/main-md.scss";
 import RSSApp from "./com/RssApp";
 import YoutubeChannelVideos from "./com/youtube/YoutubeChannelVideos";
+import { useEffect, useState } from "react";
+import Loader from "./com/loader/loader";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
   document.title = "Muhammad Medhat - Wordpress Developer";
   const scrollTop = () => {
     const contentDiv = document.getElementById("main");
@@ -22,7 +26,27 @@ function App() {
       contentDiv.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
-  return (
+  useEffect(() => {
+    // Wait for ALL images + fonts + assets to load
+    const handleLoad = () => {
+      setLoading(false);
+    };
+    // debugger;
+    document.querySelectorAll("a.image").forEach((el) => {
+      console.log("a.image element:", el);
+    });
+
+    if (document.readyState === "complete") {
+      handleLoad();
+    } else {
+      window.addEventListener("load", handleLoad);
+    }
+
+    return () => window.removeEventListener("load", handleLoad);
+  }, []);
+  return loading ? (
+    <Loader />
+  ) : (
     <div className="wrapper">
       <header id="header" className="flex flex-column justify-content-around">
         <Sidebar />
