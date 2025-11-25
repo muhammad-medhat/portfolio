@@ -2102,16 +2102,16 @@ input[type=submit]:hover,
 input[type=reset]:hover,
 input[type=button]:hover,
 .button:hover {
-  border-color: #d2efe7;
+  border-color: rgb(209.5, 239, 230.5);
   color: #787878 !important;
 }
 input[type=submit]:active,
 input[type=reset]:active,
 input[type=button]:active,
 .button:active {
-  background-color: rgba(182, 229, 216, 0.1);
-  border-color: #b6e5d8;
-  color: #b6e5d8 !important;
+  background-color: rgba(182.2, 229.4, 215.8, 0.1);
+  border-color: rgb(182.2, 229.4, 215.8);
+  color: rgb(182.2, 229.4, 215.8) !important;
 }
 input[type=submit].icon,
 input[type=reset].icon,
@@ -2163,8 +2163,8 @@ input[type=submit].primary:active,
 input[type=reset].primary:active,
 input[type=button].primary:active,
 .button.primary:active {
-  background-color: #f2f2f2;
-  border-color: #f2f2f2;
+  background-color: rgb(242.25, 242.25, 242.25);
+  border-color: rgb(242.25, 242.25, 242.25);
 }
 input[type=submit].disabled, input[type=submit]:disabled,
 input[type=reset].disabled,
@@ -2434,6 +2434,9 @@ input[type=button]:disabled,
 }
 
 /* Main */
+#main > .inner {
+  min-height: 100vh;
+}
 #main .inner {
   padding: 0 1rem;
 }
@@ -2649,7 +2652,6 @@ body.is-touch .poptrox-popup .closer {
   /* Header */
   #header {
     padding: 6em 3em 3em 3em;
-    width: 30%;
   }
   #header h1 {
     font-size: 1.25em;
@@ -2669,12 +2671,6 @@ body.is-touch .poptrox-popup .closer {
     padding-left: 0;
   }
   /* Main */
-  #main {
-    margin-left: 30%;
-    max-width: none;
-    padding: 6em 3em 3em 3em;
-    width: calc(100% - 30%);
-  }
 }
 /* Medium */
 @media screen and (max-width: 980px) {
