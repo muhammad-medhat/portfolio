@@ -1,15 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.94797581.css",
-<<<<<<< HEAD
-    "main.js": "/portfolio/static/js/main.923155fc.js",
-=======
-<<<<<<< HEAD
-    "main.js": "/portfolio/static/js/main.0e54ce4f.js",
-=======
-    "main.js": "/portfolio/static/js/main.02267fae.js",
->>>>>>> 8198b05ef40077de90bc3dfd9c8bda27e2c03cb6
->>>>>>> ab7e0825e30087538cb7279c8c8b23fcfa1f31c1
+    "main.css": "/portfolio/static/css/main.91ddd222.css",
+    "main.js": "/portfolio/static/js/main.aa3bee84.js",
     "reactPlayerYouTube.js": "/portfolio/static/js/reactPlayerYouTube.05ccec8e.chunk.js",
     "reactPlayerSoundCloud.js": "/portfolio/static/js/reactPlayerSoundCloud.3f358c16.chunk.js",
     "reactPlayerVimeo.js": "/portfolio/static/js/reactPlayerVimeo.e193c36c.chunk.js",
@@ -42,16 +34,8 @@
     "static/media/fa-regular-400.woff": "/portfolio/static/media/fa-regular-400.bb58e57c48a3e911f15f.woff",
     "static/media/fa-regular-400.woff2": "/portfolio/static/media/fa-regular-400.7a3337626410ca2f4071.woff2",
     "index.html": "/portfolio/index.html",
-    "main.94797581.css.map": "/portfolio/static/css/main.94797581.css.map",
-<<<<<<< HEAD
-    "main.923155fc.js.map": "/portfolio/static/js/main.923155fc.js.map",
-=======
-<<<<<<< HEAD
-    "main.0e54ce4f.js.map": "/portfolio/static/js/main.0e54ce4f.js.map",
-=======
-    "main.02267fae.js.map": "/portfolio/static/js/main.02267fae.js.map",
->>>>>>> 8198b05ef40077de90bc3dfd9c8bda27e2c03cb6
->>>>>>> ab7e0825e30087538cb7279c8c8b23fcfa1f31c1
+    "main.91ddd222.css.map": "/portfolio/static/css/main.91ddd222.css.map",
+    "main.aa3bee84.js.map": "/portfolio/static/js/main.aa3bee84.js.map",
     "reactPlayerYouTube.05ccec8e.chunk.js.map": "/portfolio/static/js/reactPlayerYouTube.05ccec8e.chunk.js.map",
     "reactPlayerSoundCloud.3f358c16.chunk.js.map": "/portfolio/static/js/reactPlayerSoundCloud.3f358c16.chunk.js.map",
     "reactPlayerVimeo.e193c36c.chunk.js.map": "/portfolio/static/js/reactPlayerVimeo.e193c36c.chunk.js.map",
@@ -68,15 +52,7 @@
     "reactPlayerPreview.d6dfef32.chunk.js.map": "/portfolio/static/js/reactPlayerPreview.d6dfef32.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.94797581.css",
-<<<<<<< HEAD
-    "static/js/main.923155fc.js"
-=======
-<<<<<<< HEAD
-    "static/js/main.0e54ce4f.js"
-=======
-    "static/js/main.02267fae.js"
->>>>>>> 8198b05ef40077de90bc3dfd9c8bda27e2c03cb6
->>>>>>> ab7e0825e30087538cb7279c8c8b23fcfa1f31c1
+    "static/css/main.91ddd222.css",
+    "static/js/main.aa3bee84.js"
   ]
 }

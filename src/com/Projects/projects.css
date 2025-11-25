@@ -51,22 +51,11 @@
   padding: 20px;
 }
 
-/* Columns grid layout */
-.columns-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  padding: 20px;
-}
-
-.columns-grid .thumb-wrapper {
-  flex: 1 1 calc(33.333% - 16px);
-  max-width: calc(33.333% - 16px);
-}
 /* open url lightbox button styles */
 .visit-btn {
   display: inline-block;
-  margin-top: 8px;
+  /* margin-top: 8px; */
+  margin: 1rem;
   padding: 8px 14px;
   border-radius: 8px;
   backdrop-filter: blur(6px);
@@ -81,4 +70,43 @@
 .visit-btn:hover {
   background: rgba(255, 255, 255, 0.35);
   transform: translateY(-2px);
+}
+
+/* Columns grid layout */
+.columns-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+}
+
+.columns-grid .thumb-wrapper {
+  flex: 1 1 calc(33.333% - 16px);
+  max-width: calc(33.333% - 16px);
+}
+
+@media (max-width: 900px) {
+  .columns-grid .thumb-wrapper {
+    flex: 1 1 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+  }
+}
+
+/* Small: 1 column */
+@media (max-width: 600px) {
+  .columns-grid {
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .columns-grid .thumb-wrapper {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+/**/
+@media (max-width: 900px) {
+  .yarl__container {
+    flex-direction: column;
+  }
 }

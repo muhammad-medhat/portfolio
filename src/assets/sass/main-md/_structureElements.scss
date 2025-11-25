@@ -133,14 +133,8 @@
 /* Main */
 
 #main {
-  // grid-area: main;
-  // margin-left: $size-header-width;
-  // max-width: 50em + $size-header-pad;
-
-  // width: calc(100% - #{$size-header-width});
-  main {
-    // padding: ($size-header-pad * 2) $size-header-pad $size-header-pad
-    //   $size-header-pad;
+  > .inner {
+    min-height: 100vh;
   }
   .inner {
     padding: 0 1rem;

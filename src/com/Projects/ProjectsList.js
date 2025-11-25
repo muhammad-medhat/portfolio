@@ -53,6 +53,11 @@ function ProjectsList({ scrollTop }) {
         close={() => setOpen(false)}
         slides={slides}
         plugins={[Captions]}
+        styles={{
+          container: {
+            backgroundColor: "rgba(0, 0, 0, .6)",
+          },
+        }}
         captions={{
           descriptionTextAlign: "center",
           titleTextAlign: "center",
@@ -70,7 +75,7 @@ function ProjectsList({ scrollTop }) {
                   <FontAwesomeIcon icon={faChain} />
                 </a>
               ) : (
-                "Outdated Project"
+                <p className="visit-btn">Outdated Project</p>
               )}
             </div>
           ),

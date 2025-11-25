@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ReactPlayer from "react-player";
 import "./youtube.css";
+import Loader from "../loader/loader";
 function YoutubeChannelVideos({ apiKey, channelId }) {
   const [videos, setVideos] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -46,7 +47,7 @@ function YoutubeChannelVideos({ apiKey, channelId }) {
     fetchChannelVideos();
   }, [apiKey, channelId]);
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <Loader isInner={true} />;
   console.log("videos...", videos);
   return (
     <div className="container">

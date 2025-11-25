@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import RssItem from "./RssItem";
 import { TopicsGroup } from "./TopicsGroup";
 import { tagGroups } from "./dt";
+import Loader from "../loader/loader";
 
 const RSSFeedReader = ({ feedUrl }) => {
   const [feedItems, setFeedItems] = useState([]);
@@ -114,8 +115,7 @@ const RSSFeedReader = ({ feedUrl }) => {
       </ul>
     </nav>
   );
-  if (loading)
-    return <div className="text-center py-4">Loading articles...</div>;
+  if (loading) return <Loader isInner={true} />;
   if (error) return <div className="text-center py-4 text-danger">{error}</div>;
   const clsSelectedTag = (tag) => {
     return selectedTag.toLowerCase() === tag.toLowerCase()
