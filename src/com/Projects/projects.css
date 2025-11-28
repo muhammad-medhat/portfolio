@@ -28,17 +28,22 @@
 /* 🔥 Glass Hover Effect */
 .glass-hover {
   position: absolute;
+  justify-content: space-between;
   bottom: 0;
   width: 100%;
   padding: 12px;
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: white;
   backdrop-filter: blur(12px);
   background: rgba(0, 0, 0, 0.35);
   border-top: 1px solid rgb(0, 0, 255);
   opacity: 0;
   transition: 0.3s ease;
+}
+.out {
+  font-weight: bold;
+  font-size: 0.75rem;
 }
 
 .thumb-wrapper:hover .glass-hover {
@@ -53,9 +58,10 @@
 
 /* open url lightbox button styles */
 .visit-btn {
-  display: inline-block;
+  /* display: inline-block; */
   /* margin-top: 8px; */
-  margin: 1rem;
+  /* margin: 1rem; */
+  justify-content: space-between;
   padding: 8px 14px;
   border-radius: 8px;
   backdrop-filter: blur(6px);

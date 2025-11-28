@@ -52,7 +52,7 @@ const projects = [
       "A WordPress blog dedicated to cats, covering tips, guides, and helpful information for cat lovers.",
   },
   {
-    title: "Cook reads cooking blog",
+    title: "Cook reads blog",
     slug: "cookreads",
     desc: "A WordPress blog to share recipes and cooking tips. Easily search for the perfect dish or learn how to make it yourself. Find new recipes and discover new flavors!",
     image: "img/cookreads.jpg",
