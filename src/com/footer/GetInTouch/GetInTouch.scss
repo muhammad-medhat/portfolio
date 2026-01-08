@@ -1,0 +1,30 @@
+.hire-method-section {
+  // border: solid red;
+}
+.hire-method {
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(240, 240, 240);
+  .form-check {
+  }
+  label {
+    color: white;
+  }
+  p {
+    display: flex;
+    align-items: center;
+  }
+  input[type="radio"] {
+    // border: solid;
+    opacity: 0.01;
+    z-index: 100;
+    + label::before {
+      display: none;
+    }
+  }
+}
+.elharefa-cont {
+  // border: solid;
+  padding: 1.5rem;
+}

@@ -1,5 +1,16 @@
 const projects = [
   {
+    title: "Lieferanto Trading",
+    slug: "lieferanto",
+    desc: "Trading,Import & Export  Company ",
+    image: "img/lieferanto.png",
+
+    cat: 1,
+    url: "https://lieferanto.com",
+    longDesc:
+      "A corporate WordPress website for a trading, import, and export company with a professional design.",
+  },
+  {
     title: "SBS Consultant Inc",
     slug: "sbs",
     desc: "AI Business Automation ",
@@ -52,7 +63,7 @@ const projects = [
       "A WordPress blog dedicated to cats, covering tips, guides, and helpful information for cat lovers.",
   },
   {
-    title: "Cook reads blog",
+    title: "Cookreads blog",
     slug: "cookreads",
     desc: "A WordPress blog to share recipes and cooking tips. Easily search for the perfect dish or learn how to make it yourself. Find new recipes and discover new flavors!",
     image: "img/cookreads.jpg",
