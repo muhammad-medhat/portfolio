@@ -1,6 +1,5 @@
-// import React, { useEffect } from "react";
-import PeoplePerHourWidget from "./PeoplePerHourWidget";
 import elharefaLogo from "../../assets/md/logo-elharefa.png";
+import pphLogo from "../../assets/md/pph.jpg";
 import emailIcon from "../../assets/md/envelope.png";
 
 function HireMe({ setHireMethod }) {
@@ -8,7 +7,7 @@ function HireMe({ setHireMethod }) {
     return (
       <div className="form-check d-flex justify-content-center align-items-center ">
         <input
-          className="form-check-input1 btn-check"
+          className="form-check-input btn-check"
           type="radio"
           name="hireMethod"
           id={`hireMethod-${hireMethod}`}
@@ -26,7 +25,7 @@ function HireMe({ setHireMethod }) {
               src={img}
               alt=""
               className="rounded"
-              style={{ maxHeight: "40px" }}
+              style={{ maxHeight: "150px" }}
             />
           ) : null}
           {text}
@@ -36,32 +35,31 @@ function HireMe({ setHireMethod }) {
   };
   return (
     <div className="hire-method">
-      <h3>How would you like to hire me?</h3>
-      <h4>Choose the option that works best for you.</h4>
-      <div className="hire-method-platform">
+      <div className="hire-info">
+        <h3>How would you like to hire me?</h3>
+        <h4>Choose the option that works best for you.</h4>
+      </div>
+      <div className="hire-method-platform btn-group1">
         {hireMeButton({
           hireMethod: "elharefa",
           url: "https://www.elharefa.com/en/freelancers/p/muhammad.medhat",
-          text: "Hire on Elharefa",
+          text: "ElHarefa → Hire for full project",
           img: elharefaLogo,
           def: true,
         })}
         {hireMeButton({
+          hireMethod: "pph",
+          url: "https://www.elharefa.com/en/freelancers/p/muhammad.medhat",
+          text: "PeoplePerHour → Buy this offer",
+          img: pphLogo,
+        })}
+        {hireMeButton({
           hireMethod: "email",
           url: "https://elharefa.com",
-          text: "send a message ",
+          text: "Email → Let’s talk",
           img: emailIcon,
         })}
-        <PeoplePerHourWidget />
-        {/* https://www.elharefa.com/en/freelancers/p/muhammad.medhat */}
       </div>
-      <p className="d-flex flex-column">
-        <h4>Not sure which one to choose?</h4>
-        <ul>
-          <li>ElHarefa is recommended for formal projects.</li>
-          <li>Send a message via email for informal inquiries.</li>
-        </ul>
-      </p>
     </div>
   );
 }

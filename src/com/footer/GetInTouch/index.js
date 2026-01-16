@@ -1,14 +1,13 @@
-import React from "react";
 import { useRef, useState } from "react";
-import { Row } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { ContactInfo } from "../../ContactInfo";
 import HireMe from "../../HireMe/HireMe";
 import "./GetInTouch.scss";
 import Elharefa from "../../HireMe/Elharefa";
+import PeoplePerHour from "../../HireMe/PeoplePerHour";
+import ContactEmail from "../../HireMe/ContactEmail";
 
 const GetinTouch = ({ label, msg }) => {
   const formInitialDetails = {
@@ -85,73 +84,22 @@ const GetinTouch = ({ label, msg }) => {
         <div className="hire-method-section">
           <HireMe setHireMethod={hireMethodSelected} />
         </div>
-        {hireMethod === "email" ? (
-          <Row>
-            <div className="col-8 col-12-small">
-              <form ref={form} onSubmit={handleSubmit}>
-                <p
-                  className="p-3"
-                  style={{
-                    textAlign: "justify",
-                    borderRadius: "5px",
-                    backgroundColor: "rgba(0, 0, 0, 0.1)",
-                  }}>
-                  {msg}
-                </p>
-                <div className="row gtr-uniform gtr-50">
-                  <div className="col-6 col-12-xsmall">
-                    <input
-                      type="text"
-                      value={formDetails.userName}
-                      placeholder="Full Name"
-                      name="user_name"
-                      onChange={(e) => onFormUpdate("userName", e.target.value)}
-                    />
-                  </div>
-                  <div className="col-6 col-12-xsmall">
-                    <input
-                      type="email"
-                      value={formDetails.email}
-                      placeholder="Email"
-                      name="user_email"
-                      onChange={(e) => onFormUpdate("email", e.target.value)}
-                    />
-                  </div>
-                  <div className="col-12">
-                    <input
-                      type="text"
-                      value={formDetails.subject}
-                      placeholder="Subject"
-                      name="subject"
-                      onChange={(e) => onFormUpdate("subject", e.target.value)}
-                    />
-                  </div>
-                  <div className="col-12">
-                    <textarea
-                      rows="6"
-                      value={formDetails.message}
-                      placeholder="Message"
-                      name="message"
-                      onChange={(e) =>
-                        onFormUpdate("message", e.target.value)
-                      }></textarea>
-                  </div>
-                </div>
-
-                <input
-                  type="submit"
-                  value={buttonText}
-                  style={{ marginTop: "1em", width: "100%" }}
-                />
-              </form>
-            </div>
-            <div className="col-4 col-12-small">
-              <ContactInfo />
-            </div>
-          </Row>
-        ) : (
-          <Elharefa />
-        )}
+        <div className="hire-show">
+          {hireMethod === "email" ? (
+            <ContactEmail
+              form={form}
+              formDetails={formDetails}
+              onFormUpdate={onFormUpdate}
+              handleSubmit={handleSubmit}
+              buttonText={buttonText}
+              msg={msg}
+            />
+          ) : hireMethod === "elharefa" ? (
+            <Elharefa />
+          ) : (
+            <PeoplePerHour />
+          )}
+        </div>
       </>
     </div>
   );

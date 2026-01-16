@@ -15,6 +15,8 @@ function ProjectsList({ scrollTop }) {
   const [openIndex, setOpenIndex] = useState(-1);
 
   const wp = projects.filter((p) => p.cat === 1);
+  const ac = projects.filter((p) => p.cat !== 1);
+  debugger;
 
   const slides = wp.map((p) => ({
     src: p.image,
@@ -22,13 +24,7 @@ function ProjectsList({ scrollTop }) {
     description: p.longDesc,
     url: p.url,
   }));
-  const visitWebsite = (url) => {
-    // debugger;
-    console.log("url", url);
-    if (url) {
-      window.open(url, "_blank", "noopener,noreferrer");
-    }
-  };
+
   return (
     <div className="my-gallery">
       {/* Simple grid to show thumbnails */}
@@ -48,11 +44,7 @@ function ProjectsList({ scrollTop }) {
                     href={p.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="visit-btn"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      visitWebsite(p.url);
-                    }}>
+                    className="visit-btn">
                     <FontAwesomeIcon icon={faChain} />
                   </a>
                 </span>

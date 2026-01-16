@@ -1,6 +1,34 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+// import HireMe from "../../com/HireMe/HireMe";
 
 export default function About() {
+  const widgetRef = useRef(null);
+  useEffect(() => {
+    if (!widgetRef.current) return;
+    if (document.getElementById("pph-widget-script")) return;
+    const script = document.createElement("script");
+    script.id = "pph-widget-script";
+    script.type = "text/javascript";
+    const useSSL = window.location.protocol === "https:";
+    script.src =
+      (useSSL ? "https:" : "http:") +
+      "//www.peopleperhour.com/hire/3143609927/55859.js" +
+      "?width=245&height=320&orientation=vertical&theme=dark" +
+      "&hourlies=1076023%2C1078188&rnd=" +
+      Math.floor(Math.random() * 10000);
+
+    // 🔑 Insert script AFTER the div (this is what PPH expects)
+    widgetRef.current.after(script);
+    debugger;
+
+    return () => {
+      // cleanup
+      if (widgetRef.current) {
+        widgetRef.current.innerHTML = "";
+      }
+      script.remove();
+    };
+  }, []);
   const jobSummary = (
     <>
       <h3 className="inner-title">
@@ -43,6 +71,10 @@ export default function About() {
         <div className="d-flex">
           <div>
             <p>{jobSummary}</p>
+
+            {/* REQUIRED mount point */}
+            <div id="pph-hireme" ref={widgetRef}></div>
+            {/* <HireMe /> */}
           </div>
         </div>
       </div>

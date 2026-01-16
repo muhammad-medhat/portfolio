@@ -1,30 +1,210 @@
-.hire-method-section {
-  // border: solid red;
-}
-.hire-method {
-  text-transform: capitalize;
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(240, 240, 240);
-  .form-check {
+/* Hire Method Section (SCSS) */
+/* Works with: .hire-method-section > .hire-method > .hire-info + .hire-method-platform.btn-group1 */
+
+.hire-method-section,
+.hire-show {
+  --hm-text: #111827;
+  --hm-muted: rgba(17, 24, 39, 0.7);
+  --hm-border: rgba(0, 0, 0, 0.1);
+  --hm-surface: #ffffff;
+  --hm-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+  --hm-shadow-hover: 0 16px 40px rgba(0, 0, 0, 0.12);
+  --hm-accent: #198754; /* bootstrap success */
+  --hm-accent-hover: #59c592; /* bootstrap success */
+  --hm-radius: 18px;
+  --hm-gap: 14px;
+
+  padding: clamp(18px, 3vw, 32px) 0;
+
+  .hire-method {
+    background: var(--hm-surface);
+    border: 1px solid var(--hm-border);
+    border-radius: var(--hm-radius);
+    box-shadow: var(--hm-shadow);
+    padding: clamp(18px, 3vw, 28px);
+    overflow: hidden;
+    input[type="radio"] {
+      + label::before {
+        display: none;
+      }
+    }
+
+    /* subtle top gradient */
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto 0;
+      height: 6px;
+      background: linear-gradient(
+        90deg,
+        rgba(25, 135, 84, 0.9),
+        rgba(25, 135, 84, 0.2)
+      );
+    }
   }
-  label {
-    color: white;
+
+  .hire-info {
+    text-align: left;
+    margin-bottom: clamp(14px, 2vw, 18px);
+
+    h3 {
+      margin: 0 0 6px 0;
+      font-size: clamp(18px, 2.2vw, 26px);
+      line-height: 1.2;
+      color: var(--hm-text);
+      letter-spacing: -0.02em;
+      font-weight: 800;
+    }
+
+    h4 {
+      margin: 0;
+      font-size: clamp(13px, 1.3vw, 16px);
+      color: var(--hm-muted);
+      font-weight: 500;
+    }
   }
-  p {
-    display: flex;
-    align-items: center;
-  }
-  input[type="radio"] {
-    // border: solid;
-    opacity: 0.01;
-    z-index: 100;
-    + label::before {
-      display: none;
+
+  /* Grid for options */
+
+  .hire-method-platform {
+    display: grid;
+    gap: var(--hm-gap);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+
+    /* Tablet */
+    @media (max-width: 992px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /* Mobile */
+    @media (max-width: 576px) {
+      grid-template-columns: 1fr;
+    }
+
+    .form-check {
+      margin: 0; /* bootstrap resets */
+      padding: 0;
+      width: 100%;
+
+      /* Ensure label takes full width */
+      > .btn {
+        width: 100%;
+      }
+    }
+
+    /* The label is the “card button” */
+    label.btn.btn-outline-success {
+      border: 1px solid var(--hm-border) !important;
+      background: var(--hm-surface) !important;
+      color: var(--hm-text) !important;
+
+      border-radius: 16px !important;
+      padding: 14px 14px !important;
+
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      justify-content: center !important;
+
+      min-height: 92px;
+      gap: 10px;
+
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+      transition: transform 160ms ease, box-shadow 160ms ease,
+        border-color 160ms ease, background 160ms ease;
+
+      /* optional: slightly tighter on small screens */
+      @media (max-width: 576px) {
+        min-height: 84px;
+        padding: 12px 12px !important;
+      }
+
+      /* Make the text look like title + hint (even if it’s one line) */
+      font-weight: 700;
+      letter-spacing: -0.01em;
+
+      /* logo row */
+      img {
+        width: 100%;
+        // height: 40px;
+        object-fit: contain;
+        border-radius: 10px !important;
+        background: rgba(0, 0, 0, 0.03);
+        padding: 6px;
+      }
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 14px 26px rgba(0, 0, 0, 0.1);
+        border-color: rgba(25, 135, 84, 0.35) !important;
+      }
+
+      &:active {
+        transform: translateY(0);
+      }
+    }
+
+    /* Checked state (Bootstrap: input.btn-check:checked + label.btn) */
+    .btn-check:checked + label.btn.btn-outline-success {
+      border-color: rgba(25, 135, 84, 0.55) !important;
+      box-shadow: 0 16px 30px rgba(25, 135, 84, 0.18);
+      background: linear-gradient(
+        180deg,
+        rgba(25, 135, 84, 0.1),
+        rgba(25, 135, 84, 0.04)
+      ) !important;
+
+      /* left accent */
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 10px;
+        bottom: 10px;
+        width: 5px;
+        border-radius: 999px;
+        background: rgba(25, 135, 84, 0.9);
+      }
+    }
+
+    /* Focus ring for accessibility */
+    .btn-check:focus + label.btn.btn-outline-success,
+    .btn-check:focus-visible + label.btn.btn-outline-success {
+      outline: 0;
+      box-shadow: 0 0 0 4px rgba(25, 135, 84, 0.18),
+        0 10px 24px rgba(0, 0, 0, 0.08);
+      border-color: rgba(25, 135, 84, 0.55) !important;
     }
   }
 }
-.elharefa-cont {
-  // border: solid;
-  padding: 1.5rem;
+
+/* Optional: dark mode support if your site uses it */
+@media (prefers-color-scheme: dark) {
+  .hire-method-section {
+    --hm-bg: rgba(17, 24, 39, 0.6);
+    --hm-surface: rgba(17, 24, 39, 0.75);
+    --hm-border: rgba(255, 255, 255, 0.1);
+    --hm-text: #f3f4f6;
+    --hm-muted: rgba(243, 244, 246, 0.65);
+    --hm-shadow: 0 12px 34px rgba(0, 0, 0, 0.35);
+
+    .hire-method-platform.btn-group1 label.btn.btn-outline-success img {
+      background: rgba(255, 255, 255, 0.06);
+    }
+  }
+}
+.hire-show {
+  // border: solid red 2px;
+  text-transform: capitalize;
+  a.btn,
+  form input[type="submit"] {
+    background-color: var(--hm-accent) !important;
+    color: #fff !important;
+    &:hover {
+      background-color: var(--hm-accent-hover) !important;
+    }
+  }
 }
