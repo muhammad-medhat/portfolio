@@ -9,6 +9,7 @@ const RSSFeedReader = ({ feedUrl }) => {
   const [feedItems, setFeedItems] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [numArticles, setNumArticles] = useState(0);
   // 🆕 Pagination state
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 7;
@@ -26,9 +27,11 @@ const RSSFeedReader = ({ feedUrl }) => {
     const fetchArticles = async () => {
       try {
         const response = await fetch(feedUrl);
+        // debugger;
         if (!response.ok)
           throw new Error(`HTTP error! status: ${response.status}`);
         const data = await response.json();
+        setNumArticles(data.length);
         const items = data.map((item) => ({
           title: item.title || "No title",
           link: item.url || "#",
@@ -134,6 +137,12 @@ const RSSFeedReader = ({ feedUrl }) => {
           clsSelectedTag={clsSelectedTag}
           handleTagChange={handleTagChange}
         />
+        {numArticles > 0 && (
+          <div className="mt-2">
+            <strong>{filteredItems.length}</strong> articles found for "
+            {selectedTag.toUpperCase()}"
+          </div>
+        )}
       </div>
       <div className="row rss-feed">
         {currentItems

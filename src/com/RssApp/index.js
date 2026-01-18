@@ -4,7 +4,7 @@ function RSSApp() {
     <div>
       {/* <RSSFeedReader feedUrl="https://api.rss2json.com/v1/api.json?rss_url=https://dev.to/feed/muhammadmedhat" /> */}
       {/* dev.to API */}
-      <RSSFeedReader feedUrl="https://dev.to/api/articles?username=muhammadmedhat" />
+      <RSSFeedReader feedUrl="https://dev.to/api/articles?username=muhammadmedhat&per_page=100&page=1" />
     </div>
   );
 }
