@@ -1,17 +1,27 @@
-
-ul{
+ul {
   list-style: none;
   /* max-width: 50%; */
 }
 
-.fa{
+.fa {
   font-size: xx-large;
-  color: var(--blue-theme-main-color)
+  color: var(--blue-theme-main-color);
 }
-.sm{
+.sm {
   font-size: smaller;
-    margin-left: 1rem;
+  margin-left: 1rem;
 }
-.no-border{
-  border:none !important;
+.no-border {
+  border: none !important;
+}
+section {
+  /* border: solid; */
+  padding: 2rem 4rem;
+}
+.blockquote {
+  border-left: 4px solid;
+}
+ul li {
+  letter-spacing: 1px;
+  font-size: smaller;
 }

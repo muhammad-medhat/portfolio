@@ -19,7 +19,6 @@ import Loader from "./com/loader/loader";
 function App() {
   const [loading, setLoading] = useState(true);
 
-  document.title = "Muhammad Medhat - Wordpress Developer";
   const scrollTop = () => {
     const contentDiv = document.getElementById("main");
     if (contentDiv) {

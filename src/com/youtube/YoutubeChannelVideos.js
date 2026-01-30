@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import ReactPlayer from "react-player";
 import "./youtube.css";
 import Loader from "../loader/loader";
+import { Helmet } from "react-helmet-async";
 function YoutubeChannelVideos({ apiKey, channelId }) {
   const [videos, setVideos] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -10,7 +11,7 @@ function YoutubeChannelVideos({ apiKey, channelId }) {
     const fetchChannelVideos = async () => {
       // Step 1: Get the channel's uploads playlist ID
       const channelResponse = await fetch(
-        `https://www.googleapis.com/youtube/v3/channels?part=contentDetails&id=${channelId}&key=${apiKey}`
+        `https://www.googleapis.com/youtube/v3/channels?part=contentDetails&id=${channelId}&key=${apiKey}`,
       );
       const channelData = await channelResponse.json();
       const uploadsPlaylistId =
@@ -22,7 +23,7 @@ function YoutubeChannelVideos({ apiKey, channelId }) {
 
       do {
         const playlistResponse = await fetch(
-          `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${uploadsPlaylistId}&maxResults=50&key=${apiKey}&pageToken=${nextPageToken}`
+          `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${uploadsPlaylistId}&maxResults=50&key=${apiKey}&pageToken=${nextPageToken}`,
         );
         const playlistData = await playlistResponse.json();
         console.log("playlistData", playlistData);
@@ -51,6 +52,15 @@ function YoutubeChannelVideos({ apiKey, channelId }) {
   console.log("videos...", videos);
   return (
     <div className="container">
+      <Helmet>
+        <title>
+          Muhammad Medhat – Senior WordPress Developer | YouTube Channel Videos
+        </title>
+        <meta
+          name="description"
+          content="YouTube channel videos  for web tutorials and WordPress tips."
+        />
+      </Helmet>
       <div className="video-grid">
         {videos.map((video) => (
           <div className="video-card" key={video.id}>
@@ -68,7 +78,7 @@ function YoutubeChannelVideos({ apiKey, channelId }) {
                 onClick={() =>
                   window.open(
                     `https://www.youtube.com/watch?v=${video.id}`,
-                    "_blank"
+                    "_blank",
                   )
                 }>
                 <i className="fa-brands fa-youtube"></i>&nbsp; Watch on
