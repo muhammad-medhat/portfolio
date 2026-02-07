@@ -19,12 +19,6 @@ import Loader from "./com/loader/loader";
 function App() {
   const [loading, setLoading] = useState(true);
 
-  const scrollTop = () => {
-    const contentDiv = document.getElementById("main");
-    if (contentDiv) {
-      contentDiv.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  };
   useEffect(() => {
     // Wait for ALL images + fonts + assets to load
     const handleLoad = () => {
@@ -53,30 +47,23 @@ function App() {
       <main id="main" className="main flex flex-column justify-content-between">
         <div className="inner flex flex-column justify-content-between">
           <Routes>
-            <Route exact path={`/`} element={<Home scrollTop={scrollTop} />} />
-            {/* <Route path={`/projects`} element={<Projects scrollTop={scrollTop}/>} /> */}
-            <Route path={`/about`} element={<About scrollTop={scrollTop} />} />
-            <Route
-              path={`/contact`}
-              element={<Contact scrollTop={scrollTop} />}
-            />
-            <Route
-              path={`/tools`}
-              element={<MyTools scrollTop={scrollTop} />}
-            />
-            <Route path={`/rss`} element={<RSSApp scrollTop={scrollTop} />} />
+            <Route exact path={`/`} element={<Home />} />
+            {/* <Route path={`/projects`} element={<Projects />} /> */}
+            <Route path={`/about`} element={<About />} />
+            <Route path={`/contact`} element={<Contact />} />
+            <Route path={`/tools`} element={<MyTools />} />
+            <Route path={`/rss`} element={<RSSApp />} />
             <Route
               path={`/youtube`}
               element={
                 <YoutubeChannelVideos
                   apiKey={"AIzaSyAyd7uDEf5pKNOJRyhuQI2D2xhpaUm-h8Q"}
                   channelId={"UCiLy-biaIPs3QddeMLIo2bw"}
-                  scrollTop={scrollTop}
                 />
               }
             />
             {/* handle 404 */}
-            <Route path="*" element={<Home scrollTop={scrollTop} />} />
+            <Route path="*" element={<Home />} />
           </Routes>
         </div>
         <Footer />

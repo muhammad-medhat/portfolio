@@ -8,6 +8,7 @@ import "./GetInTouch.scss";
 import Elharefa from "../../HireMe/Elharefa";
 import PeoplePerHour from "../../HireMe/PeoplePerHour";
 import ContactEmail from "../../HireMe/ContactEmail";
+import ScrollTop from "../../ScrollTop";
 
 const GetinTouch = ({ label, msg }) => {
   const formInitialDetails = {
@@ -47,7 +48,7 @@ const GetinTouch = ({ label, msg }) => {
           "service_s6y27bd",
           "template_55rjjjc",
           form.current,
-          "W32iZXK0u86ahOjm9"
+          "W32iZXK0u86ahOjm9",
         )
         .then(
           (result) => {
@@ -57,7 +58,7 @@ const GetinTouch = ({ label, msg }) => {
           (error) => {
             console.log(error.text);
             showToastMessageError(error.text);
-          }
+          },
         );
     }
     setButtonText("Send");
@@ -99,6 +100,7 @@ const GetinTouch = ({ label, msg }) => {
           ) : (
             <PeoplePerHour />
           )}
+          <ScrollTop />
         </div>
       </>
     </div>

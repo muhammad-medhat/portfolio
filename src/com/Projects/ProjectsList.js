@@ -9,7 +9,8 @@ import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import Captions from "yet-another-react-lightbox/plugins/captions";
 import "yet-another-react-lightbox/plugins/captions.css";
-function ProjectsList({ scrollTop }) {
+import ScrollTop from "../ScrollTop.js";
+function ProjectsList() {
   const [layout, setLayout] = useState("columns");
   // -1 means closed; 0..n is open index
   const [openIndex, setOpenIndex] = useState(-1);
@@ -55,12 +56,8 @@ function ProjectsList({ scrollTop }) {
           </div>
         ))}
       </div>
-      <div className="d-flex align-items-center justify-content-center move-top">
-        <p onClick={scrollTop}>
-          Top <FontAwesomeIcon icon={faArrowUp} />
-        </p>
-      </div>
 
+      <ScrollTop />
       <Lightbox
         open={openIndex >= 0}
         index={openIndex >= 0 ? openIndex : 0}

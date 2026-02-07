@@ -5,6 +5,8 @@ import { Brief } from "../../com/Brief/brief";
 import ProjectsList from "../../com/Projects/ProjectsList";
 import GetinTouch from "../../com/footer/GetInTouch";
 import { Helmet } from "react-helmet-async";
+import SeoContent from "../../com/SeoContent";
+import ScrollTop from "../../com/ScrollTop";
 
 function Home({ scrollTop }) {
   useEffect(() => {
@@ -25,7 +27,8 @@ function Home({ scrollTop }) {
         />
       </Helmet>
       <Brief />
-      <ProjectsList scrollTop={scrollTop} />
+      <ProjectsList />
+      <SeoContent />
       <GetinTouch />
     </div>
   );
