@@ -28,7 +28,7 @@ function Home({ scrollTop }) {
       </Helmet>
       <Brief />
       <ProjectsList />
-      <SeoContent />
+      {/* <SeoContent /> */}
       <GetinTouch />
     </div>
   );
