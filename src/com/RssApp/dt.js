@@ -5,6 +5,7 @@ const tagGroupKeys = [
   "wordpress",
   "vscode",
   "mobile",
+  "ai",
 ];
 const tagGroups = {
   frontend: ["html", "css", "javascript", "react", "vue", "svelte"],
@@ -20,6 +21,7 @@ const tagGroups = {
   ],
   vscode: ["vscode", "editor", "ide"],
   wordpress: ["php", "javascript", "html", "css", "cli", "wpcli", "wordpress"],
+  ai: ["ai"],
   all: [], // fallback for "All"
 };
 export { tagGroups, tagGroupKeys };

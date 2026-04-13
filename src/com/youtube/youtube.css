@@ -114,3 +114,24 @@
     gap: 1em;
   }
 }
+/****** Additional styling for the channel info */
+.channel-info {
+  /* display: flex;
+  align-items: center;
+  gap: 15px; */
+  margin-top: 20px;
+  /* border: 1px solid #ccc; */
+}
+
+.channel-info img {
+  border-radius: 50%;
+  width: 60px;
+}
+
+.channel-info h2 {
+  margin: 0;
+}
+a {
+  color: #0073e6;
+  text-decoration: none;
+}

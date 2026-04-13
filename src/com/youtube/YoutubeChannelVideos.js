@@ -3,6 +3,7 @@ import ReactPlayer from "react-player";
 import "./youtube.css";
 import Loader from "../loader/loader";
 import { Helmet } from "react-helmet-async";
+import YoutubeInfo from "./YoutubeInfo";
 function YoutubeChannelVideos({ apiKey, channelId }) {
   const [videos, setVideos] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -61,33 +62,36 @@ function YoutubeChannelVideos({ apiKey, channelId }) {
           content="YouTube channel videos  for web tutorials and WordPress tips."
         />
       </Helmet>
-      <div className="video-grid">
-        {videos.map((video) => (
-          <div className="video-card" key={video.id}>
-            <div className="video-container">
-              <ReactPlayer
-                url={`https://www.youtube.com/watch?v=${video.id}`}
-                controls
-              />
+      <div className="channel">
+        <YoutubeInfo channelId={channelId} apiKey={apiKey} />
+        <div className="video-grid">
+          {videos.map((video) => (
+            <div className="video-card" key={video.id}>
+              <div className="video-container">
+                <ReactPlayer
+                  url={`https://www.youtube.com/watch?v=${video.id}`}
+                  controls
+                />
+              </div>
+              <div className="video-meta">
+                <h3 className="video-title">{video.title}</h3>
+                <p className="video-description">{video.description}</p>
+                <button
+                  className="btn btn-youtube"
+                  onClick={() =>
+                    window.open(
+                      `https://www.youtube.com/watch?v=${video.id}`,
+                      "_blank",
+                    )
+                  }>
+                  <i className="fa-brands fa-youtube"></i>&nbsp; Watch on
+                  YouTube...
+                </button>
+                {/* suggestions social share... */}
+              </div>
             </div>
-            <div className="video-meta">
-              <h3 className="video-title">{video.title}</h3>
-              <p className="video-description">{video.description}</p>
-              <button
-                className="btn btn-youtube"
-                onClick={() =>
-                  window.open(
-                    `https://www.youtube.com/watch?v=${video.id}`,
-                    "_blank",
-                  )
-                }>
-                <i className="fa-brands fa-youtube"></i>&nbsp; Watch on
-                YouTube...
-              </button>
-              {/* suggestions social share... */}
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
