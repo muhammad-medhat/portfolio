@@ -21,7 +21,6 @@ export default function About() {
 
     // 🔑 Insert script AFTER the div (this is what PPH expects)
     widgetRef.current.after(script);
-    debugger;
 
     return () => {
       // cleanup

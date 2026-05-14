@@ -14,7 +14,6 @@
   --hm-radius: 18px;
   --hm-gap: 14px;
   padding: clamp(18px, 3vw, 32px) 0;
-  /* Grid for options */
 }
 .hire-method-section .hire-method,
 .hire-show .hire-method {
@@ -24,12 +23,15 @@
   box-shadow: var(--hm-shadow);
   padding: clamp(18px, 3vw, 28px);
   overflow: hidden;
-  /* subtle top gradient */
-  position: relative;
 }
 .hire-method-section .hire-method input[type=radio] + label::before,
 .hire-show .hire-method input[type=radio] + label::before {
   display: none;
+}
+.hire-method-section .hire-method,
+.hire-show .hire-method {
+  /* subtle top gradient */
+  position: relative;
 }
 .hire-method-section .hire-method::before,
 .hire-show .hire-method::before {
@@ -60,6 +62,10 @@
   color: var(--hm-muted);
   font-weight: 500;
 }
+.hire-method-section,
+.hire-show {
+  /* Grid for options */
+}
 .hire-method-section .hire-method-platform,
 .hire-show .hire-method-platform {
   display: grid;
@@ -67,16 +73,16 @@
   grid-template-columns: repeat(3, minmax(0, 1fr));
   align-items: stretch;
   /* Tablet */
-  /* Mobile */
-  /* The label is the “card button” */
-  /* Checked state (Bootstrap: input.btn-check:checked + label.btn) */
-  /* Focus ring for accessibility */
 }
 @media (max-width: 992px) {
   .hire-method-section .hire-method-platform,
   .hire-show .hire-method-platform {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+}
+.hire-method-section .hire-method-platform,
+.hire-show .hire-method-platform {
+  /* Mobile */
 }
 @media (max-width: 576px) {
   .hire-method-section .hire-method-platform,
@@ -95,6 +101,10 @@
 .hire-show .hire-method-platform .form-check > .btn {
   width: 100%;
 }
+.hire-method-section .hire-method-platform,
+.hire-show .hire-method-platform {
+  /* The label is the “card button” */
+}
 .hire-method-section .hire-method-platform label.btn.btn-outline-success,
 .hire-show .hire-method-platform label.btn.btn-outline-success {
   border: 1px solid var(--hm-border) !important;
@@ -111,10 +121,6 @@
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
   transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease, background 160ms ease;
   /* optional: slightly tighter on small screens */
-  /* Make the text look like title + hint (even if it’s one line) */
-  font-weight: 700;
-  letter-spacing: -0.01em;
-  /* logo row */
 }
 @media (max-width: 576px) {
   .hire-method-section .hire-method-platform label.btn.btn-outline-success,
@@ -122,6 +128,13 @@
     min-height: 84px;
     padding: 12px 12px !important;
   }
+}
+.hire-method-section .hire-method-platform label.btn.btn-outline-success,
+.hire-show .hire-method-platform label.btn.btn-outline-success {
+  /* Make the text look like title + hint (even if it’s one line) */
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  /* logo row */
 }
 .hire-method-section .hire-method-platform label.btn.btn-outline-success img,
 .hire-show .hire-method-platform label.btn.btn-outline-success img {
@@ -142,6 +155,10 @@
 .hire-show .hire-method-platform label.btn.btn-outline-success:active {
   transform: translateY(0);
 }
+.hire-method-section .hire-method-platform,
+.hire-show .hire-method-platform {
+  /* Checked state (Bootstrap: input.btn-check:checked + label.btn) */
+}
 .hire-method-section .hire-method-platform .btn-check:checked + label.btn.btn-outline-success,
 .hire-show .hire-method-platform .btn-check:checked + label.btn.btn-outline-success {
   border-color: rgba(25, 135, 84, 0.55) !important;
@@ -160,6 +177,10 @@
   width: 5px;
   border-radius: 999px;
   background: rgba(25, 135, 84, 0.9);
+}
+.hire-method-section .hire-method-platform,
+.hire-show .hire-method-platform {
+  /* Focus ring for accessibility */
 }
 .hire-method-section .hire-method-platform .btn-check:focus + label.btn.btn-outline-success,
 .hire-method-section .hire-method-platform .btn-check:focus-visible + label.btn.btn-outline-success,

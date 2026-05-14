@@ -122,7 +122,6 @@ const RSSFeedReader = ({ feedUrl }) => {
     if (key === "all") {
       setFilteredItems(feedItems);
     } else {
-      debugger;
       const filtered = feedItems.filter((item) =>
         item.tags.some((t) =>
           tagGroups[key]?.includes(String(t).toLowerCase().trim()),

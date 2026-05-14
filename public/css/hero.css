@@ -7,7 +7,6 @@
   line-height: 1.75;
   color: var(--bs-secondary-color);
   /* subtle accent divider */
-  /* Keep alignment consistent with Bootstrap container */
 }
 .seo-content::before {
   content: "";
@@ -44,6 +43,9 @@
 }
 .seo-content li {
   margin-bottom: 0.4rem;
+}
+.seo-content {
+  /* Keep alignment consistent with Bootstrap container */
 }
 @media (min-width: 1200px) {
   .seo-content {
