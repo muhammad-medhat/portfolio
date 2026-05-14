@@ -122,7 +122,6 @@ const RSSFeedReader = ({ feedUrl }) => {
     if (key === "all") {
       setFilteredItems(feedItems);
     } else {
-      debugger;
       const filtered = feedItems.filter((item) =>
         item.tags.some((t) =>
           tagGroups[key]?.includes(String(t).toLowerCase().trim()),
@@ -166,11 +165,12 @@ const RSSFeedReader = ({ feedUrl }) => {
       ? "bg-primary"
       : "bg-secondary";
   };
+  console.log(`~~${numArticles}~~`);
   return (
     <>
       {/* ... your header + TopicsGroup ... */}
       <h2 className="inner-title">
-        <i className="fa-brands fa-readme"></i>Dev Articles({numArticles})
+        <i className="fa-brands fa-readme"></i>Dev Articles
       </h2>
       {/* 🔽 Tag Selector */}
       <div className="mb-4 text-center">

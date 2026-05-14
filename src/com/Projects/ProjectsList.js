@@ -17,7 +17,6 @@ function ProjectsList() {
 
   const wp = projects.filter((p) => p.cat === 1);
   const ac = projects.filter((p) => p.cat !== 1);
-  debugger;
 
   const slides = wp.map((p) => ({
     src: p.image,

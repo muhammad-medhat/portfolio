@@ -17,7 +17,16 @@
 @import "main-md/table";
 @import "main-md/input";
 
-/* Work Item */
+.flex {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+} /* Work Item */
 
 .work-item {
   margin: 0 0 _size(element-margin) 0;
@@ -48,7 +57,8 @@
     padding: 1rem 2rem;
     font-size: large;
     font-weight: bold;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    box-shadow:
+      rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
       rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     // background: var(--gradient);
   }
@@ -61,7 +71,9 @@
   :hover {
     // width: 15em;
     background: #e0e0e0;
-    box-shadow: 0px 10px 20px #bebebe, 0px -10px 20px #ffffff;
+    box-shadow:
+      0px 10px 20px #bebebe,
+      0px -10px 20px #ffffff;
   }
 }
 blockquote {
