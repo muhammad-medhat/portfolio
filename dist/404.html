@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/logo-img.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Explore Muhammad's portfolio showcasing 15+ years of web development expertise, including WordPress customization, custom themes, e-commerce, real estate, and more. Discover unique, impactful projects crafted with attention to detail and functionality, designed to elevate your digital presence" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <base href="%PUBLIC_URL%/" />
+    <meta
+      name="google-site-verification"
+      content="uFirwycbdw5QLZzWjENfsbj7gw8wKFJ_yno6VSUmYdU" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <!-- <meta http-equiv="Permissions-Policy" content="interest-cohort=()"> -->
+
+    <title>Muhammad Medhat Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-
+awesome.min.css" rel="stylesheet" integrity="sha384-
+wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+      $(function () {
+        $("#projects").poptrox({
+          caption: function ($a) {
+            // $a refers to the anchor element
+            return $a.find(".caption").text();
+          },
+          usePopupCaption: true,
+          overlayColor: "#000",
+          overlayOpacity: 0.6,
+          windowMargin: 50, // Window margin size (in pixels; only comes into
+          // play when an image is larger than the viewport)
+          popupBlankCaptionText: "(untitled)",
+          selector: "a.image",
+
+          usePopupNav: true,
+          preload: true,
+          baseZIndex: 1000,
+          usePopupEasyClose: true,
+          usePopupLoader: true,
+          usePopupCloser: false,
+          usePopupDefaultStyling: false,
+          popupClass: "poptrox-popup", // Popup class
+          popupLoaderSelector: ".loader", // (Advanced) Popup Loader selector
+          popupCloserSelector: ".closer", // (Advanced) Popup Closer selector
+          popupCaptionSelector: ".caption", // (Advanced) Popup Caption selector
+          popupNavPreviousSelector: ".nav-previous", // (Advanced) Popup Nav Previous selector
+          popupNavNextSelector: ".nav-next", // (Advanced) Popup Nav Next selector
+        });
+      });
+    </script>
+  </body>
+</html>

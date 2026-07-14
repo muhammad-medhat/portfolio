@@ -1,0 +1,36 @@
+import { useState } from "react";
+import profileImg from "../../assets/img/profile-img.jpeg";
+import { Link } from "react-router-dom";
+import Logo from "../../assets/md/logo.svg";
+import "./MyInfo.css";
+
+export default function MyInfo({ handleNavigation }) {
+  const [isHovered, setIsHovered] = useState(false);
+
+  return (
+    <>
+      <Link className="image avatar" to="/">
+        <img
+          className="avatar"
+          onClick={() => handleNavigation("/")}
+          src={profileImg}
+          alt="Muhammad Medhat Profile Image"
+        />
+      </Link>
+      <div className="capitalize">
+        <img
+          className="logo"
+          src={Logo}
+          alt="Muhammad Medhat Logo"
+          style={{
+            maxHeight: "6rem",
+            opacity: isHovered ? 1 : 0.5,
+          }}
+          onMouseOver={() => setIsHovered(true)}
+          onMouseOut={() => setIsHovered(false)}
+          onClick={() => handleNavigation("/")}
+        />
+      </div>
+    </>
+  );
+}

@@ -1,0 +1,9 @@
+.hire-email {
+  form {
+    input,
+    textarea {
+      /* border: solid; */
+      margin: 0.5rem 0;
+    }
+  }
+}

@@ -1,0 +1,1 @@
+.title{color:red}.title::before{content:"";display:block;width:48px;height:2px;margin-bottom:1.5rem;border-radius:2px;background-color:var(--bs-success);opacity:.6}
