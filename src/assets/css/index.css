@@ -14,10 +14,10 @@
     rgba(70, 57, 50, 1) 82%
   );
   --color-pale: #ffffff80;
-  --size-mob:        
-;
 }
-
+body {
+  font-family: "Centra No2", sans-serif;
+}
 .wrapper {
   display: flex;
   flex-direction: column;

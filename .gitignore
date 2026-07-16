@@ -69,3 +69,5 @@ packages.txt
 src/com/RssApp/RssFeedReader.buggy.js
 src/com/RssApp/RssFeedReader.1.js
 src/com/RssApp/RssFeedReader.old.js
+build
+dist

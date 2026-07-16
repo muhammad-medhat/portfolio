@@ -18,6 +18,8 @@ function ProjectsList() {
   const wp = projects.filter((p) => p.cat === 1);
   const ac = projects.filter((p) => p.cat !== 1);
 
+  // console.log("p", wp);
+
   const slides = wp.map((p) => ({
     src: p.image,
     title: p.title,
@@ -35,7 +37,13 @@ function ProjectsList() {
             key={p.slug}
             className="thumb-wrapper"
             onClick={() => setOpenIndex(i)}>
-            <img src={p.image} alt={p.title} className="gallery-thumb" />
+            <img
+              src={import.meta.env.BASE_URL + "/" + p.image}
+              alt={p.title}
+              className="gallery-thumb"
+            />
+            {/* <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Logo" /> */}
+
             <div className="glass-hover capitalize flex">
               {p.title}
               {p.url ? (
