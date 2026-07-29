@@ -4,7 +4,7 @@ import projects from "../../projectsData.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp, faChain } from "@fortawesome/free-solid-svg-icons";
 import "./projects.css";
-
+//yet-another-react-lightbox
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import Captions from "yet-another-react-lightbox/plugins/captions";
@@ -19,9 +19,10 @@ function ProjectsList() {
   const ac = projects.filter((p) => p.cat !== 1);
 
   // console.log("p", wp);
+  // console.log(import.meta.env.BASE_URL);
 
   const slides = wp.map((p) => ({
-    src: p.image,
+    src: import.meta.env.BASE_URL + "/" + p.image,
     title: p.title,
     description: p.longDesc,
     url: p.url,
@@ -63,7 +64,6 @@ function ProjectsList() {
           </div>
         ))}
       </div>
-
       <ScrollTop />
       <Lightbox
         open={openIndex >= 0}

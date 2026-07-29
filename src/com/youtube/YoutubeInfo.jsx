@@ -16,6 +16,7 @@ function YoutubeInfo({ channelId, apiKey }) {
     if (!text) return "";
     return text.length > length ? text.substring(0, length) + "..." : text;
   };
+  console.log("channel", channel);
   return (
     <div className="youtube-info">
       {channel ? (
