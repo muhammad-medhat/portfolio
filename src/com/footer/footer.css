@@ -1,17 +1,16 @@
 /************ Footer Css ************/
-#footer{
+#footer {
   background: var(--gradient-footer);
   padding-top: 1rem;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: var(--color-pale)  ;
+  color: #fff;
 }
 .footer {
-
 }
-.soc-info{
+.soc-info {
   /* border: solid; */
 }
 

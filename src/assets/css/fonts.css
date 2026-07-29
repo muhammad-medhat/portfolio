@@ -18,3 +18,16 @@
   font-weight: 700;
   font-style: normal;
 }
+@font-face {
+  font-family: "Story Script";
+  src: url("../font/Story_Script/StoryScript-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Quintessential;
+  src: url("../font/quintessential/Quintessential-Regular.ttf")
+    format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
