@@ -35,7 +35,7 @@ function Expectations() {
     },
   ];
   return (
-    <div className="sec-expectations">
+    <section className="sec-expectations">
       <h3 className="title">What You Can Expect</h3>
       <p className="subtitle">
         Here's what you can expect from our collaboration:
@@ -53,7 +53,7 @@ function Expectations() {
           </Col>
         ))}
       </Row>
-    </div>
+    </section>
   );
 }
 

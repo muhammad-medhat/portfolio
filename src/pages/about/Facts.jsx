@@ -35,7 +35,7 @@ function Facts() {
     },
   ];
   return (
-    <div className="sec-at-a-glance">
+    <section className="sec-at-a-glance">
       <h3 className="title">At a Glance</h3>
       <p className="subtitle">
         A quick overview of my professional journey, skills, and achievements in
@@ -52,7 +52,7 @@ function Facts() {
           </Col>
         ))}
       </Row>
-    </div>
+    </section>
   );
 }
 
