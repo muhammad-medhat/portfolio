@@ -42,7 +42,7 @@ function MyJourney() {
       <Row className="g-5 align-items-start">
         <Col lg={4}>
           <div className="timeline">
-            {journey.map((item) => (
+            {journey.reverse().map((item) => (
               <div className="timeline-item" key={item.year}>
                 <span className="year">{item.year}</span>
 

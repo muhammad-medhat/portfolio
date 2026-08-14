@@ -278,11 +278,11 @@ section.seo-intro {
     }
 
     .subtitle {
-      /* max-width: 650px; */
       text-align: center;
       color: #6c757d;
       font-size: 1.05rem;
       line-height: 1.7;
+      display: none;
     }
 
     /* ===== Timeline ===== */
@@ -313,7 +313,7 @@ section.seo-intro {
         &::before {
           content: "";
           position: absolute;
-          left: -1.95rem;
+          left: -1.65rem;
           top: 0.35rem;
           width: 14px;
           height: 14px;
