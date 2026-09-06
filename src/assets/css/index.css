@@ -138,6 +138,7 @@ body {
       align-self: stretch;
       height: 100vh;
       .content-area {
+        min-width: 100%;
         overflow-y: auto;
         min-height: 80vh;
       }

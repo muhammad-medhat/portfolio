@@ -4,7 +4,6 @@ const projects = [
     slug: "lieferanto",
     desc: "Trading,Import & Export  Company ",
     image: "img/lieferanto.png",
-
     cat: 1,
     url: "https://lieferanto.com",
     longDesc:
@@ -15,7 +14,6 @@ const projects = [
     slug: "sbs",
     desc: "AI Business Automation ",
     image: "img/sbs.png",
-
     cat: 1,
     url: "https://sbs-inc.us",
     longDesc:
@@ -26,13 +24,11 @@ const projects = [
     slug: "ls",
     desc: "Accessories for digital gadgets website ",
     image: "img/Livestores.png",
-
     cat: 1,
     url: "https://livestores.co",
     longDesc:
       "A modern WordPress ecommerce website for digital gadget accessories with a clean layout and smooth shopping experience.",
   },
-
   {
     title: "platinum properties",
     slug: "pl",
@@ -48,7 +44,6 @@ const projects = [
     slug: "www",
     desc: "A company website ",
     image: "img/www.png",
-
     cat: 1,
     longDesc:
       "A corporate WordPress website showcasing the company’s services with a clean and modern interface.",
@@ -70,6 +65,16 @@ const projects = [
     cat: 1,
     longDesc:
       "A WordPress blog for sharing recipes and cooking tips, making it easy for users to discover new dishes.",
+  },
+  {
+    title: "Simple Calculator App",
+    slug: "calc",
+    desc: "A simple and responsive calculator app for performing basic arithmetic operations.",
+    image: "img/calc.png",
+    cat: 2,
+    url: "",
+    longDesc:
+      "A lightweight calculator application with a clean and user-friendly interface. It supports basic arithmetic operations such as addition, subtraction, multiplication, and division, with a responsive design that works well across different screen sizes.",
   },
   {
     title: "MERN Shop",

@@ -7,6 +7,9 @@ import Contact from "../pages/contact";
 import MyTools from "../pages/MyTools";
 import RSSApp from "./RssApp";
 import YoutubeChannelVideos from "./youtube/YoutubeChannelVideos";
+import ProjectsList from "./Projects/ProjectsList";
+import ProjectsGallery from "./ProjectsGallery/projectsGallery";
+import projects from "../projectsData.js";
 
 function MDRoutes() {
   return (
@@ -17,6 +20,7 @@ function MDRoutes() {
       <Route path={`/contact`} element={<Contact />} />
       <Route path={`/tools`} element={<MyTools />} />
       <Route path={`/rss`} element={<RSSApp />} />
+      <Route path={`/p`} element={<ProjectsGallery items={projects} />} />
       <Route
         path={`/youtube`}
         element={

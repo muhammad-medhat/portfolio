@@ -47,13 +47,14 @@ section.seo-intro {
   .subtitle {
     width: 70%;
     font-family: Quintessential, sans-serif;
-    /* border: solid 1px; */
     text-align: center;
     margin: 0 auto 4rem;
 
     /* all subtitles will have text-muted */
     --bs-text-opacity: 1;
     color: var(--bs-secondary-color) !important;
+    border: solid;
+    display: none;
   }
   .quote {
     font-family: "Story Script", sans-serif !important;
@@ -277,14 +278,6 @@ section.seo-intro {
       text-align: center;
     }
 
-    .subtitle {
-      text-align: center;
-      color: #6c757d;
-      font-size: 1.05rem;
-      line-height: 1.7;
-      display: none;
-    }
-
     /* ===== Timeline ===== */
 
     .timeline {
@@ -479,13 +472,6 @@ section.seo-intro {
       margin-bottom: 0.5rem;
     }
 
-    .subtitle {
-      text-align: center;
-      color: #6c757d;
-      /* max-width: 650px; */
-      margin: 0 auto 3rem;
-    }
-
     .cards {
       row-gap: 1.5rem;
     }
@@ -670,12 +656,6 @@ section.seo-intro {
       margin-bottom: 0.5rem;
     }
 
-    .subtitle {
-      /* max-width: 650px; */
-      margin: auto;
-      color: #6c757d;
-    }
-
     .tech-card {
       height: 100%;
       background: #fff;
@@ -753,15 +733,6 @@ section.seo-intro {
       font-size: 2.5rem;
       font-weight: 700;
       margin-bottom: 0.75rem;
-    }
-
-    .subtitle {
-      max-width: 700px;
-      margin: 0 auto 4rem;
-      text-align: center;
-      color: #6c757d;
-      line-height: 1.8;
-      font-size: 1.05rem;
     }
 
     .beyond-card {
