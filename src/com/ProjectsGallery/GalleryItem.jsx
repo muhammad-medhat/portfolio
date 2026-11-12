@@ -16,7 +16,11 @@ function GalleryItem({ itm, handleShow }) {
       <Card.Img
         src={import.meta.env.BASE_URL + "/" + itm.image}
         alt={itm.title}
-        style={{ aspectRatio: "16/9", objectFit: "cover" }}
+        style={{
+          aspectRatio: "16/9",
+          objectFit: "cover",
+          objectPosition: "center",
+        }}
       />
       <Card.Body className="d-flex flex-column justify-content-between">
         <>
