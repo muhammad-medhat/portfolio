@@ -10,6 +10,8 @@ import YoutubeChannelVideos from "./youtube/YoutubeChannelVideos";
 import ProjectsList from "./Projects/ProjectsList";
 import ProjectsGallery from "./ProjectsGallery/projectsGallery";
 import projects from "../projectsData.js";
+import Club21 from "../caseStudies/c21/Club21.jsx";
+import LiveStores from "../caseStudies/liveStores/LiveStores.jsx";
 
 function MDRoutes() {
   return (
@@ -31,6 +33,8 @@ function MDRoutes() {
           />
         }
       />
+      <Route path="/p/club21" element={<Club21 />} />
+      <Route path="/p/livestores" element={<LiveStores />} />
       {/* handle 404 */}
       <Route path="*" element={<Home />} />
     </Routes>

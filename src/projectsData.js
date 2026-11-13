@@ -8,6 +8,7 @@ const projects = [
     url: "https://club21-cafe.github.io/scan/",
     longDesc:
       "A mobile-friendly menu that guests open by scanning a QR code to browse food and drinks, view prices, and switch between Arabic and English.",
+    caseStudyPath: "/p/club21",
   },
   {
     title: "Lieferanto Trading",
@@ -38,6 +39,7 @@ const projects = [
     url: "https://livestores.co",
     longDesc:
       "A WordPress ecommerce website for Livestores Electronics that uses a clean storefront layout to help shoppers browse accessories for their digital devices.",
+    caseStudyPath: "/p/livestores",
   },
   {
     title: "platinum properties",

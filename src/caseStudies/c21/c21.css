@@ -1,0 +1,69 @@
+.club21-case-study {
+  /* border: solid red; */
+  padding: 1.5em;
+}
+.club21-screenshots {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 48rem;
+  margin: 1.5rem auto 2rem;
+}
+
+.club21-screenshots figure {
+  min-width: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.club21-screenshots img {
+  display: block;
+  width: 100%;
+  max-width: 390px;
+  height: auto;
+  margin-inline: auto;
+  border-radius: 0.75rem;
+}
+
+.club21-screenshots figcaption {
+  margin-top: 0.5rem;
+}
+
+/****************************************************/
+.club21-phone {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 19rem;
+  margin-inline: auto;
+  padding: 1.5rem 0.45rem 0.65rem;
+  position: relative;
+  border: 1px solid #454750;
+  border-radius: 1.75rem;
+  background: #17181c;
+  box-shadow: 0 12px 24px rgb(0 0 0 / 18%);
+}
+
+.club21-phone::before {
+  content: "";
+  position: absolute;
+  top: 0.55rem;
+  left: 50%;
+  width: 2.5rem;
+  height: 0.25rem;
+  transform: translateX(-50%);
+  border-radius: 999px;
+  background: #626570;
+}
+
+.club21-screenshots .club21-phone img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 1.2rem;
+}
+/****************************************************/
+
+@media (min-width: 768px) {
+  .club21-screenshots {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

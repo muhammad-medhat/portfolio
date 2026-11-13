@@ -1,5 +1,6 @@
 import React from "react";
 import { Carousel as BootstrapCarousel, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function CarouselComponent({ items, activeIndex, handleSelect }) {
   return (
@@ -46,19 +47,28 @@ function CarouselComponent({ items, activeIndex, handleSelect }) {
                     </p>
                   </div>
 
+                  {/* show case study */}
+                  {itm.caseStudyPath && (
+                    <Button
+                      as={Link}
+                      to={itm.caseStudyPath}
+                      variant="outline-light"
+                      size="sm">
+                      View Case Study
+                    </Button>
+                  )}
+
                   {/* Right Action Button Block */}
                   {itm.url && (
-                    <div className="text-nowrap">
-                      <Button
-                        variant="primary"
-                        size="sm"
-                        href={itm.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="fw-bold px-3 py-2">
-                        Visit Project Website ↗
-                      </Button>
-                    </div>
+                    <Button
+                      variant="primary"
+                      size="sm"
+                      href={itm.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="fw-bold px-3 py-2 text-nowrap">
+                      Visit Project Website ↗
+                    </Button>
                   )}
                 </div>
               </div>
