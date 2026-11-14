@@ -68,6 +68,23 @@ export default function Livestores() {
         rel="noopener noreferrer">
         Visit Livestores
       </a>
+      <section
+        className="case-study-contact"
+        aria-labelledby="livestores-contact">
+        <div>
+          <h2 id="livestores-contact">
+            Need help with your WooCommerce store?
+          </h2>
+          <p>
+            Tell me what you’d like to improve, from site cleanup to storefront
+            updates.
+          </p>
+        </div>
+
+        <Link to="/contact" className="button">
+          Discuss Your Store
+        </Link>
+      </section>
     </article>
   );
 }

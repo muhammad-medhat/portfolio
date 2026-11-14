@@ -9,6 +9,8 @@ const projects = [
     longDesc:
       "A mobile-friendly menu that guests open by scanning a QR code to browse food and drinks, view prices, and switch between Arabic and English.",
     caseStudyPath: "/p/club21",
+
+    projectType: "client",
   },
   {
     title: "Lieferanto Trading",
@@ -19,6 +21,8 @@ const projects = [
     url: "https://lieferanto.com",
     longDesc:
       "A corporate WordPress website for Lieferanto Trading that introduces the company and presents its trading, import, and export services to prospective clients.",
+
+    projectType: "client",
   },
   {
     title: "SBS Consultant Inc",
@@ -29,6 +33,8 @@ const projects = [
     url: "https://sbs-inc.us",
     longDesc:
       "A website for SBS Consultant Inc that explains how its AI automation services help small businesses streamline routine processes and improve operational efficiency.",
+
+    projectType: "client",
   },
   {
     title: "livestores electronics",
@@ -40,6 +46,8 @@ const projects = [
     longDesc:
       "A WordPress ecommerce website for Livestores Electronics that uses a clean storefront layout to help shoppers browse accessories for their digital devices.",
     caseStudyPath: "/p/livestores",
+
+    projectType: "client",
   },
   {
     title: "platinum properties",
@@ -50,6 +58,8 @@ const projects = [
     cat: 1,
     longDesc:
       "A WordPress website for Platinum Properties that presents the agency and gives prospective buyers a central place to browse its real estate listings.",
+
+    projectType: "client",
   },
   {
     title: "WWW Company",
@@ -59,6 +69,8 @@ const projects = [
     cat: 1,
     longDesc:
       "A corporate WordPress website for WWW Company that introduces the business and presents its services through a clean layout that visitors can browse easily.",
+
+    projectType: "personal",
   },
   {
     title: "The pets now",
@@ -68,6 +80,8 @@ const projects = [
     cat: 1,
     longDesc:
       "A WordPress blog for cat owners and enthusiasts, featuring practical guides on feeding and daily care, information about cat breeds, and reviews of cat products.",
+
+    projectType: "personal",
   },
   {
     title: "Cookreads blog",
@@ -77,6 +91,8 @@ const projects = [
     cat: 1,
     longDesc:
       "A WordPress food blog where readers can discover recipes, find ideas for their next meal, and learn practical cooking tips for preparing dishes at home.",
+
+    projectType: "personal",
   },
   {
     title: "Simple Calculator App",
@@ -87,6 +103,8 @@ const projects = [
     url: "",
     longDesc:
       "A lightweight calculator that supports addition, subtraction, multiplication, and division through a simple interface that adapts to different screen sizes for everyday calculations.",
+
+    projectType: "personal",
   },
   {
     title: "MERN Shop",
@@ -96,6 +114,8 @@ const projects = [
     cat: 2,
     longDesc:
       "A MERN stack storefront where shoppers can browse products, add items to their carts, review their selections, and complete purchases through the checkout flow.",
+
+    projectType: "course",
   },
   {
     title: "MDweb",
@@ -105,6 +125,8 @@ const projects = [
     cat: 1,
     longDesc:
       "A WordPress website that showcases video ads and digital media services, with a simple layout that helps visitors explore the available offerings.",
+
+    projectType: "personal",
   },
   {
     title: "MERN Ecom",
@@ -114,6 +136,8 @@ const projects = [
     cat: 2,
     longDesc:
       "An ecommerce application built with the MERN stack that brings product discovery, online shopping, and selling together in a single web application.",
+
+    projectType: "course",
   },
   {
     title: "MD Store",
@@ -123,6 +147,8 @@ const projects = [
     cat: 1,
     longDesc:
       "A WordPress ecommerce website for home and décor products, where shoppers can explore the catalog, find items for their homes, and complete purchases online.",
+
+    projectType: "personal",
   },
   {
     title: "ACI Adhesives",
@@ -132,6 +158,8 @@ const projects = [
     cat: 1,
     longDesc:
       "A company website for Advanced Chemical Industries that organizes adhesives and sealants into categories so visitors can browse the range and find product information.",
+
+    projectType: "client",
   },
   {
     title: "Alex West Egypt",
@@ -142,6 +170,8 @@ const projects = [
     url: "https://alexwestegypt.com",
     longDesc:
       "A Joomla real estate website that introduces the Alex West development, showcases its villas and townhouses, and highlights community amenities such as golf and hospitality.",
+
+    projectType: "client",
   },
   {
     title: "United Cotton",
@@ -152,6 +182,8 @@ const projects = [
     url: "https://united-cotton.com/",
     longDesc:
       "A corporate portfolio website for United Cotton that introduces the company, outlines its services, and highlights its history and achievements in the cotton industry.",
+
+    projectType: "client",
   },
   {
     title: "CLT Shuttle",
@@ -161,6 +193,8 @@ const projects = [
     cat: 1,
     longDesc:
       "A company website for CLT Shuttle that introduces its airport shuttle service and lets travelers know that ground transportation is available around the clock.",
+
+    projectType: "client",
   },
   {
     title: "Landing Page",
@@ -170,6 +204,8 @@ const projects = [
     cat: 222,
     longDesc:
       "A JavaScript landing page that uses interactive elements, dynamic content, and animations to engage visitors and encourage them to take the page’s intended action.",
+
+    projectType: "course",
   },
   {
     title: "Courses List",
@@ -179,6 +215,8 @@ const projects = [
     cat: 2,
     longDesc:
       "A course management application with a React interface and a Flask backend that lets users add courses, view the list, update entries, and remove courses.",
+
+    projectType: "course",
   },
   {
     title: "My Reads",
@@ -188,6 +226,8 @@ const projects = [
     cat: 3,
     longDesc:
       "A React application that helps readers organize their books, search and sort their collection, group titles into categories, and keep track of their reading progress.",
+
+    projectType: "course",
   },
   {
     title: "Fyurr app",
@@ -197,6 +237,8 @@ const projects = [
     cat: 3,
     longDesc:
       "A Flask application for managing music artists and venues, with tools to browse records and add or update information about bands and performers.",
+
+    projectType: "course",
   },
   {
     title: "Trivia API app",
@@ -206,6 +248,8 @@ const projects = [
     cat: 3,
     longDesc:
       "A Flask API that provides endpoints for creating, retrieving, updating, and deleting trivia questions, giving client applications a way to manage their question collections.",
+
+    projectType: "course",
   },
   {
     title: "TODO CRUD app",
@@ -215,6 +259,7 @@ const projects = [
     cat: 2,
     longDesc:
       "A to-do application built with React and Flask that lets users add daily tasks, view their task list, update task details, and delete entries.",
+    projectType: "course",
   },
 ];
 export default projects;

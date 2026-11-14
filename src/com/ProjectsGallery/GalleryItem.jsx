@@ -6,6 +6,11 @@ import { Card } from "react-bootstrap";
 
 function GalleryItem({ itm, handleShow }) {
   // console.log("===========", index);
+  const projectTypeLabels = {
+    client: "Client Project",
+    personal: "Personal Project",
+    course: "Course Project",
+  };
   return (
     <Card
       className=" gallery-item h-100 shadow-sm  overflow-hidden"
@@ -27,6 +32,13 @@ function GalleryItem({ itm, handleShow }) {
           <Card.Title className="text-capitalize h5 mb-2">
             {itm.title}
           </Card.Title>
+          {projectTypeLabels[itm.projectType] && (
+            <div className="mb-2">
+              <span className="badge rounded-pill text-bg-secondary">
+                {projectTypeLabels[itm.projectType]}
+              </span>
+            </div>
+          )}
           <Card.Text className="small text-muted mb-0">{itm.desc}</Card.Text>
           <div className="glass-hover capitalize flex">
             {itm.url ? (
